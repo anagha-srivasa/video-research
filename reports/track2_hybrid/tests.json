@@ -1,0 +1,1 @@
+{"command":"python3.13 -m pytest tests -q --basetemp=work/track2_hybrid_final_pytest","log_sha256":"47319cf85882cd94c3734391a5fc7f879ceac1ddc573f24f1cba4f00fbc10682","passed":132,"synthetic_episode60_smoke_passed":true}

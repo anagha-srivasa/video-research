@@ -1,0 +1,43 @@
+# Bounded Track 2 hybrid prototype
+
+Exploratory source-state evaluation. Proxy feasibility passed: **False**. Scientific acceptance and full Track 2 GO remain false. No baseline promotion.
+
+Implemented an actual stationary/CV interacting multiple-model filter: Markov interaction, between-mode covariance, Joseph measurement updates and likelihood-based mode weights. Twelve settings were selected on five training participants only. Single CV and stationary Kalman filters share the selected IMM parameters; they are ablations, not separately optimized competitors. Method reference: [Dingler 2022](https://arxiv.org/abs/2207.04875).
+
+This prototype reads retrospective centroid observations within one second. Earlier Koopman/GRU/MLP models read four cached kinematic states. Their input information differs, so this is not an isolated architecture ranking. Frozen six-second contexts and participant assignments are unchanged. Two validation participants have been used repeatedly; they are not a fresh test.
+
+| Method | Horizon ms | Position RMSE | Velocity RMSE | Targets |
+|---|---:|---:|---:|---:|
+| cv | 250 | 0.134840 | 0.585917 | 203 |
+| cv | 500 | 0.259603 | 0.646652 | 184 |
+| cv | 1000 | 0.465000 | 0.582575 | 146 |
+| constant_position | 250 | 0.099121 | 0.422062 | 203 |
+| constant_position | 500 | 0.144485 | 0.434625 | 184 |
+| constant_position | 1000 | 0.182520 | 0.459818 | 146 |
+| nearest_observation | 250 | 0.094708 | 0.422062 | 203 |
+| nearest_observation | 500 | 0.141076 | 0.434625 | 184 |
+| nearest_observation | 1000 | 0.181346 | 0.459818 | 146 |
+| imm | 250 | 0.096076 | 0.447902 | 203 |
+| imm | 500 | 0.162043 | 0.476157 | 184 |
+| imm | 1000 | 0.216262 | 0.457766 | 146 |
+| kalman_cv | 250 | 0.130635 | 0.583252 | 203 |
+| kalman_cv | 500 | 0.262993 | 0.666622 | 184 |
+| kalman_cv | 1000 | 0.467156 | 0.587332 | 146 |
+| kalman_stationary | 250 | 0.104812 | 0.422062 | 203 |
+| kalman_stationary | 500 | 0.144180 | 0.434625 | 184 |
+| kalman_stationary | 1000 | 0.181798 | 0.459818 | 146 |
+
+
+Units are intrinsic-normalized position and position per second. RMSE is calculated within participant, then averaged. Unsupported future targets remain null in prediction ledgers; all original opportunities remain in target_ledger.parquet.
+
+Input support: [{"original_valid_inputs": 1047, "raw_history_supported": 1047, "split": "train"}, {"original_valid_inputs": 224, "raw_history_supported": 224, "split": "validation"}].
+
+Optional certified M32 transport scored 179 of 448 proposals. Missing geometry: 264. This freezes the historical canonical shape and positive scale and translates it with predicted position. It does not learn shape dynamics, certify future physical boundaries or supply contact ground truth. Target topology changes remain in evaluation. Boundary scores use annotation pixels.
+
+Conditional uncertainty includes within-mode and between-mode covariance. It is not calibrated physical uncertainty; NEES/coverage are descriptive source-target diagnostics. Five calibration participant units cannot supply a finite 95% participant-level split-conformal bound under the previous construction.
+
+Exact synthetic stress tests report event recall, delay, false alarms per quiet minute, velocity and continuation. The independently implemented innovation-evidence channel remains separate from position estimation. These are previously exposed synthetic episodes, not independent human motion/contact labels.
+
+Prototype 1 and 3 results are preserved in ../track2_feasibility and ../track2_kinematics. The stable Koopman candidate failed its original short-horizon gate; the newer kinematic neural models did not beat constant position across horizons. This run fills Prototype 2 without repeating those searches. No scientific finalization or expanded training is authorized by negative proxy results.
+
+Reproduce: `PYTHONPATH=src:work/deps:work/track1_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m track2_hybrid.run --resume`. Source/input/output hashes are checked; scratch checkpoints are under work/track2_hybrid. No RGB data is duplicated. The guard enforces tree RSS below 20 GiB, available memory above 5 GiB and the existing disk reserve.
