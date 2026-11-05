@@ -1,0 +1,17 @@
+{
+  "seed": 20261105,
+  "phase_cases_per_video": 24,
+  "repair_cases_per_video": 12,
+  "context_candidates_per_video": 12,
+  "context_seconds": 6,
+  "workers": 7,
+  "fractional_phase_limit_controls": 0.5,
+  "phase_smoothness": 0.001,
+  "maximum_sampled_static_displacement_px": 0.25,
+  "weak_shape_regularization_increment": 0.03,
+  "certificate_max_depth": 8,
+  "certificate_max_nodes": 255,
+  "minimum_relative_gain": 0.002,
+  "finalized": false,
+  "track2_started": false
+}

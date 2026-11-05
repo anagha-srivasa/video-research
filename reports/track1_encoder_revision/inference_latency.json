@@ -1,0 +1,1 @@
+{"deployment_end_to_end_fps_established":false,"existing_decoder_median_ms":13.427645491901785,"number_of_rings":1,"repeats":100,"scope":"warm normalized certified geometry decode for one sampled 128-point-per-ring state; excludes RGB decode, masks, appearance, fitting, and certification","warm_compiled_median_ms":0.005604502803180367,"warm_compiled_p95_ms":0.007783054024912413}

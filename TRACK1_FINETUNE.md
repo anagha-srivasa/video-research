@@ -74,3 +74,7 @@ Training uses exact small weighted float64 solves, rather than neural epochs. Th
 All **99 tests** pass. Checks cover withheld-target independence, candidate-selection safety, source/participant boundaries and existing numerical contracts. All newly generated tensors were checked for finite values; supported covariance matrices passed PSD checks; collocation tensors and endpoint-neutral detail were reconstructed analytically; certified curves retain coefficient/decoder binding. Every one of the 6,984 sequence indices was audited, and real reader batches passed, including length 16. All baseline/input and release hashes match.
 
 The Qwen ledger remains machine-only evidence and was not used to fabricate contour/contact/identity/motion targets. Independent physical motion, contact, identity, event preservation, joint uncertainty, and fresh scientific evaluation remain open. Scientific acceptance is false. The training cycle is complete as an open Track 1 development candidate.
+
+## Follow-up research-report implementation
+
+The optional report-driven encoder revision is documented in [TRACK1_ENCODER_REVISION.md](TRACK1_ENCODER_REVISION.md). Its phase/event/repair/covariance experiments and added stable contexts remain separate from this preserved finetuning release.

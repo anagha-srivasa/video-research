@@ -1,0 +1,66 @@
+{
+  "items": [
+    {
+      "priority": "P0",
+      "proposal": "retained-only circular phase alignment",
+      "status": "implemented_and_tested_not_promoted",
+      "evidence": "phase.json"
+    },
+    {
+      "priority": "P0",
+      "proposal": "causal innovation event channel",
+      "status": "implemented_training_selected_experimental",
+      "evidence": "events.json"
+    },
+    {
+      "priority": "P0",
+      "proposal": "independent reference ingestion",
+      "status": "strict_cli_implemented_zero_accepted_references",
+      "evidence": "independent_references.json"
+    },
+    {
+      "priority": "P1",
+      "proposal": "localized certificate repair",
+      "status": "implemented_quality_gain_no_new_certified_states",
+      "evidence": "repair.json"
+    },
+    {
+      "priority": "P1",
+      "proposal": "full covariance propagation",
+      "status": "conditional_observation_api_and_diagnostics_implemented_unestimated_components_explicit",
+      "evidence": "covariance.json"
+    },
+    {
+      "priority": "P1",
+      "proposal": "stable-context expansion",
+      "status": "three_contexts_built_no_multi_validation_participant_gain",
+      "evidence": "context_appearance.json"
+    },
+    {
+      "priority": "P2",
+      "proposal": "contact-aware fixed-budget allocation",
+      "status": "deferred_until_independent_contact_geometry",
+      "evidence": "scientific_readiness.json"
+    },
+    {
+      "priority": "P2",
+      "proposal": "calibrated association rejection",
+      "status": "deferred_until_independent_identity_labels",
+      "evidence": "scientific_readiness.json"
+    },
+    {
+      "priority": "P3",
+      "proposal": "clean rebuild",
+      "status": "75_bounded_artifacts_match_full_raw_pilot_rebuild_unverified",
+      "evidence": "clean_rebuild.json"
+    },
+    {
+      "priority": "gate",
+      "proposal": "final freeze/fresh evaluation",
+      "status": "not_authorized_and_scientific_gates_not_satisfied",
+      "evidence": "scientific_readiness.json"
+    }
+  ],
+  "scientific_acceptance": false,
+  "track2_started": false
+}
