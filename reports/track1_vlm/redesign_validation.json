@@ -1,0 +1,28 @@
+{
+  "preserved_reviews": 592,
+  "preservation_exact": true,
+  "native_checks": 6480,
+  "planned": {
+    "pending": 916,
+    "preserved": 206
+  },
+  "pilot_valid": 3,
+  "pilot_native_rgb_match": true,
+  "pilot_mean_seconds": 124.9053218056797,
+  "pilot_reasoning_tokens": [
+    3089,
+    1260,
+    2289
+  ],
+  "independent_accuracy_validated": false,
+  "tests_passed": 95,
+  "preserved_backup_sha256": "eac4f121c78d6ece3a818f495f47b8cf69ec348cc1b4bfbd099c6638cbf13f00",
+  "current_plan": {
+    "complete": 5,
+    "pending": 911,
+    "preserved": 206
+  },
+  "new_failures": 0,
+  "reviewer_running": true,
+  "updated_unix": 1793457086.962473
+}

@@ -1,0 +1,27 @@
+{
+  "video_id": "P27_105",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "7b72a293b54361e83148cd3b2fd933a7034d4207a91f20a5026b8b976c422f46",
+  "repair_image_sha256": "70f4bc6d71803d29f16e6a987c188885885584a45162dc788699690010b8dcf0",
+  "table_hashes": {
+    "videos": "6a700761623399169e2864c6fda8201b591db386f8b5618eebb37f9eebb7cf4c",
+    "frames": "3f15e78662f87d5139daa3ca739663607540e8aa10ef03a818ba3b6965c27292",
+    "annotation_frames": "c194b6c22774bcc6181d50d27762687d8cc751b3842c61e62b923552969a853a",
+    "masks": "6d6fef7c02a35e8e6021d0424a4ddf0f02e8a707e8c8f7cf3efb74839989dcfa",
+    "contacts": "034a1423e31038432b52ab705d7d9ad6986ccfd28075ffdea2caf0f5278f1482",
+    "entities": "44a2f7a22d850810af449ec9bfe78b793a60f70d7efb71268add138c18fe0600",
+    "actions": "ffa6f2c7894d314294184339f011226b917a607712ba681cf1e75eb270464e12",
+    "camera_frames": "20ffa244473dd7663980d277e624f913fea8adfb0cb0182c9064bd41245eee6f",
+    "event_evidence": "47aff3c09e28c3b05e01ae56addf4b55939952332bdcd39172223b9bbf77363e",
+    "windows_1s_hop250ms": "99925fbaf03204f3db185a1c9fe960a382aebd2f9763f8326d8e782f891d0027",
+    "qa_flags": "eab79358d602682146f879d2e67b3130c6da0e7a05e353f36d4c743a5bc8f83a"
+  },
+  "findings": "Sink, bin, hands, pot holder, cake and towel overlays align; missing camera pose is displayed. Repaired table preserves foreground occlusions.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

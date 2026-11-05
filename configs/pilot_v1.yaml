@@ -1,0 +1,14 @@
+schema_version: canonical_v1
+raw: dataset
+output: canonical/v1
+staging: work
+gold_video: P04_109
+window_us: 1000000
+hop_us: 250000
+alignment_rounding_margin_us: 1000
+decode_threads: 4
+hardware_device: videotoolbox
+batch_rows: 1000
+qa_samples_per_video: 6
+camera_resize_verified: false
+license: CC-BY-NC-4.0

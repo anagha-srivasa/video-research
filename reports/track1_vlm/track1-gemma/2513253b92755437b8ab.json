@@ -1,0 +1,75 @@
+{
+  "task_id": "2513253b92755437b8ab",
+  "cue": "right hand / knife",
+  "model": "track1-gemma",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    163,
+    175,
+    187
+  ],
+  "image_sha256": [
+    "d15dc634d307e30d0969e557d91c939d0ab8c57ab0c19b46bbb3dcca605df0b0",
+    "4d9c7ccea66c5d788d3b641b3d4412966bb9db351c034876cb7b90aab5f0b7b9",
+    "0f652fa3e586882d464993a9a71853cec38b687f09f21bd65c8c68c1191079c2"
+  ],
+  "prompt_sha256": "aef51b3ac6cb0939bae75f05ef130d6aa01530cfb711002c767ffe70cee54bdb",
+  "source_sha256": "fb930d4593b22b92e45e32afddf028d97cebf0dc138caae36a84671364fef2d4",
+  "seconds": 37.39390182495117,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1759,
+    "completion_tokens": 597,
+    "total_tokens": 2356,
+    "completion_tokens_details": {
+      "reasoning_tokens": 449
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-51yfgo3v45uwytuh2zoucm",
+    "object": "chat.completion",
+    "created": 1793359302,
+    "model": "track1-gemma",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"entities_found\": true,\n  \"description\": \"The right hand is gripping the handle of the knife while cutting tomatoes on a wooden cutting board.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"visible\",\n  \"object_edge_visibility\": \"partial\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The pixels show the right hand's fingers wrapped around the handle of the knife.\"\n}\n```",
+          "reasoning_content": "The user wants me to review the CENTER frame for the interaction between the 'right hand' and a 'knife'.\n\n1.  **Identify the entities**:\n    *   **Right hand**: The hand on the right side of the image, holding the handle of the knife.\n    *   **Knife**: The cutting tool being used on the tomatoes.\n\n2.  **Analyze the interaction in the CENTER frame**:\n    *   The right hand is gripping the handle of the knife.\n    *   The handle of the knife is clearly within the grasp of the right hand.\n    *   The pixels show the hand's fingers wrapped around the handle.\n    *   The edge of the hand is visible where it meets the handle.\n    *   The edge of the knife handle is partially hidden by the hand.\n    *   The projected relation is overlap (the hand is over the handle).\n    *   Physical contact is visible evidence (the hand is gripping the handle).\n\n3.  **Evaluate visibility**:\n    *   `object_visible`: Yes, the knife is visible.\n    *   `hand_edge_visibility`: Visible (the outer edges of the hand are clear).\n    *   `object_edge_visibility`: Partial (the handle is partially obscured by the hand).\n    *   `projected_relation`: Overlap (hand over handle).\n    *   `physical_contact`: visible_evidence.\n\n4.  **Construct the JSON response**:\n    *   `entities_found`: true\n    *   `description`: The right hand is gripping the handle of the knife while cutting tomatoes on a wooden board.\n    *   `object_visible`: true\n    *   `hand_edge_visibility`: visible\n    *   `object_edge_visibility`: partial\n    *   `projected_relation`: overlap\n    *   `physical_contact`: visible_evidence\n    *   `uncertainty_reasons`: []\n    *   `recommended_action`: usable_description\n    *   `evidence`: The right hand is clearly wrapped around the handle of the knife.",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1759,
+      "completion_tokens": 597,
+      "total_tokens": 2356,
+      "completion_tokens_details": {
+        "reasoning_tokens": 449
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-gemma"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "The right hand is gripping the handle of the knife while cutting tomatoes on a wooden cutting board.",
+    "object_visible": true,
+    "hand_edge_visibility": "visible",
+    "object_edge_visibility": "partial",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [],
+    "recommended_action": "usable_description",
+    "evidence": "The pixels show the right hand's fingers wrapped around the handle of the knife."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

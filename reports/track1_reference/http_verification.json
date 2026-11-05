@@ -1,0 +1,15 @@
+{
+  "tasks": 183,
+  "contact": 163,
+  "motion_identity": 20,
+  "native_png_size": [
+    1920,
+    1080
+  ],
+  "blinded_routes_blocked": true,
+  "invalid_review_rejected": true,
+  "foreign_host_rejected": true,
+  "reference_files_written_by_verification": 0,
+  "real_browser_ui_verified": false,
+  "browser_limitation": "No browser available through CUA in this session"
+}

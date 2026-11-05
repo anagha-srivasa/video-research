@@ -1,0 +1,72 @@
+{
+  "dataset/partition_v2/P22_117.rgb.npy": {
+    "bytes": 25505280128,
+    "sha256": "019c7f42ab50c49146d28afbdd358f1229713d98dd5c29d9222bfbde77942e20",
+    "receipt": "dataset/partition_v2/P22_117.json"
+  },
+  "dataset/partition_v2/P11_16.rgb.npy": {
+    "bytes": 25573708928,
+    "sha256": "6f70ed540ac785c8f284ed276bad6184c0ac0fc0a4e3f44f1553b7da17eec382",
+    "receipt": "dataset/partition_v2/P11_16.json"
+  },
+  "dataset/partition_v2/P03_112.rgb.npy": {
+    "bytes": 25430630528,
+    "sha256": "9a79c899a493cd6f0d9cf3f4e15b037beb13b83368fce07020b36ba362c915af",
+    "receipt": "dataset/partition_v2/P03_112.json"
+  },
+  "dataset/partition_v2/P02_122.rgb.npy": {
+    "bytes": 25505280128,
+    "sha256": "a45e7b637a83cad3db6c3716b1efeda6c10c072b9b877cd1c0bbe7038abf8376",
+    "receipt": "dataset/partition_v2/P02_122.json"
+  },
+  "dataset/partition_v2/P04_109.rgb.npy": {
+    "bytes": 25505280128,
+    "sha256": "9cf28ce74e8ad1000eda041aec49eedd415fd59bc4da0632d719b5b63f852c16",
+    "receipt": "dataset/partition_v2/P04_109.json"
+  },
+  "dataset/partition_v2/P08_09.rgb.npy": {
+    "bytes": 25169356928,
+    "sha256": "57395f1855ed989db3b3687e1fd9ea965e59e40fd332fbd0391ea739a1b1e222",
+    "receipt": "dataset/partition_v2/P08_09.json"
+  },
+  "dataset/partition_v2/P18_03.rgb.npy": {
+    "bytes": 25169356928,
+    "sha256": "07cca66d8867586f586fe5b33ffc21670faa1d4a60601dc07f74f5a787397d8d",
+    "receipt": "dataset/partition_v2/P18_03.json"
+  },
+  "dataset/context_v3/P22_117.rgb.npy": {
+    "bytes": 5598720128,
+    "sha256": "84887790cb69bc312fdfa88af05b6169d35ba46bf3af31836e5b2789708cd8e3",
+    "receipt": "dataset/context_v3/P22_117.json"
+  },
+  "dataset/context_v3/P11_16.rgb.npy": {
+    "bytes": 4870886528,
+    "sha256": "882e118bd4c352d00ca196c2dffbe09442023523ad40f6dd3104be6b491c493d",
+    "receipt": "dataset/context_v3/P11_16.json"
+  },
+  "dataset/context_v3/P03_112.rgb.npy": {
+    "bytes": 4211481728,
+    "sha256": "4107420bb379a99b8d4689938ab3466e2381a7f64a82a45f7713dca55b04ff40",
+    "receipt": "dataset/context_v3/P03_112.json"
+  },
+  "dataset/context_v3/P02_122.rgb.npy": {
+    "bytes": 4354560128,
+    "sha256": "64122138134135bb2a032022f18014940be404da7552395b4c9edf0fd575c4af",
+    "receipt": "dataset/context_v3/P02_122.json"
+  },
+  "dataset/context_v3/P04_109.rgb.npy": {
+    "bytes": 5598720128,
+    "sha256": "c5a1d73f83f7ec8dec3889fd3c16620b1e8dce088b047b0b25e664b1d38b8b2a",
+    "receipt": "dataset/context_v3/P04_109.json"
+  },
+  "dataset/context_v3/P08_09.rgb.npy": {
+    "bytes": 5237913728,
+    "sha256": "8d1c7edc96cbb90f039dcf26485f3c8037f29948ce927e495ea3817882a3c783",
+    "receipt": "dataset/context_v3/P08_09.json"
+  },
+  "dataset/context_v3/P18_03.rgb.npy": {
+    "bytes": 1511654528,
+    "sha256": "bf3110d5787fd576fa856319cf6921623b97634b0b86b34d3049b8b7e2fb94a6",
+    "receipt": "dataset/context_v3/P18_03.json"
+  }
+}

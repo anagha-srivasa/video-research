@@ -1,0 +1,13 @@
+{
+  "path": "dataset/visor/P11_16_interpolations.zip",
+  "url": "https://data.bris.ac.uk/datasets/2v6cgv1x04ol22qp9rm9x2j6a7/Interpolations-DenseAnnotations/train/P11_16_interpolations.zip",
+  "bytes": 23305890,
+  "sha256": "9b2aab2bce56bcaace5c107c4271c9bdac65648b91ccdbbcab1e1c1422f4fff9",
+  "md5": "4c36210fe0f78fb5cb6a74aa9da78545",
+  "official_md5": null,
+  "official_md5_verified": false,
+  "recovery_reason": "prior_download_failed_ZIP_CRC",
+  "failed_copy": "work/quarantine/P11_16.45f44843e28f.zip",
+  "failed_copy_sha256": "45f44843e28fbced056acbd13c058d48b0d56fe95991105af0f40d27a5d4e7ac",
+  "payload_modification": "none; fresh official bytes downloaded and CRC verified"
+}

@@ -1,0 +1,15 @@
+{
+  "video_id": "P22_117",
+  "mask_uid": "148d9266230cf386d5be6c2f5d5ff20f",
+  "timestamp_us": 359800000,
+  "repair_code": "self_intersection_make_valid_linework",
+  "quality_flags": [
+    "dense_time_inferred_from_sparse_anchor_and_native_ordinal",
+    "repair_contains_non_area_fragments",
+    "repeated_vertices",
+    "source_polygon_invalid"
+  ],
+  "policy_difference_pixels": 4,
+  "raw_polygons_preserved": true,
+  "mask_table_sha256": "b711b46c9c9f1909f48f84403e95ae360f177da4c2d8bd5db44e2db71a56b738"
+}

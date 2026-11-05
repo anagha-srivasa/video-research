@@ -1,0 +1,48 @@
+{
+  "candidate": "pure_resize_without_crop",
+  "geometry_scale": "reconstruction_units",
+  "image_sha256": "44ac3e530a9285325c9af636f38920dcef208057add81fc5740afad9653e2346",
+  "metric_3d_enabled": false,
+  "samples": [
+    {
+      "projected_points": 5895,
+      "rgb_error": 56.79788728465171,
+      "shifted_controls": [
+        86.41180474911978,
+        83.15046602394962,
+        80.99382598421298,
+        87.1550340891904
+      ],
+      "timestamp_us": 75780000
+    },
+    {
+      "projected_points": 10622,
+      "rgb_error": 65.55150646628954,
+      "shifted_controls": [
+        91.7632823768725,
+        83.33366531601615,
+        96.27045181207916,
+        82.18272324521742
+      ],
+      "timestamp_us": 252020000
+    },
+    {
+      "projected_points": 6453,
+      "rgb_error": 61.0163912403872,
+      "shifted_controls": [
+        78.19207120929845,
+        81.44937077718895,
+        77.31752712031083,
+        80.83006718324518
+      ],
+      "timestamp_us": 424880000
+    }
+  ],
+  "source_sha256": "9ba6082b011392084f22d7a0b8421117be5e647e3d600c12dd21135d8dc78ac7",
+  "transform_valid": true,
+  "video_id": "P03_112",
+  "visual_review": "passed",
+  "reviewer": "Codex sampled projection inspection",
+  "evidence": "Three native PTS frames per video: static scene projections follow surfaces and edges; actual RGB residual beats four shifted negative controls in every frame.",
+  "validation_scope": "Sampled pure-resize and crop consistency only; no certified metric calibration, dynamic-object depth or per-frame pose certainty."
+}

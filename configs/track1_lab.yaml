@@ -1,0 +1,16 @@
+version: track1_lab_open
+seed: 20261029
+train: [P02_122, P03_112, P04_109, P11_16, P22_117]
+validation: [P08_09, P18_03]
+workers: 12
+memory_budget_gib: 20
+memory_target_gib: 16
+memory_warning_gib: 18
+minimum_available_gib: 5
+spatial_controls: 16
+temporal_coefficients: 4
+state_channels: 35
+appearance_dimensions: 128
+finalization_authorized: false
+track2_authorized: false
+architecture_ablations_authorized: true

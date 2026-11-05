@@ -1,0 +1,17 @@
+{
+  "workspace_url": "http://127.0.0.1:8765",
+  "reviewer_role": "A",
+  "contact_cases": 163,
+  "motion_identity_cases": 20,
+  "per_case_guides": 183,
+  "tests_passed": 79,
+  "HTTP_frame_and_blinding_checks_passed": true,
+  "browser_UI_automation_verified": false,
+  "browser_limitation": "CUA reported no browser available",
+  "human_reviews_generated_by_agent": 0,
+  "independent_reference_ready": false,
+  "scientific_acceptance": false,
+  "track2_started": false,
+  "baseline_promotion": false,
+  "finalized": false
+}

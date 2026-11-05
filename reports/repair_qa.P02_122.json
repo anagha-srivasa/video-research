@@ -1,0 +1,13 @@
+{
+  "video_id": "P02_122",
+  "mask_uid": "370c210229a2d819496eec4eee332573",
+  "timestamp_us": 11400000,
+  "repair_code": "self_intersection_make_valid_linework",
+  "quality_flags": [
+    "bounds_clipped_for_rasterisation",
+    "source_polygon_invalid"
+  ],
+  "policy_difference_pixels": 0,
+  "raw_polygons_preserved": true,
+  "mask_table_sha256": "2aead250302444f891a8d85300d702e662cd829132f153e1034a6f3ce3e7e7f9"
+}

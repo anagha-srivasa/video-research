@@ -1,0 +1,101 @@
+[
+  {
+    "video_id": "P02_122",
+    "source_scopes": 64614,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "b5bc61dd861f4632656b839b2c14710904a4cc68ebedfaf907d1e5d31f15d068",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P03_112",
+    "source_scopes": 42603,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "00050c9b69fbaaffb6c20b275cfc12532d44013c894970d399b5a679e96d17a9",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P04_109",
+    "source_scopes": 104249,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "44708208350f14cc17e0844fec049d21bad6234ce1bda09bbcc518be6fd6dd75",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P06_108",
+    "source_scopes": 62488,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "789ef9320a77ff861d6097c71b1711123e34ad063c89e636395e503d3618f378",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P08_09",
+    "source_scopes": 71230,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "aa268e047d57d1760cb6e6e8fee92579ab27dec1fa18ba147e27a45866bdd227",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P11_16",
+    "source_scopes": 24247,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "e91a769673e51b662e0062d2e2e0665a7ea90e920e19e23be46e347fd9c26cbd",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P18_03",
+    "source_scopes": 43902,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "242f8a39814315af3a0aad699e620f06393a35676254ca22b0dc14f94af68be9",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P21_01",
+    "source_scopes": 33407,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "1d3e93b697e012a0b0e37072acc4358855174cfe9f0dbe2502fe3300865c8661",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P22_117",
+    "source_scopes": 129443,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "3f13d46f63b69367ce9590486eb9ae386fe0e0687c0813ec3a2f8bc298853996",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P27_105",
+    "source_scopes": 91114,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "44a2f7a22d850810af449ec9bfe78b793a60f70d7efb71268add138c18fe0600",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  },
+  {
+    "video_id": "P30_07",
+    "source_scopes": 32199,
+    "recurring_scopes": 0,
+    "maximum_observations_per_scope": 1,
+    "table_sha256": "a950f7245bb268ed5da8bf74a368fa65056d1303a51d2a835e34a83b07d52a92",
+    "status": "temporal_identity_unavailable_from_proposed_scope",
+    "interpretation": "Frame-local contacts can resolve. Source mask ID scopes are not promoted to temporal tracks."
+  }
+]

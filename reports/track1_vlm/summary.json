@@ -1,0 +1,249 @@
+{
+  "counts": {
+    "track1-qwen": 2,
+    "track1-gemma": 8
+  },
+  "machine_only": true,
+  "independent_accuracy_measured": false,
+  "rows": [
+    {
+      "task_id": "0193111068c5f40347ed",
+      "cue": "right hand / sponge",
+      "model": "track1-gemma",
+      "seconds": 37.002705097198486,
+      "annotation": {
+        "entities_found": true,
+        "description": "The right hand is gripping a yellow sponge and using it to scrub a dark tray in a sink.",
+        "object_visible": true,
+        "hand_edge_visibility": "partial",
+        "object_edge_visibility": "partial",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The right hand's fingers are wrapped around the yellow sponge, showing clear physical contact as it is being used to scrub the tray."
+      },
+      "flags": [
+        "Boundary visibility is incomplete; no precise boundary reference",
+        "Model omitted its uncertainty explanation",
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "03e0bb25c674a05fd9b1",
+      "cue": "left hand / bread",
+      "model": "track1-gemma",
+      "seconds": 38.28348183631897,
+      "annotation": {
+        "entities_found": true,
+        "description": "The left hand is touching the top surface of a slice of brown bread on a white plate.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "partial",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The pixels show the fingers of the left hand resting on the surface of the bread."
+      },
+      "flags": [
+        "Boundary visibility is incomplete; no precise boundary reference",
+        "Model omitted its uncertainty explanation",
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "046911438a46520dd840",
+      "cue": "right hand / knife",
+      "model": "track1-gemma",
+      "seconds": 38.885900020599365,
+      "annotation": {
+        "entities_found": true,
+        "description": "The right hand is gripping the handle of a chef's knife, which is being used to slice a cucumber on a wooden cutting board.",
+        "object_visible": true,
+        "hand_edge_visibility": "partial",
+        "object_edge_visibility": "partial",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The right hand is clearly wrapped around the handle of the knife, with the fingers and palm in direct contact with the handle's surface."
+      },
+      "flags": [
+        "Boundary visibility is incomplete; no precise boundary reference",
+        "Model omitted its uncertainty explanation",
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "06a137c7c475ab6dec1d",
+      "cue": "right hand / knife",
+      "model": "track1-gemma",
+      "seconds": 39.15561079978943,
+      "annotation": {
+        "entities_found": true,
+        "description": "The right hand is gripping the handle of the knife, which is being used to slice a cucumber on a wooden cutting board.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "partial",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The pixels show the right hand wrapped around the handle of the knife, with the knife blade cutting through a cucumber on the board."
+      },
+      "flags": [
+        "Boundary visibility is incomplete; no precise boundary reference",
+        "Model omitted its uncertainty explanation",
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "078099124ecbd632c2af",
+      "cue": "right hand / oregano tupperware",
+      "model": "track1-gemma",
+      "seconds": 41.74614715576172,
+      "annotation": {
+        "entities_found": true,
+        "description": "The right hand, wearing a black watch, is holding a blue circular tupperware lid over a kitchen sink.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "visible",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [
+          "Cannot verify if the tupperware contains oregano"
+        ],
+        "recommended_action": "usable_description",
+        "evidence": "The right hand's fingers are seen gripping the edge of the blue circular lid."
+      },
+      "flags": [
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "08e17e0c76b64ddec06c",
+      "cue": "left hand / saucepan lid",
+      "model": "track1-gemma",
+      "seconds": 38.08213138580322,
+      "annotation": {
+        "entities_found": true,
+        "description": "The left hand is gripping the handle of the glass saucepan lid.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "visible",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The left hand is clearly seen holding the handle of the saucepan lid."
+      },
+      "flags": [
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "234f1178a2163543bd5d",
+      "cue": "right hand / ladle",
+      "model": "track1-gemma",
+      "seconds": 34.39567184448242,
+      "annotation": {
+        "entities_found": true,
+        "description": "The right hand is gripping the yellow handle of the ladle.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "visible",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The right hand is clearly seen holding the yellow handle of the ladle."
+      },
+      "flags": [
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "2513253b92755437b8ab",
+      "cue": "right hand / knife",
+      "model": "track1-gemma",
+      "seconds": 37.39390182495117,
+      "annotation": {
+        "entities_found": true,
+        "description": "The right hand is gripping the handle of the knife while cutting tomatoes on a wooden cutting board.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "partial",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [],
+        "recommended_action": "usable_description",
+        "evidence": "The pixels show the right hand's fingers wrapped around the handle of the knife."
+      },
+      "flags": [
+        "Boundary visibility is incomplete; no precise boundary reference",
+        "Model omitted its uncertainty explanation",
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "0193111068c5f40347ed",
+      "cue": "right hand / sponge",
+      "model": "track1-qwen",
+      "seconds": 63.96593689918518,
+      "annotation": {
+        "entities_found": true,
+        "description": "In the center frame, a first-person overhead view of a kitchen sink is shown. A dark rectangular tray with a pale rim sits in the left basin. The person's left hand grips the left edge of the tray. The right hand is positioned over the tray's dark surface, fingers extended and spread, holding a small yellow sponge that is pressed flat against the tray. The right hand and the yellow sponge are both clearly resolved against the dark tray background, with the sponge lying between the fingers and the tray surface.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "visible",
+        "projected_relation": "overlap",
+        "physical_contact": "visible_evidence",
+        "uncertainty_reasons": [
+          "The sponge is partly occluded by the fingers of the right hand, so its full outline is not all at once visible.",
+          "Mild motion blur on the hand/sponge makes the exact contact boundary with the tray slightly soft, though contact is still evident."
+        ],
+        "recommended_action": "usable_description",
+        "evidence": "The right hand's outline (thumb, fingers, wrist) is fully visible against the dark tray, and the yellow sponge is seen as a distinct yellow mass held in the palm/fingers and resting on the tray surface, indicating the hand is gripping the sponge and the sponge is in contact with the tray."
+      },
+      "flags": [
+        "Physical-contact claim requires independent verification"
+      ],
+      "schema_valid": true
+    },
+    {
+      "task_id": "03e0bb25c674a05fd9b1",
+      "cue": "left hand / bread",
+      "model": "track1-qwen",
+      "seconds": 146.8459508419037,
+      "annotation": {
+        "entities_found": true,
+        "description": "In the CENTER frame, a left arm in a gray ribbed sleeve reaches from the lower-left toward a white plate with a dark rim. The left hand is open, fingers extended, and is positioned over the left/near edge of a rectangular slice of brown whole-grain bread resting on the plate; the fingers and thumb are projected onto that edge of the bread. Mashed avocado sits on the plate below the bread. The right hand at the lower-right holds a metal fork. A wooden cutting board with chopped red tomatoes, an avocado half, and two knives occupies the center-foreground. In the 2D projection the left hand overlaps the bread.",
+        "object_visible": true,
+        "hand_edge_visibility": "visible",
+        "object_edge_visibility": "partial",
+        "projected_relation": "overlap",
+        "physical_contact": "unknown",
+        "uncertainty_reasons": [
+          "Top-down camera angle: the hand and bread overlap in 2D, but a single top-down frame cannot distinguish the hand resting on the bread from hovering just above it, so contact is not confirmed by pixels alone.",
+          "No unambiguous depth cue (e.g., a clear cast shadow of the hand on the bread, or visible deformation of the bread) is present to verify physical touching.",
+          "The left edge of the bread is partly occluded by the hand, so the full object boundary is not visible (object edge only partially visible)."
+        ],
+        "recommended_action": "human_check",
+        "evidence": "The left hand is clearly visible with fingers and thumb placed on the left/near edge of the brown bread slice on the plate, producing a 2D overlap; however, because the view is top-down and lacks a definitive contact cue, the hand could be either touching or hovering over the bread, leaving physical contact unconfirmed."
+      },
+      "flags": [
+        "Boundary visibility is incomplete; no precise boundary reference"
+      ],
+      "schema_valid": true
+    }
+  ]
+}

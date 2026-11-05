@@ -1,0 +1,17 @@
+{
+  "video_id": "P04_109",
+  "source_md5": "b5b4d808691794c425f5129cdc2677bc",
+  "sample_frames": 1000,
+  "metadata_fields": [
+    "PTS",
+    "DTS",
+    "duration",
+    "keyframe"
+  ],
+  "hardware_backend": "videotoolbox",
+  "hardware_frames_per_second": 431.9,
+  "software_frames_per_second": 88.0,
+  "metadata_sha256": "c0b2b32dcc168473afbd3b71b731a785bf187fb3be0b339155446be72782fac7",
+  "metadata_identical": true,
+  "scope": "First 1000 source frames only; no claim of pixel-level parity. Full-pilot reproducibility is recorded separately."
+}

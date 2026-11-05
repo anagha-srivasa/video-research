@@ -1,0 +1,36 @@
+{
+  "geometry_summary": [
+    {
+      "conditional_boundary_fscore_mean_video": null,
+      "coverage_weighted_boundary_fscore_mean_video": null,
+      "method": "m16",
+      "planned": 163,
+      "reference_eligible": 0,
+      "geometry_scored": 0,
+      "coverage": null,
+      "conditional_boundary_fscore": null,
+      "coverage_weighted_boundary_fscore": null,
+      "gap_within_2px_among_all_eligible": null
+    },
+    {
+      "conditional_boundary_fscore_mean_video": null,
+      "coverage_weighted_boundary_fscore_mean_video": null,
+      "method": "tiered",
+      "planned": 163,
+      "reference_eligible": 0,
+      "geometry_scored": 0,
+      "coverage": null,
+      "conditional_boundary_fscore": null,
+      "coverage_weighted_boundary_fscore": null,
+      "gap_within_2px_among_all_eligible": null
+    }
+  ],
+  "planned_contact_tasks": 163,
+  "planned_motion_tasks": 20,
+  "adjudicated_usable": 0,
+  "scoring_blocked_until_adjudication": true,
+  "contact_sign_and_physical_onset_acceptance": false,
+  "identity_idf1_available": false,
+  "scientific_acceptance": false,
+  "track2_started": false
+}

@@ -1,0 +1,24 @@
+{
+  "updated_unix": 1793361480.6510432,
+  "tests_passed": 89,
+  "files": {
+    "src/track1_reference/machine_refine.py": "ea6edbce77b2d51f56330b1b35e2e7ccf4d7aca7fa049a2327daf27db34666af",
+    "src/track1_reference/machine_server.py": "00b96eae4fc0bd0b9405db5caa5b56f0b0e89aac54495f84d5435f49524f617e",
+    "src/track1_reference/machine.py": "fb930d4593b22b92e45e32afddf028d97cebf0dc138caae36a84671364fef2d4",
+    "src/track1_reference/machine_report.py": "d83350c1755ecb3e5a2f4a8a5736563fb1ddbb3c7fb3991f937c131055762efe",
+    "src/track1_reference/frame_review.py": "f2c53b055b0dfadf84d0f9ee669a904b44d5a01ef8d1e53367e83da1b2a96781",
+    "src/track1_reference/frame_dashboard.html": "7b19ec4e28df586f97b575e87a369b4be1e65f97a3dc0f0fc41962a67be3eec6",
+    "tests/test_track1_frame_review.py": "cc4c6d660598ad82b0909fd0fbfe969e874caa564e7f6bc29c8c44ab992b6c8f",
+    "tests/test_track1_machine.py": "eae4b86f12adb7d33b64eb677034ee1c6a91479908cb1e833d3f035e743db537"
+  },
+  "live_dashboard": "http://127.0.0.1:8767",
+  "product": "derived/track1_qwen_review",
+  "full_run_complete": false,
+  "active_worker_pid": 5656,
+  "selected_model": "qwen/qwen3.8-27b@4bit",
+  "configuration_version": 2,
+  "initial_output_limit_failure_archived": true,
+  "reviewer_choice_finalized": true,
+  "track1_scientific_freeze": false,
+  "track2_started": false
+}

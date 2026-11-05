@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "seed": 20261105,
+  "cases_per_video": 96,
+  "mask_probes_per_video": 32,
+  "evaluation_cases_per_video": 96,
+  "workers": 8,
+  "minimum_relative_improvement": 0.002,
+  "maximum_training_family_regret": 0.02,
+  "models": [16, 32],
+  "memory_limit_gib": 20,
+  "minimum_available_gib": 5,
+  "backbone_frozen": true,
+  "track2_started": false,
+  "finalized": false
+}

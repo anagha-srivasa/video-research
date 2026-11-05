@@ -1,0 +1,27 @@
+{
+  "video_id": "P30_07",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "b2b1ebed3d7d984a2c4b6335551ace44a98380947597252689097b2f642ee751",
+  "repair_image_sha256": "8a50db8bcb26bb07b0d1ddf0d1efe21fd7f7233b53ca56148583af0760d0d7ad",
+  "table_hashes": {
+    "videos": "1ebedada34f298cabb81fa8804f9c8a5f5b78df3a2d49fcc01ededa47bf3a4a0",
+    "frames": "64f19eed7a0ffcd309334a0508f30bbbed891c88923e27ff45491c13a17fe713",
+    "annotation_frames": "2b1c2eb0188641588d250a2830b5e71442427011eac44edcc5bc96ae60d1a5d3",
+    "masks": "751e82cfd0546c30371cc1c133f3129db44b2aa003d89617d4eec0f8dcdea752",
+    "contacts": "94301cdf15ca166e7c6315a768e425d283583ac78c32bbb19be6446e2ddcd02b",
+    "entities": "a950f7245bb268ed5da8bf74a368fa65056d1303a51d2a835e34a83b07d52a92",
+    "actions": "c429303960e0ca89b8bd0045bdfc085017358ac7d311d7f8983ea23f824ff1d5",
+    "camera_frames": "df9c36bd87351280ffb2d4da9c3d014dca3acb46d92dec5a1cd0c147cba798f0",
+    "event_evidence": "9d4f3d295b0b997e9a4ca8bd16d7769bae71cad6857261a4311fed9fc4d21925",
+    "windows_1s_hop250ms": "44fe89b2ca56939f03080e59735091a954ea117e0b19020b9e1ee2f0e3601afb",
+    "qa_flags": "13b19a2550d64c233b47bf4d7b2d5165c7ee5932f7d2818c410ecfbfa77f3cf8"
+  },
+  "findings": "Kettle, sink, hands, drawer and cupboard overlays align; missing pose is displayed. Repaired surface retains hand occlusion.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

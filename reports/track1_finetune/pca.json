@@ -1,0 +1,1 @@
+{"backbone_frozen":true,"dimensions":128,"explained_variance":[0.9208307806314395,0.9011901773857233],"training_videos":["P02_122","P03_112","P04_109","P11_16","P22_117"],"unique_training_observations":72235,"validation_used_for_fitting":false,"weights":"track balanced times source prior^0.5 times geometry quality"}

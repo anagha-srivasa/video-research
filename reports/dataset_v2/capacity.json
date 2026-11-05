@@ -1,0 +1,9 @@
+{
+  "budget_bytes": 250000000000,
+  "source_bytes": 24900549614,
+  "partition_bytes": 177861061747,
+  "canonical_v2_bytes": 4568429535,
+  "total_bytes": 207330040896,
+  "scope": "Dataset product: original sources + native RGB partition + canonical/v2. Historical model artifacts, old work caches, runtime and reports are separate.",
+  "compression": null
+}

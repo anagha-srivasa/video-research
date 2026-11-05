@@ -1,0 +1,9 @@
+{
+  "scope": "Completed context pipeline process tree",
+  "samples": 166,
+  "peak_tree_rss_gib": 4.5671539306640625,
+  "minimum_available_gib": 17.631820678710938,
+  "minimum_disk_free_gb": 35.964071936,
+  "oom": false,
+  "limits": "RSS includes shared mapped pages; not unique physical allocation"
+}

@@ -1,0 +1,75 @@
+{
+  "task_id": "046911438a46520dd840",
+  "cue": "right hand / knife",
+  "model": "track1-gemma",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    138,
+    150,
+    162
+  ],
+  "image_sha256": [
+    "24fa99bd17c862cb463c7ea4eaa32ac980cf6889409809191d3266d69f2c30c6",
+    "75571c996cea01d1831d6c8b3ef0f41d812158d3500c570b76e1959546457ee7",
+    "f20799397c80e1844bbafb47153999ee2f41c086243f77427c0ef875a5f43644"
+  ],
+  "prompt_sha256": "aef51b3ac6cb0939bae75f05ef130d6aa01530cfb711002c767ffe70cee54bdb",
+  "source_sha256": "4f10aa2451d81f6afca8d6b93790f2754964831fdf8bf008e7db90f395c3a296",
+  "seconds": 38.885900020599365,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1759,
+    "completion_tokens": 563,
+    "total_tokens": 2322,
+    "completion_tokens_details": {
+      "reasoning_tokens": 395
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-nweqt2uyriis7e9uwxbs7d",
+    "object": "chat.completion",
+    "created": 1793359099,
+    "model": "track1-gemma",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"entities_found\": true,\n  \"description\": \"The right hand is gripping the handle of a chef's knife, which is being used to slice a cucumber on a wooden cutting board.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"partial\",\n  \"object_edge_visibility\": \"partial\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The right hand is clearly wrapped around the handle of the knife, with the fingers and palm in direct contact with the handle's surface.\"\n}\n```",
+          "reasoning_content": "The user wants me to review the CENTER frame for the interaction between the 'right hand' and a 'knife'.\n\n1.  **Identify the entities**:\n    *   **Right hand**: The hand on the right side of the image, holding the handle of the knife.\n    *   **Knife**: The large chef's knife being used to cut the cucumber on the wooden cutting board.\n\n2.  **Analyze the interaction in the CENTER frame**:\n    *   The right hand is gripping the handle of the knife.\n    *   The handle of the knife is inside the palm/fingers of the right hand.\n    *   The edge of the hand (fingers/palm) is in direct contact with the handle of the knife.\n    *   The knife's blade is cutting through a piece of cucumber.\n\n3.  **Evaluate visibility**:\n    *   **Right hand**: Visible.\n    *   **Knife**: Visible.\n    *   **Hand edge visibility**: The part of the hand touching the knife is partially hidden by the knife handle itself, but the overall hand is visible. I'll mark it as partial because the exact contact point is occluded by the handle.\n    *   **Object edge visibility**: The handle of the knife is partially hidden by the hand. The blade is visible. I'll mark it as partial.\n    *   **Projected relation**: The hand is overlapping the handle of the knife from this 2D perspective.\n    *   **Physical contact**: There is clear visible evidence of the hand gripping the knife handle.\n\n4.  **Final check against constraints**:\n    *   No invisible borders.\n    *   No inference of identity through occlusion.\n    *   No fabrication of coordinates.\n    *   Report unknown if evidence is insufficient (evidence is sufficient here).\n    *   Return only JSON.",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1759,
+      "completion_tokens": 563,
+      "total_tokens": 2322,
+      "completion_tokens_details": {
+        "reasoning_tokens": 395
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-gemma"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "The right hand is gripping the handle of a chef's knife, which is being used to slice a cucumber on a wooden cutting board.",
+    "object_visible": true,
+    "hand_edge_visibility": "partial",
+    "object_edge_visibility": "partial",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [],
+    "recommended_action": "usable_description",
+    "evidence": "The right hand is clearly wrapped around the handle of the knife, with the fingers and palm in direct contact with the handle's surface."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

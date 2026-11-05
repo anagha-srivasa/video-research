@@ -1,0 +1,10 @@
+{
+  "all_artifact_hashes_verified": true,
+  "all_source_hashes_verified": true,
+  "sequence_indices_verified": 6984,
+  "participant_leakage": false,
+  "finite_evaluation_metrics": true,
+  "real_length16_batch_passed": true,
+  "tests_passed": 99,
+  "track2_started": false
+}

@@ -1,0 +1,7 @@
+{
+  "manifest": "reports/track1_remediation/manifest.json",
+  "matching_files": 144,
+  "missing_files": [],
+  "changed_files": [],
+  "previous_RGB_copy_manifest_not_claimed_complete": true
+}

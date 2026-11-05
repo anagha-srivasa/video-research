@@ -1,0 +1,78 @@
+{
+  "task_id": "0193111068c5f40347ed",
+  "cue": "right hand / sponge",
+  "model": "track1-qwen",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    214,
+    226,
+    238
+  ],
+  "image_sha256": [
+    "7489696d6e87eb67756db7301101fc19a04e622e8a980d9ffbc2e9670da8737c",
+    "c017db5045e9367bb062f7a3df13528244fbb7bfcb60c242b4f7a1f2488a770b",
+    "f6fdf42cfc21afe5c3f37845b1c93377af1330e92282960e247dda0e35903c2f"
+  ],
+  "prompt_sha256": "7f6788721969d01f2945ee446522a8768873fd53ed92498cd25121d9ff44cfdf",
+  "source_sha256": "fb930d4593b22b92e45e32afddf028d97cebf0dc138caae36a84671364fef2d4",
+  "seconds": 63.96593689918518,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 881,
+    "total_tokens": 1228,
+    "completion_tokens_details": {
+      "reasoning_tokens": 562
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-a4lr4gkv64eoprtv8u3a9",
+    "object": "chat.completion",
+    "created": 1793359381,
+    "model": "track1-qwen",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "\n\n{\n  \"entities_found\": true,\n  \"description\": \"In the center frame, a first-person overhead view of a kitchen sink is shown. A dark rectangular tray with a pale rim sits in the left basin. The person's left hand grips the left edge of the tray. The right hand is positioned over the tray's dark surface, fingers extended and spread, holding a small yellow sponge that is pressed flat against the tray. The right hand and the yellow sponge are both clearly resolved against the dark tray background, with the sponge lying between the fingers and the tray surface.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"visible\",\n  \"object_edge_visibility\": \"visible\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [\n    \"The sponge is partly occluded by the fingers of the right hand, so its full outline is not all at once visible.\",\n    \"Mild motion blur on the hand/sponge makes the exact contact boundary with the tray slightly soft, though contact is still evident.\"\n  ],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The right hand's outline (thumb, fingers, wrist) is fully visible against the dark tray, and the yellow sponge is seen as a distinct yellow mass held in the palm/fingers and resting on the tray surface, indicating the hand is gripping the sponge and the sponge is in contact with the tray.\"\n}",
+          "reasoning_content": "The user wants me to act as a cautious visual evidence reviewer. The center image is the second one (native frame 226). I need to review the center frame and describe what the pixels establish regarding the unverified entity cue: right hand / sponge.\n\nLet me look at the center image carefully. There's a kitchen sink scene viewed from above. A person's two hands are visible. The left hand is holding the edge of a dark tray/pan with a light border. The right hand is holding a yellow sponge and is positioned on the surface of the tray, appearing to scrub it.\n\nIn the center frame, the right hand is clearly visible, fingers extended, holding a yellow sponge against the dark tray surface. The sponge is in contact with the tray surface. The hand edge is visible. The object (sponge) edge is visible.\n\nLet me consider the projected relation and physical contact. The right hand holds the sponge, and the sponge is on the tray. The hand and sponge are in contact (the hand grips the sponge). The sponge is in contact with the tray surface.\n\nThe cue is \"right hand / sponge\". So the entity is the right hand holding the sponge. In the center frame, the right hand is visible with the sponge. The hand is gripping the sponge, so physical contact between hand and sponge is visible. The sponge is on the tray.\n\nLet me think about the fields:\n- entities_found: true (right hand and sponge are visible)\n- description: describe what pixels show\n- object_visible: true (sponge visible)\n- hand_edge_visibility: visible (the right hand outline is visible)\n- object_edge_visibility: visible (sponge edges visible)\n- projected_relation: overlap (hand overlaps sponge, sponge overlaps tray)\n- physical_contact: visible_evidence (hand gripping sponge, sponge on tray)\n- uncertainty_reasons: maybe some motion blur, but generally clear\n- recommended_action: usable_description\n- evidence: string\n\nLet me look more carefully at the center frame. The right hand is in the middle, fingers spread, holding the yellow sponge. The sponge is pressed against the dark tray. The left hand holds the left edge of the tray. The hand edges are clearly visible against the dark tray background. The sponge is yellow and its edges are visible.\n\nThe projected relation between hand and sponge: the hand overlaps the sponge (fingers on top of sponge). So overlap.\n\nPhysical contact: visible_evidence because we see the hand gripping the sponge and the sponge on the tray.\n\nI'll write the description focusing on the center frame only.\n\nLet me ensure I don't claim onset/release. Just describe the center frame.\n\nNow produce JSON.\n",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 347,
+      "completion_tokens": 881,
+      "total_tokens": 1228,
+      "completion_tokens_details": {
+        "reasoning_tokens": 562
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-qwen"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "In the center frame, a first-person overhead view of a kitchen sink is shown. A dark rectangular tray with a pale rim sits in the left basin. The person's left hand grips the left edge of the tray. The right hand is positioned over the tray's dark surface, fingers extended and spread, holding a small yellow sponge that is pressed flat against the tray. The right hand and the yellow sponge are both clearly resolved against the dark tray background, with the sponge lying between the fingers and the tray surface.",
+    "object_visible": true,
+    "hand_edge_visibility": "visible",
+    "object_edge_visibility": "visible",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [
+      "The sponge is partly occluded by the fingers of the right hand, so its full outline is not all at once visible.",
+      "Mild motion blur on the hand/sponge makes the exact contact boundary with the tray slightly soft, though contact is still evident."
+    ],
+    "recommended_action": "usable_description",
+    "evidence": "The right hand's outline (thumb, fingers, wrist) is fully visible against the dark tray, and the yellow sponge is seen as a distinct yellow mass held in the palm/fingers and resting on the tray surface, indicating the hand is gripping the sponge and the sponge is in contact with the tray."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

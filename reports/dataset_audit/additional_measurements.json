@@ -1,0 +1,130 @@
+{
+  "quarantine_flags": [
+    {
+      "flag": "degenerate_polygon",
+      "n": 52478
+    },
+    {
+      "flag": "dense_time_inferred_from_sparse_anchor_and_native_ordinal",
+      "n": 52347
+    },
+    {
+      "flag": "source_polygon_invalid",
+      "n": 12174
+    },
+    {
+      "flag": "repair_contains_non_area_fragments",
+      "n": 9902
+    },
+    {
+      "flag": "identity_scoped_to_interpolation_only",
+      "n": 7508
+    },
+    {
+      "flag": "repeated_vertices",
+      "n": 7003
+    },
+    {
+      "flag": "no_area_after_geometry_validation",
+      "n": 2380
+    },
+    {
+      "flag": "time_alignment_unresolved",
+      "n": 1580
+    },
+    {
+      "flag": "dense_anchor_missing_or_inconsistent",
+      "n": 1580
+    },
+    {
+      "flag": "bounds_clipped_for_rasterisation",
+      "n": 1
+    },
+    {
+      "flag": "empty_raster",
+      "n": 1
+    }
+  ],
+  "annotation_transforms": [
+    {
+      "annotation_width": 1920,
+      "annotation_height": 1080,
+      "source_kind": "manual_sparse",
+      "transform_valid": true,
+      "n": 3825
+    },
+    {
+      "annotation_width": 854,
+      "annotation_height": 480,
+      "source_kind": "dense",
+      "transform_valid": true,
+      "n": 205056
+    }
+  ],
+  "camera": [
+    {
+      "pose_valid": false,
+      "transform_valid": false,
+      "alignment_status": "unresolved",
+      "n": 25259
+    },
+    {
+      "pose_valid": true,
+      "transform_valid": false,
+      "alignment_status": "camera_time_inferred_between_sparse_anchors",
+      "n": 346978
+    },
+    {
+      "pose_valid": true,
+      "transform_valid": false,
+      "alignment_status": "official_sparse_bridge",
+      "n": 3690
+    }
+  ],
+  "contact": [
+    {
+      "source_kind": "manual_sparse",
+      "contact_status": "inconclusive",
+      "resolution_status": "inconclusive",
+      "n": 465
+    },
+    {
+      "source_kind": "manual_sparse",
+      "contact_status": "unresolved_target_id",
+      "resolution_status": "target_id_missing",
+      "n": 33
+    },
+    {
+      "source_kind": "manual_sparse",
+      "contact_status": "resolved_target",
+      "resolution_status": "resolved",
+      "n": 4859
+    },
+    {
+      "source_kind": "manual_sparse",
+      "contact_status": "hand_not_in_contact",
+      "resolution_status": "not_applicable",
+      "n": 381
+    },
+    {
+      "source_kind": "manual_sparse",
+      "contact_status": "unsegmented_contact_target",
+      "resolution_status": "target_not_segmented",
+      "n": 346
+    }
+  ],
+  "native_frames": [
+    {
+      "native_width": 1920,
+      "native_height": 1080,
+      "n": 390570,
+      "rgb_bytes": 2429657856000
+    }
+  ],
+  "lab_compound_roles": [
+    {
+      "role": "outer",
+      "n": 1023
+    }
+  ]
+}

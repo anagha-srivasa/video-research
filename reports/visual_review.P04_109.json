@@ -1,0 +1,27 @@
+{
+  "video_id": "P04_109",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "bbcb1b5bee95dd189852bde9274f472ff6bb1f5952cca91586ba67babb9ace82",
+  "repair_image_sha256": "6d7b1e85b8d28a7d3395f1798c293f65fb55fc7d6e87950e3f7bb67d389f0fd2",
+  "table_hashes": {
+    "videos": "9d1ae7aa5ca367e4a8110f26d0c28d90cd678d5388aece82d646e37126f5cc34",
+    "frames": "3614eca91304cd8cf0f5ab4512c9e937c529a79d41b5047e4269ece165d147d4",
+    "annotation_frames": "7c39518647ab5aa97aca764c77768c2768e1ec95f4cb731cd5f95c84fe78903e",
+    "masks": "3043b59bc6b08f85addf3835c60033062fbe236904bf9946542f7cee000e1523",
+    "contacts": "c7bf1a758713e1bcee83f438922d6e5d902f53e27733b598aa3adcf0081807f1",
+    "entities": "44708208350f14cc17e0844fec049d21bad6234ce1bda09bbcc518be6fd6dd75",
+    "actions": "d4bfdca8abff77255fda1c927a0dbaa99dd3157638f177ab7380a6497b219b9d",
+    "camera_frames": "96c9e5eaf09b314f8da6e67495a38abd87b6062ebd07e494aee7aca1822d3715",
+    "event_evidence": "72d8d30ccbf68ee4a8f62e87ca2d2911b556da679005f297155de2198c8fac87",
+    "windows_1s_hop250ms": "d48047305eb2380709c2f967b971a673f2374bebd59adc4717a0f85ca3db7ff0",
+    "qa_flags": "19b0f1bd969b15832a5eea68c332ff693cd83ac025c0d2342e9849c9e615d79f"
+  },
+  "findings": "Hands, knife, carrot and cucumber overlays align in sampled manual and dense views; repaired carrot components retained.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

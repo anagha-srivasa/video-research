@@ -1,0 +1,75 @@
+{
+  "task_id": "03e0bb25c674a05fd9b1",
+  "cue": "left hand / bread",
+  "model": "track1-gemma",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    226,
+    238,
+    250
+  ],
+  "image_sha256": [
+    "c68d57530582d7809cc800dbb924d3db208f7a2e0b3089b2d4b4e513332fe3bb",
+    "079c1f5fec73bc86b7babcd12a1a7a735bd2e9540c98b0b470fb1a206454dfe0",
+    "552f2540c6a76979dd556d4830dbb893687e1a26f2cbd8ba0de80051e9050771"
+  ],
+  "prompt_sha256": "6e1141b98732504682b42574af74eee7f92777a9137d61a39b8db8a49df61e47",
+  "source_sha256": "4f10aa2451d81f6afca8d6b93790f2754964831fdf8bf008e7db90f395c3a296",
+  "seconds": 38.28348183631897,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1759,
+    "completion_tokens": 594,
+    "total_tokens": 2353,
+    "completion_tokens_details": {
+      "reasoning_tokens": 446
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-agg8kel1lkoht84f9upm3l",
+    "object": "chat.completion",
+    "created": 1793359058,
+    "model": "track1-gemma",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"entities_found\": true,\n  \"description\": \"The left hand is touching the top surface of a slice of brown bread on a white plate.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"visible\",\n  \"object_edge_visibility\": \"partial\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The pixels show the fingers of the left hand resting on the surface of the bread.\"\n}\n```",
+          "reasoning_content": "The user wants me to review the CENTER frame for the interaction between the 'left hand' and 'bread'.\n\n1.  **Identify the entities**:\n    *   **Left hand**: The hand reaching towards the bread on the plate.\n    *   **Bread**: The slice of brown bread on the white plate.\n\n2.  **Analyze the CENTER frame**:\n    *   The left hand is positioned over the slice of bread.\n    *   The fingers of the left hand are in direct contact with the top surface of the bread.\n    *   The hand is pressing down or holding the bread.\n    *   The edge of the hand is visible where it meets the bread.\n    *   The edge of the bread is partially obscured by the hand.\n    *   The relation is 'overlap' in 2D projection.\n    *   Physical contact is clearly visible.\n\n3.  **Evaluate visibility**:\n    *   `object_visible`: True (bread is visible).\n    *   `hand_edge_visibility`: Visible (the fingers and palm edge are seen).\n    *   `object_edge_visibility`: Partial (the part of the bread under the hand is hidden).\n    *   `projected_relation`: Overlap (the hand is on top of the bread).\n    *   `physical_contact`: visible_evidence (the fingers are touching the bread).\n\n4.  **Construct the JSON**:\n    *   `entities_found`: true\n    *   `description`: The left hand is touching the top surface of a slice of brown bread on a white plate.\n    *   `object_visible`: true\n    *   `hand_edge_visibility`: visible\n    *   `object_edge_visibility`: partial\n    *   `projected_relation`: overlap\n    *   `physical_contact`: visible_evidence\n    *   `uncertainty_reasons`: []\n    *   `recommended_action`: usable_description\n    *   `evidence`: The pixels show the fingers of the left hand resting on the surface of the bread.",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1759,
+      "completion_tokens": 594,
+      "total_tokens": 2353,
+      "completion_tokens_details": {
+        "reasoning_tokens": 446
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-gemma"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "The left hand is touching the top surface of a slice of brown bread on a white plate.",
+    "object_visible": true,
+    "hand_edge_visibility": "visible",
+    "object_edge_visibility": "partial",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [],
+    "recommended_action": "usable_description",
+    "evidence": "The pixels show the fingers of the left hand resting on the surface of the bread."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

@@ -1,0 +1,39 @@
+schema: track1_v1
+seed: 41
+input: canonical/v1
+output: derived
+workers: 12
+memory_budget_gib: 20
+minimum_available_gib: 5
+appearance_batch: 16
+spatial:
+  control_points: 16
+  degree: 3
+  samples: 64
+  lambda_curvature: 0.001
+  lambda_ridge: 0.000001
+  huber_delta: 1.5
+  irls_iterations: 3
+  sigma_floor_pixels: 1.0
+  wavelet: db2
+  max_gap_seconds: 0.35
+temporal:
+  degree: 3
+  seconds: 1.0
+  hop_seconds: 0.25
+  lambda_modes: 0.001
+  lambda_ridge: 0.000001
+  huber_delta: 1.5
+  irls_iterations: 3
+  variance_floor: 0.000001
+  min_effective_samples: 6
+  min_span_seconds: 0.6
+  max_gap_seconds: 0.35
+provenance_priors:
+  manual_sparse: 1.0
+  dense_gt_endpoint: 0.9
+  dense_interpolated: 0.6
+engineering_splits:
+  train: [P02_122, P03_112, P04_109, P11_16, P22_117, P27_105, P30_07]
+  validation: [P08_09, P18_03]
+  test: [P06_108, P21_01]

@@ -1,0 +1,18 @@
+{
+  "status": "pending_human_annotation",
+  "validated_references": 0,
+  "clips": 20,
+  "anchor_rows_per_reviewer": 3000,
+  "sampling": "Nearest actual native PTS at nominal 25 Hz; duplicate frame UIDs removed",
+  "coordinates": "native 1920x1080 pixels; no model centroids prefilled",
+  "duration_seconds": 6,
+  "reviewers": "Two independently completed worksheets with reviewer identity, visibility and agreement adjudication required",
+  "contact": "Relations alone insufficient: independently traced boundary geometry and hashes required",
+  "identity": "Review full context, do not assume provisional annotation-chain IDs",
+  "locked_evaluation": false,
+  "limits": "Development participants already exposed; this pack cannot establish fresh final acceptance",
+  "rgb": "References existing uncompressed native shards; no RGB copies or compression",
+  "track2_started": false,
+  "target_definition": "Class cue is a source label only. Each reviewer must independently identify the entity and define the same visible physical landmark; flag ambiguity/occlusion instead of copying a source centroid. Adjudicate landmark definitions before derivative scoring.",
+  "rgb_hash_manifest": "rgb_manifest.json"
+}

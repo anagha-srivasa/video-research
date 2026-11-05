@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "video_id": "P02_122",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    },
+    {
+      "video_id": "P03_112",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    },
+    {
+      "video_id": "P04_109",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    },
+    {
+      "video_id": "P08_09",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    },
+    {
+      "video_id": "P11_16",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    },
+    {
+      "video_id": "P18_03",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    },
+    {
+      "video_id": "P22_117",
+      "native_dimensions": [
+        1920,
+        1080
+      ],
+      "exact_PTS_requested": true
+    }
+  ],
+  "new_rgb_files": 0,
+  "source_decoder": "Isolated exact-PTS software decoder; checked source SHA256 on first access",
+  "native_NPY_used_only_after_receipt_checksum": true
+}

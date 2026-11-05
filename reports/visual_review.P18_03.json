@@ -1,0 +1,27 @@
+{
+  "video_id": "P18_03",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "66f4fea0c85affef53fa7861c254bb1adadb912e6baf49fc1cc442881945dc90",
+  "repair_image_sha256": "b0adab697cdf7647cb1eef4a4f0ca2c0e55d7915f9644e4775ee218067fddf04",
+  "table_hashes": {
+    "videos": "352dedc6de11a4ccbe0b59262d1014286a5920558293b3266959972820709d56",
+    "frames": "99ff521bd70bfab1e2a3ff89bee14124e1588ff1927619dd13593c4de40be6eb",
+    "annotation_frames": "a0d68c24015ecb448c8a625433d3f9e16175d5a640b01d647cd89214139ac3a3",
+    "masks": "068c9bdda55973a8dc75c31d3206ca2e5d28b2efc00de06921843bb2a42e00d0",
+    "contacts": "b3347e95ff71fdb8637fa8a233a82308d07e0058e4b2ff1b847baab041889a67",
+    "entities": "242f8a39814315af3a0aad699e620f06393a35676254ca22b0dc14f94af68be9",
+    "actions": "c81e0fa5fa1ab3d402f013fccf0047b719a4c41134d6379bf13fbdeaf500497d",
+    "camera_frames": "8d1b6c213a510586de22677c752b9457fc9bd871721509ad76b7245e6e07bd91",
+    "event_evidence": "4d9a8dfb16c0aad34951c325700e27062905b0140836944da6db6ccc04383ea2",
+    "windows_1s_hop250ms": "5603a77c1511dbbe2681f1fa4c872823c656b2c896976fd3dfdc7ef4ac6495c7",
+    "qa_flags": "8c1ce656b78d378111e5911efcb1a192090e53be97e04e63a542d7544cf7f4d3"
+  },
+  "findings": "Cupboard, sink, bowl, hands and cup overlays align; empty dense observation is retained without fabricated masks. Repaired cupboard preserves occlusion.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

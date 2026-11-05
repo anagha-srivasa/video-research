@@ -1,0 +1,28 @@
+{
+  "hole_contract_reproducer": {
+    "canonical_holes": 1,
+    "consumer_holes": 0,
+    "confirmed": true
+  },
+  "mixed_valid_degenerate_fixture": {
+    "whole_mask_quarantined": true,
+    "safe_to_recover_without_review": false
+  },
+  "partial_geometry_recovery_candidates": {
+    "quarantined_development_masks": 34774,
+    "degenerate_with_individually_rasterizable_segment": 33243,
+    "examples": [
+      "e1494182033deb8b6ade81568316dc7e",
+      "2fd6e1fa0d34dbd11a6af6a823571aba",
+      "a5eda75a30aeb686d5daf5c3f07c5480",
+      "0d5f94aab8e676c03aed47e387b9ff05",
+      "afea3e4d51ce1f8938b66825a3df0b46",
+      "42735d82ad2fc5b9b84c1581ac5d8384",
+      "1d98c3febaaed758aa07bd611bb999ed",
+      "1c6a3fdce4d4e482ecd6c5700ff4121d",
+      "6d5a70c3fd5244338de554eb6cc1894e",
+      "138d59e1e234d5c6d12faeb508b2a0a6"
+    ],
+    "interpretation": "Potential partial evidence only. Discarding fragments does not establish a complete or correct mask."
+  }
+}

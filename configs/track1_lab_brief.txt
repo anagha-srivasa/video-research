@@ -1,0 +1,179 @@
+My recommendation: freeze Track 1 v2 as a valid engineering baseline and begin Track 2 development now, but do not declare Track 1 scientifically validated yet.
+
+Your results indicate that further optimization of the same spline and cubic-fitting objectives is unlikely to be the best use of time. The remaining uncertainties concern whether the representation preserves the information Track 2 actually needs, not whether the current optimizer can reduce its loss another fraction of a percent.
+
+## 1. What your results actually establish
+
+| Area                     | Result                                                   | Assessment  |
+| ------------------------ | -------------------------------------------------------- | ----------- |
+| Numerical reconstruction | Maximum analytical rebuild error \\(2.11\times10^{-5}\\) | Pass        |
+| Spatial reconstruction   | IoU 0.8968                                               | Pass        |
+| Boundary reconstruction  | Scale-aware BF-score 0.8399; strict 2 px BF-score 0.6210 | Conditional |
+| Temporal fitting         | Median nonconstant-channel \\(R^2=0.6545\\)              | Investigate |
+| Uncertainty calibration  | Spatial 95% coverage 0.9556                              | Provisional |
+| Temporal generalization  | Endpoint holdout NRMSE 1.0574                            | Investigate |
+| Window coverage          | 99.92% eligible-window yield                             | Pass        |
+| Appearance localization  | Feature-cell foreground precision 0.8070                 | Investigate |
+| Tracking identity        | No independently certified IDF1/HOTA                     | Unverified  |
+| Physical derivatives     | No independent velocity/acceleration reference           | Unverified  |
+
+The strongest positive evidence is that your refinement substantially improved spatial accuracy and temporal holdouts without changing the architecture. The fit is also within approximately 3–4% of the all-observation cubic compression lower bound.
+
+That suggests a meaningful conclusion:
+
+You are approaching the representational limit of this four-coefficient cubic encoding under the current objective. More fitting optimization cannot necessarily recover motion information the representation does not retain.
+
+The weaker areas deserve targeted testing, not another broad parameter search.
+
+## 2. Five things I would do before relying on Track 1 for scientific conclusions
+
+### Priority 1 — Validate physical velocity and short-event preservation
+
+This is the most important missing test.
+
+Track 2 consumes endpoint state and derivatives. If velocity is inaccurate, Koopman dynamics may learn artifacts of the cubic approximation rather than genuine entity motion.
+
+Create a manually reviewed subset of approximately 100–200 short motion episodes, covering:
+
+- Stationary-to-moving transitions.
+- Rapid hand movements.
+- Object pickup and placement.
+- Contact onset and release.
+- Occlusion and reappearance.
+- Sudden changes in direction.
+
+Use dense reference positions where possible, and estimate reference velocity using an independently selected smoothing/differentiation procedure. Report sensitivity to the reference method because finite-difference velocity from noisy annotations is not ground truth.
+
+Measure endpoint position error, velocity magnitude error, velocity direction error, onset timing error, and short-event recall.
+
+Proposed gate: the functional representation should outperform a constant-position baseline and be competitive with a simple constant-velocity or smoothed finite-difference baseline on velocity estimation. For short events, target at least 90% recall at a declared temporal tolerance, initially 250 ms.
+
+The threshold is provisional; the baseline comparison is more important.
+
+### Priority 2 — Explain the low temporal \\(R^2\\)
+
+A median \\(R^2\\) of 0.6545 is not automatically a failure, because 35 channels include heterogeneous position and shape coefficients. Small-variance channels can produce unstable \\(R^2\\).
+
+But you must determine whether the low score reflects harmless high-frequency contour noise or meaningful lost motion.
+
+Produce a breakdown of:
+
+| Channel family           | What to measure                               |
+| ------------------------ | --------------------------------------------- |
+| Position channels        | Held-out RMSE, \\(R^2\\), endpoint error      |
+| Coarse shape modes       | Reconstruction error and temporal consistency |
+| Fine shape modes         | Residual energy and noise sensitivity         |
+| Stationary segments      | Spurious velocity and drift                   |
+| Fast-motion segments     | Peak attenuation and onset delay              |
+| Contact-related contours | Fingertip/handle boundary error               |
+
+Proposed gate: no systematic loss of meaningful position or coarse-shape motion relative to a simple matched-input baseline.
+
+Do not force every shape coefficient to achieve \\(R^2\ge0.95\\). That could encourage overfitting annotation noise.
+
+### Priority 3 — Test contact-relevant geometry
+
+Your strict 2-pixel boundary F-score of 0.6210 is a real warning, even though full-mask IoU is strong.
+
+For Track 3, a contour that is wrong by a few pixels near contact can reverse a contact decision.
+
+Build a subset of hand–object and object–surface interactions. Evaluate boundary errors specifically around the closest interacting regions, not just over the full silhouette.
+
+Measure:
+
+- Contact-region boundary distance.
+- Minimum inter-object separation error.
+- False-contact and missed-contact rates under a declared 2D proximity definition.
+- Whether the spatial uncertainty ribbon contains the reference boundary near contact.
+
+Proposed gate: contact-relevant geometric errors must be low enough that downstream proximity decisions are stable under plausible contour perturbations.
+
+Do not require a particular strict BF-score globally if the contact-specific measurements demonstrate acceptable behavior. Conversely, high global IoU must not excuse contact-region failures.
+
+### Priority 4 — Verify uncertainty on independent references
+
+Your 95% spatial coverage of 95.56% is encouraging, but it was calibrated against contour representation errors.
+
+That does not yet establish uncertainty relative to independently verified physical geometry.
+
+On a small independently reviewed annotation subset, evaluate coverage and ribbon width separately for visible boundaries, occluded boundaries, small objects, and interaction boundaries.
+
+Also test temporal coefficient and endpoint uncertainty.
+
+Proposed gate: nominal 95% intervals achieve approximately 90–98% coverage across adequately sized groups, with no systematic undercoverage in critical interaction cases. Treat these as pilot tolerances and report confidence intervals.
+
+### Priority 5 — Verify identities and small-object appearance
+
+The 80.7% feature-cell foreground precision and the 88/528 masks with no foreground feature-cell center suggest a genuine spatial-resolution bottleneck.
+
+Before Track 2, verify whether these cases are concentrated among tiny objects and whether the appearance embedding remains useful.
+
+I would run two focused tests:
+
+1. Identity audit: manually review representative continuous tracks, including occlusions, and count identity switches and fragmentation.
+2. Appearance ablation: compare the current pooled MobileNet features with geometry-only inputs and a lightweight ROI-aligned pooling alternative.
+
+You do not necessarily need to redesign the appearance pipeline before Track 2. If appearance contributes little or is unreliable on small objects, keep it as optional conditioning and prevent it from dominating the dynamical latent state.
+
+## 3. A practical decision rule
+
+Scientific readiness checklist
+
+0 of 6 verified
+
+Independent endpoint velocity test
+
+Physical derivative errors measured against a reviewed reference
+
+Temporal channel breakdown
+
+Position and coarse shape are not systematically oversmoothed
+
+Contact-region geometry audit
+
+Interaction boundaries support reliable proximity estimates
+
+Independent uncertainty audit
+
+Spatial and temporal coverage are defensible
+
+Identity and appearance audit
+
+Known identity failures are flagged; small-object limitations quantified
+
+Frozen Track 1 interface
+
+Hashes, splits, covariances, units and validity flags remain immutable
+
+I would classify the outcome as follows:
+
+| Decision                                        | Requirement                                                                                              |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Proceed to Track 2 prototype                    | Already justified by the current numerical and artifact evidence                                         |
+| Use Track 1 for comparative Track 2 experiments | Complete the focused audits; explicitly flag unresolved limitations                                      |
+| Declare Track 1 scientifically accepted         | Independent derivative, geometry, uncertainty and identity evidence supports its intended downstream use |
+| Reopen Track 1 architecture                     | Only if focused tests reveal systematic loss of essential motion/contact information                     |
+
+## 4. What to do next, in order
+
+1. Freeze the current v2 release. Keep the 271 baseline hashes, locked parameters, participant-disjoint split, validity flags and source snapshot. Do not tune it again using reserved test scores.
+2. Run a small independent reference audit. Prioritize derivative accuracy, short-event retention, contact geometry and identity. This should be a bounded evaluation effort, not another full training cycle.
+3. Start Track 2 with a minimal Koopman baseline. Use the existing \\(4\times35\\) coefficients, endpoint state/velocity, and quality flags. Begin with a shared 32-dimensional latent representation and the stable generator, but compare it against persistence and constant-velocity predictions.
+4. Keep geometry-only and geometry-plus-appearance variants. This isolates whether appearance pooling helps or contaminates dynamical prediction.
+5. Measure whether Track 2 can predict real held-out observations. Do not evaluate only prediction of the next overlapping Legendre coefficient vector, because adjacent windows share most of their input frames.
+
+For Track 2, I would specifically require future-observation evaluation at horizons beyond the shared observation overlap, with explicit physical timestamps and calibrated uncertainty. Otherwise, excellent Koopman scores may largely reflect overlap leakage rather than predictive dynamics.
+
+## 5. The single most valuable experiment
+
+If you only run one more experiment before proceeding, make it this:
+
+Compare the Track 1 functional state against a simple direct-position/velocity representation on genuinely future, independently observed entity motion.
+
+Use the same training videos, same entities, same observation cutoff and same prediction horizons. Compare position RMSE, velocity error, uncertainty calibration and performance around contact or abrupt motion.
+
+If Track 1 is competitive or better while providing its intended compact, smooth and uncertainty-aware representation, you have strong practical justification to proceed.
+
+If the simpler representation consistently wins on motion-critical cases, investigate whether the cubic temporal compression is suppressing useful information before investing heavily in a Koopman model.
+
+Bottom line: Track 1 v2 is ready for Track 2 engineering and experimentation today. It is not yet ready for a claim of full scientific acceptance. I would stop broad Track 1 optimization, perform the five targeted audits, and let downstream predictive performance determine whether any remaining Track 1 changes are actually necessary.

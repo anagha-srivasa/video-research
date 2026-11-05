@@ -1,0 +1,75 @@
+{
+  "task_id": "234f1178a2163543bd5d",
+  "cue": "right hand / ladle",
+  "model": "track1-gemma",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    74,
+    86,
+    98
+  ],
+  "image_sha256": [
+    "f5c83a4a230e059faf3213bcab937d6cac76dfd405e2038444206b475184f140",
+    "6d00e4fa8e509914f8916c8ed4f1f119ecee7fb1d00f9bc6f141099f41b7f053",
+    "829bcf6a70c40173fd471f8cceae7220ed0caa658726995f0f22a66eeffe288b"
+  ],
+  "prompt_sha256": "b443b13e9a15850002cadeb5b6ebb6266eaabe6ab1b3fb62c8a9af14941052d1",
+  "source_sha256": "fb930d4593b22b92e45e32afddf028d97cebf0dc138caae36a84671364fef2d4",
+  "seconds": 34.39567184448242,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1756,
+    "completion_tokens": 530,
+    "total_tokens": 2286,
+    "completion_tokens_details": {
+      "reasoning_tokens": 392
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-vhqv66fr6ocjeyaoeolpkn",
+    "object": "chat.completion",
+    "created": 1793359266,
+    "model": "track1-gemma",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"entities_found\": true,\n  \"description\": \"The right hand is gripping the yellow handle of the ladle.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"visible\",\n  \"object_edge_visibility\": \"visible\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The right hand is clearly seen holding the yellow handle of the ladle.\"\n}\n```",
+          "reasoning_content": "The user wants me to review the CENTER frame for the interaction between the 'right hand' and the 'ladle'.\n\n1.  **Identify the entities**:\n    *   **Right hand**: The hand on the right side of the image, holding the handle of the ladle.\n    *   **Ladle**: The metal utensil with a bowl and a handle. The handle is yellow.\n\n2.  **Analyze the interaction in the CENTER frame**:\n    *   The right hand is gripping the yellow handle of the ladle.\n    *   The fingers of the right hand are wrapped around the handle.\n    *   The contact between the hand and the handle is clearly visible.\n\n3.  **Evaluate visibility**:\n    *   **Right hand**: Visible.\n    *   **Ladle**: Visible.\n    *   **Hand edge**: The edges of the hand are visible where they meet the handle.\n    *   **Object edge**: The edges of the ladle handle are visible where they meet the hand.\n    *   **Projected relation**: The hand is overlapping the handle of the ladle.\n    *   **Physical contact**: There is visible evidence of the hand gripping the handle.\n\n4.  **Determine the final values**:\n    *   `entities_found`: true\n    *   `description`: The right hand is gripping the yellow handle of the ladle.\n    *   `object_visible`: true\n    *   `hand_edge_visibility`: visible\n    *   `object_edge_visibility`: visible\n    *   `projected_relation`: overlap\n    *   `physical_contact`: visible_evidence\n    *   `uncertainty_reasons`: []\n    *   `recommended_action`: usable_description\n    *   `evidence`: The right hand is clearly seen holding the yellow handle of the ladle.",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1756,
+      "completion_tokens": 530,
+      "total_tokens": 2286,
+      "completion_tokens_details": {
+        "reasoning_tokens": 392
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-gemma"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "The right hand is gripping the yellow handle of the ladle.",
+    "object_visible": true,
+    "hand_edge_visibility": "visible",
+    "object_edge_visibility": "visible",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [],
+    "recommended_action": "usable_description",
+    "evidence": "The right hand is clearly seen holding the yellow handle of the ladle."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

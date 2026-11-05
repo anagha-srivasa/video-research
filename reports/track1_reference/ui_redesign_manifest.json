@@ -1,0 +1,11 @@
+{
+  "files": {
+    "src/track1_reference/reviewer.html": "85077d302ef837ee5709a16585b6653e54aa97d0e3be5ad6ebb1beafb81e0fb5",
+    "src/track1_reference/review_media.js": "39a9fdecf34f6c7e1f406034073fcf6b9314fa7e79ed07f71cdaafedaa1cdd47",
+    "src/track1_reference/review.py": "4136ce7fd2487f52fb884253c121a18d42f40d37a6ec7ac0dc168c3a02e0e999",
+    "src/track1_reference/reviewer.js": "ab9ad5ef3c141e65d5be0ae9248579781a4cd4f21f266444c1ba7e6c2634be07",
+    "src/track1_reference/protocol.py": "acc90be78b283ee51572004b6b234d05e5871c63800f414be0a91e87d75d947e"
+  },
+  "tests_passed": 80,
+  "real_reviews_submitted_by_qa": 0
+}

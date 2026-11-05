@@ -1,0 +1,7 @@
+{
+  "initial_guard_stop": true,
+  "initial_observed_peak_tree_rss_gib": 20.574066162109375,
+  "post_fix_observed_peak_tree_rss_gib": 4.952301025390625,
+  "oom_observed": false,
+  "scope": "sampled extraction/evaluation processes; mmap RSS includes shared pages. Later verification measured separately near 1 GiB."
+}

@@ -1,0 +1,12 @@
+[project]
+name = "video-research-evidence"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["av", "numpy", "scipy", "pyarrow", "duckdb", "opencv-python-headless", "shapely", "PyYAML", "Pillow", "tqdm"]
+
+[project.optional-dependencies]
+track1 = ["torch==2.13.0", "torchvision==0.28.0", "PyWavelets", "psutil", "threadpoolctl"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "work/deps"]
+testpaths = ["tests"]

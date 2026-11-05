@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-29T15:35:13.557995+00:00",
+  "kind": "read_only_source_audit",
+  "model_rebuild_performed": false,
+  "frozen_artifacts_modified": false,
+  "findings": [
+    {
+      "priority": "P0",
+      "finding": "canonical inner versus consumer hole schema mismatch",
+      "status": "reproduced"
+    },
+    {
+      "priority": "P0",
+      "finding": "offline interpolated masks do not establish online input causality",
+      "status": "source_semantics_confirmed"
+    },
+    {
+      "priority": "P1",
+      "finding": "whole-mask quarantine discards individually rasterizable segments",
+      "status": "reproduced_and_counted"
+    }
+  ],
+  "files": {
+    "reports/dataset_audit/additional_measurements.json": "fcd3d6dd41c5edd37a6eeb0c6d2212b8b42f479ebd754865e56f3fb4b7a34007",
+    "reports/dataset_audit/reproductions.json": "7fdf325fd3024eb1d1c452d1ae46bbd8d71b5d77e130e8b83ef4717093167a6b",
+    "reports/dataset_audit/measurements.json": "ceeff77c206dfd10d83545bd68e42716c24cd8d19445d0062b121822b55a4930",
+    "reports/dataset_audit/AUDIT.md": "79caa8d6f947d8373c56c9fd8d0dad84dec3aa1b2aee1ec2ea460eb6650305f0",
+    "work/dataset_audit/audit.py": "0c37d731cfe12e42669cbc42ab19a3c0ec9b7f460b4517da565852ee999ee5a5",
+    "work/dataset_audit/reproduce.py": "66f86d16fa58723ae2447584470c17573850665146dd16d6075dc8754a0b74cd"
+  }
+}

@@ -1,0 +1,1 @@
+{"code_sha256":"d5c083a8e4397da7720bf30aae246cbd93f02222cb7c6016c22e2b94e30c8b16","config_sha256":"9b9cf915bcf479b7b1e24d7a4268fef22c151c6b086778482ce1b1b9f8935692","options":{"curvature":1e-05,"loss":"huber","reverse":1.0,"steps":16},"state":"experimental_not_finalized","v2_freeze_sha256":"c37687b9863fa40bc1a8e20602b9b84a301ae9e038f7e1db9121d47d34c899aa"}

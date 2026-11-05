@@ -1,0 +1,1759 @@
+{
+  "scope": "11-video inventory only; new diagnostic geometry inspection on seven development participants; no test model selection",
+  "started": "2026-10-29T20:58:18+0530",
+  "videos": {
+    "P02_122": {
+      "provenance_geometry": [
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 839,
+          "untimed": 0,
+          "masks_with_holes": 52,
+          "multicomponent": 253
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 8686,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 6284
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 5340,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 76,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 383,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 205
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 42,
+          "untimed": 0,
+          "masks_with_holes": 10,
+          "multicomponent": 16
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 8,
+          "untimed": 0,
+          "masks_with_holes": 1,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 1205,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 149
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 47414,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 8676
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 621,
+          "untimed": 0,
+          "masks_with_holes": 49,
+          "multicomponent": 95
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 17815
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 494
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 313
+        }
+      ],
+      "frames": [
+        {
+          "n": 38365,
+          "distinct_times": 38365,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 767280000,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 112,
+        "ring_roles": {
+          "outer": 152,
+          "inner": 195
+        },
+        "examples": [
+          {
+            "mask_uid": "e432afffe8043dc79a1d51616d104dba",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "6b2372c5f5f74a393aca06a8573fa242",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "876e8f47c52b0a01032d0c6f1a9c6072",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 478,
+          "tracks": 478,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 56100,
+          "tracks": 502,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 183,
+          "tracks": 106,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 1032,
+          "tracks": 388,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P03_112": {
+      "provenance_geometry": [
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 32780,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 5148
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 984,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 104
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 7,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 3
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 1,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 2890,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 4516,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 2942
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 266,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 148
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 15,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 542,
+          "untimed": 0,
+          "masks_with_holes": 13,
+          "multicomponent": 101
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 602,
+          "untimed": 0,
+          "masks_with_holes": 17,
+          "multicomponent": 115
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 12577
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 265
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 396
+        }
+      ],
+      "frames": [
+        {
+          "n": 25398,
+          "distinct_times": 25398,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 507940000,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 30,
+        "ring_roles": {
+          "outer": 39,
+          "inner": 44
+        },
+        "examples": [
+          {
+            "mask_uid": "0d5b348b51a72ee27ef87219b54ddcd5",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "e12df50352622296f3a86931a06357b9",
+            "hole_count": 2,
+            "roles": [
+              "outer",
+              "inner",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "e64e6de30f4839ff8de30739850c0758",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 361,
+          "tracks": 361,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 37296,
+          "tracks": 366,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 153,
+          "tracks": 82,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 791,
+          "tracks": 281,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P04_109": {
+      "provenance_geometry": [
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 2458,
+          "untimed": 0,
+          "masks_with_holes": 196,
+          "multicomponent": 1026
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 1647,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 1006
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 10897,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 8183
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 6422,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 338,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 2371,
+          "untimed": 0,
+          "masks_with_holes": 149,
+          "multicomponent": 456
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 120,
+          "untimed": 0,
+          "masks_with_holes": 17,
+          "multicomponent": 60
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 5,
+          "untimed": 0,
+          "masks_with_holes": 3,
+          "multicomponent": 3
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 5432,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 822
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 74559,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 14005
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 22582
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 994
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 1838
+        }
+      ],
+      "frames": [
+        {
+          "n": 49027,
+          "distinct_times": 49027,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 980520000,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 365,
+        "ring_roles": {
+          "outer": 1179,
+          "inner": 764
+        },
+        "examples": [
+          {
+            "mask_uid": "595f610e64e907cce0e4399b7e3d2478",
+            "hole_count": 2,
+            "roles": [
+              "outer",
+              "outer",
+              "inner",
+              "inner",
+              "outer"
+            ]
+          },
+          {
+            "mask_uid": "1c37f2652ffe4243c91e3f8275c90c8f",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "3d6de950e14a6993047d3579e41d1275",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "outer",
+              "inner",
+              "outer"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 85456,
+          "tracks": 1018,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 339,
+          "tracks": 179,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 947,
+          "tracks": 947,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 4007,
+          "tracks": 804,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P06_108": {
+      "provenance_geometry": [
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 538,
+          "untimed": 0,
+          "masks_with_holes": 42,
+          "multicomponent": 74
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 6248,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 4321
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 5188,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 326,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 200
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 46,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 775,
+          "untimed": 0,
+          "masks_with_holes": 32,
+          "multicomponent": 251
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 48219,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 5482
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 1098,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 104
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 46,
+          "untimed": 0,
+          "masks_with_holes": 20,
+          "multicomponent": 14
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 4,
+          "untimed": 0,
+          "masks_with_holes": 1,
+          "multicomponent": 2
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 16882
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 402
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 249
+        }
+      ],
+      "frames": [
+        {
+          "n": 36435,
+          "distinct_times": 36435,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 728680000,
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "P08_09": {
+      "provenance_geometry": [
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 4512,
+          "untimed": 566,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 6618,
+          "untimed": 792,
+          "masks_with_holes": 0,
+          "multicomponent": 4222
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 226,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 107
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 40,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 636,
+          "untimed": 0,
+          "masks_with_holes": 16,
+          "multicomponent": 161
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 57506,
+          "untimed": 8341,
+          "masks_with_holes": 0,
+          "multicomponent": 8113
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 1074,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 132
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 20,
+          "untimed": 0,
+          "masks_with_holes": 5,
+          "multicomponent": 7
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 3,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 1
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 595,
+          "untimed": 0,
+          "masks_with_holes": 34,
+          "multicomponent": 97
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 18747
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 418
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 240
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "unresolved",
+          "transform_valid": true,
+          "n": 3348
+        }
+      ],
+      "frames": [
+        {
+          "n": 37192,
+          "distinct_times": 37192,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 620469850,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 55,
+        "ring_roles": {
+          "outer": 72,
+          "inner": 77
+        },
+        "examples": [
+          {
+            "mask_uid": "f394031568d9e7785099f5fc0d9a26d2",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "c8fe47a49859c18a88cef1f460dade38",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "33618b28ecedca12b309fb097df68ff7",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "outer",
+              "inner"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 54991,
+          "tracks": 387,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 158,
+          "tracks": 102,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 411,
+          "tracks": 411,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 843,
+          "tracks": 353,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P11_16": {
+      "provenance_geometry": [
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 18378,
+          "untimed": 1138,
+          "masks_with_holes": 0,
+          "multicomponent": 2271
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 386,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 49
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 6,
+          "untimed": 0,
+          "masks_with_holes": 3,
+          "multicomponent": 3
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 2,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 2766,
+          "untimed": 175,
+          "masks_with_holes": 0,
+          "multicomponent": 1565
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 2030,
+          "untimed": 113,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 93,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 39
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 306,
+          "untimed": 0,
+          "masks_with_holes": 10,
+          "multicomponent": 83
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 25,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 255,
+          "untimed": 0,
+          "masks_with_holes": 10,
+          "multicomponent": 51
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 7668
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "unresolved",
+          "transform_valid": true,
+          "n": 575
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 174
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 122
+        }
+      ],
+      "frames": [
+        {
+          "n": 21211,
+          "distinct_times": 21211,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 353853500,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 23,
+        "ring_roles": {
+          "outer": 30,
+          "inner": 47
+        },
+        "examples": [
+          {
+            "mask_uid": "11f22996c1ac60815199d3b3b17d7e6f",
+            "hole_count": 4,
+            "roles": [
+              "outer",
+              "inner",
+              "inner",
+              "inner",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "c30597aa471b895b0b10440314ace7fc",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "c221b480ef4ff5ae46ee3bdba2044eef",
+            "hole_count": 2,
+            "roles": [
+              "outer",
+              "inner",
+              "inner"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 351,
+          "tracks": 155,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 19831,
+          "tracks": 166,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 27,
+          "tracks": 16,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 218,
+          "tracks": 218,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P18_03": {
+      "provenance_geometry": [
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 36276,
+          "untimed": 5866,
+          "masks_with_holes": 0,
+          "multicomponent": 3608
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 699,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 63
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 17,
+          "untimed": 0,
+          "masks_with_holes": 3,
+          "multicomponent": 12
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 2,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 2235,
+          "untimed": 289,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 3662,
+          "untimed": 415,
+          "masks_with_holes": 0,
+          "multicomponent": 2021
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 129,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 67
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 14,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 444,
+          "untimed": 0,
+          "masks_with_holes": 6,
+          "multicomponent": 88
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 424,
+          "untimed": 0,
+          "masks_with_holes": 13,
+          "multicomponent": 66
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 12177
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "unresolved",
+          "transform_valid": true,
+          "n": 2320
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 189
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 300
+        }
+      ],
+      "frames": [
+        {
+          "n": 25620,
+          "distinct_times": 25620,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 427410317,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 22,
+        "ring_roles": {
+          "outer": 26,
+          "inner": 35
+        },
+        "examples": [
+          {
+            "mask_uid": "8c3c4515d6f95cb055ab411395e21dae",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "caab6a6d50cad97737c7e9961c7518bf",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "4a1dead9523bff6dff9ec0ca5792e3c8",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "outer",
+              "inner"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 566,
+          "tracks": 248,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 33657,
+          "tracks": 262,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 79,
+          "tracks": 46,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 321,
+          "tracks": 321,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P21_01": {
+      "provenance_geometry": [
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 409,
+          "untimed": 0,
+          "masks_with_holes": 10,
+          "multicomponent": 49
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 24855,
+          "untimed": 2450,
+          "masks_with_holes": 0,
+          "multicomponent": 2821
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 408,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 34
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 3589,
+          "untimed": 488,
+          "masks_with_holes": 0,
+          "multicomponent": 2186
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 3698,
+          "untimed": 471,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 79,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 29
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 6,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 363,
+          "untimed": 0,
+          "masks_with_holes": 8,
+          "multicomponent": 93
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "unresolved",
+          "transform_valid": true,
+          "n": 1392
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 10166
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 174
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 165
+        }
+      ],
+      "frames": [
+        {
+          "n": 41535,
+          "distinct_times": 41535,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 692925567,
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "P22_117": {
+      "provenance_geometry": [
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 7,
+          "untimed": 0,
+          "masks_with_holes": 1,
+          "multicomponent": 1
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 127,
+          "untimed": 0,
+          "masks_with_holes": 27,
+          "multicomponent": 48
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 96239,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 15813
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 2969,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 350
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 1473,
+          "untimed": 0,
+          "masks_with_holes": 80,
+          "multicomponent": 258
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 1725,
+          "untimed": 0,
+          "masks_with_holes": 90,
+          "multicomponent": 447
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 10584,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 15179,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 10901
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 887,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 458
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 253,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 35223
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 1210
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 670
+        }
+      ],
+      "frames": [
+        {
+          "n": 48591,
+          "distinct_times": 48591,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 971800000,
+          "width": 1920,
+          "height": 1080
+        }
+      ],
+      "actual_hole_schema": {
+        "masks": 198,
+        "ring_roles": {
+          "outer": 302,
+          "inner": 338
+        },
+        "examples": [
+          {
+            "mask_uid": "9e9399a0ec1570ec90bf9f31d3236701",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "3f28ae4878b9259a453d4592b4f51a04",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          },
+          {
+            "mask_uid": "71bd6d16a8334b658e3195edf147e2a6",
+            "hole_count": 1,
+            "roles": [
+              "outer",
+              "inner"
+            ]
+          }
+        ]
+      },
+      "selected": [
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_shared_endpoint_geometry",
+          "n": 2286,
+          "tracks": 735,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 111418,
+          "tracks": 1044,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "identity_evidence": "unique_entity_in_source_interpolation",
+          "n": 484,
+          "tracks": 268,
+          "reported_holes": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "identity_evidence": "manual_identity_unlinked",
+          "n": 1046,
+          "tracks": 1046,
+          "reported_holes": 0
+        }
+      ]
+    },
+    "P27_105": {
+      "provenance_geometry": [
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 115,
+          "untimed": 0,
+          "masks_with_holes": 1,
+          "multicomponent": 84
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 6,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 2
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 66404,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 10583
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 1876,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 251
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "quarantined",
+          "n": 1,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 1043,
+          "untimed": 0,
+          "masks_with_holes": 36,
+          "multicomponent": 242
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 11150,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 7494
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 8817,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 110,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 509,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 311
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 1083,
+          "untimed": 0,
+          "masks_with_holes": 33,
+          "multicomponent": 237
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 25968
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 728
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 462
+        }
+      ],
+      "frames": [
+        {
+          "n": 48888,
+          "distinct_times": 48888,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 977740000,
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "P30_07": {
+      "provenance_geometry": [
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "valid",
+          "n": 25359,
+          "untimed": 2358,
+          "masks_with_holes": 0,
+          "multicomponent": 1713
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "valid",
+          "n": 508,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 23
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid_with_diagnostics",
+          "n": 1,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 3295,
+          "untimed": 232,
+          "masks_with_holes": 0,
+          "multicomponent": 1773
+        },
+        {
+          "source_kind": "dense_interpolated",
+          "geometry_status": "quarantined",
+          "n": 2211,
+          "untimed": 141,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "repaired_for_rasterisation",
+          "n": 117,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 52
+        },
+        {
+          "source_kind": "dense_gt_endpoint",
+          "geometry_status": "quarantined",
+          "n": 8,
+          "untimed": 0,
+          "masks_with_holes": 0,
+          "multicomponent": 0
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "valid",
+          "n": 353,
+          "untimed": 0,
+          "masks_with_holes": 11,
+          "multicomponent": 78
+        },
+        {
+          "source_kind": "manual_sparse",
+          "geometry_status": "clipped_for_rasterisation",
+          "n": 347,
+          "untimed": 0,
+          "masks_with_holes": 14,
+          "multicomponent": 35
+        }
+      ],
+      "alignment": [
+        {
+          "source_kind": "dense",
+          "alignment_status": "dense_ordinal_inferred",
+          "transform_valid": true,
+          "n": 10026
+        },
+        {
+          "source_kind": "manual_sparse",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 156
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "aligned_official_sparse",
+          "transform_valid": true,
+          "n": 234
+        },
+        {
+          "source_kind": "dense",
+          "alignment_status": "unresolved",
+          "transform_valid": true,
+          "n": 1222
+        }
+      ],
+      "frames": [
+        {
+          "n": 18308,
+          "distinct_times": 18308,
+          "null_times": 0,
+          "first_us": 0,
+          "last_us": 305421783,
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  },
+  "source_hashes": {
+    "src/pipeline/geometry.py": "13b2251368ef043d79d143a5a188a3ac88659defa4cc25efcf5886b64b517882",
+    "src/pipeline/visor.py": "6ce75734e5d1ecd4433191fe00504c0c0406dba66a82d92c75daaf4356c12759",
+    "src/track1/tracks.py": "6fa89094bd12c4572ce69f1959cfaa55b15168a16445c556ff79f0cc3619fddd",
+    "src/track1/spatial.py": "e7e2b4deee421b678914786df2b24719397b12699afd74e9b28690bf822a253c",
+    "src/track1/appearance.py": "efd0d1d6f06b426f109f7c65764c41db46ab2f009128f8981121e3e61b2c61c6",
+    "src/track1_lab/compound.py": "347e3e34cb3bd00bc62bd39fe09654a3cf56829db6f0d497041e82b9e2550a84",
+    "src/track1_lab/appearance.py": "7e38c4773fab52f5a12dfeb89c95080e0e741b38179aa502e90b68d51ae1b1aa"
+  }
+}

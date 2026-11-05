@@ -1,0 +1,10 @@
+{
+  "selected": "qwen/qwen3.8-27b@4bit",
+  "identifier": "track1-qwen",
+  "selection_basis": "Explicit user decision; exploratory comparison stopped",
+  "selected_for": "machine-only frame-wise review",
+  "independent_accuracy_established": false,
+  "track1_finalized": false,
+  "track2_started": false,
+  "time": 1793360957.565712
+}

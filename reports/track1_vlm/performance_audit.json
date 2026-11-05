@@ -1,0 +1,27 @@
+{
+  "measured_unix": 1793371532.770081,
+  "telemetry": {
+    "samples": 30,
+    "gpu_min": 99,
+    "gpu_median": 100.0,
+    "gpu_max": 100,
+    "gpu_at_least_95_fraction": 1.0,
+    "available_gib_min": 12.477386474609375,
+    "swap_in_delta": 3997696,
+    "swap_out_delta": 0,
+    "gpu_used_gib_max": 18.811325073242188
+  },
+  "recent_batches": 12,
+  "median_batch_seconds": 210.14986109733582,
+  "reasoning_fraction_of_output_tokens": 0.8661109447272969,
+  "quality_configuration_changed": false,
+  "runtime_parallel": 1,
+  "quality_config_sha256": "11d167241e6613c86d5f88656b0731a1ad1934b80f0b89d5159f0598f81c3095",
+  "no_clock_frequency_claim": true,
+  "notes": [
+    "Device utilization is a whole-GPU counter, not proof of maximum theoretical throughput.",
+    "No new swap-outs during sample; swap-in was approximately 3.8 MiB.",
+    "GPU clock/power telemetry was unavailable without administrator authentication.",
+    "No model precision, image resolution, reasoning cap, prompt, or acceptance-rule changes were made."
+  ]
+}

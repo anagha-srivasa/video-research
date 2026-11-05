@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "files": {
+    "src/track1_reference/adaptive_review.py": "80afc81843173cda34d4164a1062b9fbf7f861f9cb13617d4b18baf6a94f114e",
+    "src/track1_reference/machine_refine.py": "ea6edbce77b2d51f56330b1b35e2e7ccf4d7aca7fa049a2327daf27db34666af",
+    "src/track1_reference/machine_server.py": "49fb4209326210bf528bd3576e2ed65b1ab5e74a9902f1af5b649acbbf946657",
+    "src/track1_reference/events.py": "cb8e3f4f7ab1839d6bc90f824da3fcf0f1abeac0ffb4efca31f717158d82e8a3",
+    "src/track1_reference/protocol.py": "acc90be78b283ee51572004b6b234d05e5871c63800f414be0a91e87d75d947e",
+    "src/track1_reference/native_stream.py": "1869cf092db853f8ba0036aeb025eb5973869a43d750dd75ad8cb630cffb0c4c",
+    "src/track1_reference/__init__.py": "ceb419018cfaa22a3739b06c38e31b0e5c99986505508a3ca157d131316f3bc6",
+    "src/track1_reference/review.py": "4136ce7fd2487f52fb884253c121a18d42f40d37a6ec7ac0dc168c3a02e0e999",
+    "src/track1_reference/frame_checks.py": "8fe01c1a85f1313d3c5816198658181aa6039fe4c48453466ff08148e6cc0ba5",
+    "src/track1_reference/native_frame.py": "9a5e37567b905cfb9d5b9f84e70fa515e0076002ac40859cdab77ce80119dad6",
+    "src/track1_reference/machine.py": "fb930d4593b22b92e45e32afddf028d97cebf0dc138caae36a84671364fef2d4",
+    "src/track1_reference/frame_review.py": "f2c53b055b0dfadf84d0f9ee669a904b44d5a01ef8d1e53367e83da1b2a96781",
+    "src/track1_reference/machine_report.py": "d83350c1755ecb3e5a2f4a8a5736563fb1ddbb3c7fb3991f937c131055762efe",
+    "src/track1_reference/evaluate.py": "80fde07af2fceff6e88903599233478e13769ac3e1320dc17c7fed52b351abe2",
+    "src/track1_reference/frame_dashboard.html": "7fddc6c308bfa46679415d8b70bf86bce4651f9494fe99aee298f650749f7f95",
+    "tests/test_track1_adaptive.py": "dead4eb6639d005c37bbb963d4bbbd62de06779214d5b1b73b855dca02d37279",
+    "work/track1_vlm/review_service.py": "9b2520b9f43f59ed9a5e7aaa852a6e88a1688be6e5b0d0f6c81cd51c3974f92f",
+    "work/track1_vlm/service_control.py": "d835aca191b5f94fa60d1d3fc6d3c711dcfc77737de078e13a688bdf9cb8f983"
+  },
+  "tests_passed": 95,
+  "legacy_preserved_reviews": 592,
+  "original_product": "derived/track1_qwen_review",
+  "active_product": "derived/track1_qwen_review_v3",
+  "track2_started": false
+}

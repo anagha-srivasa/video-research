@@ -1,0 +1,27 @@
+{
+  "video_id": "P03_112",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "34f4c4b25bd497aa6ec001e6a363671eeba03ae1fa2a4fb41059c880ca2a0e22",
+  "repair_image_sha256": "92e1b8fa621c49d2127cc1cb197dc1d60a8a39b928cb37c547caa204d8288f9d",
+  "table_hashes": {
+    "videos": "cd96fc0d5345209b3c1cfa5415bb4adcae0fffcde72e3b66c1977e714819e736",
+    "frames": "c78ceeb1725ebac3ccdc3ee3e939755f457e194af08700af12e16b1cfd793ebb",
+    "annotation_frames": "25da1cd5866444bd4178327b62a696afdf59e32e61e1d8ebd475ae1cf6ed1ab7",
+    "masks": "7b0ddb658be307c7a742009d14923065baa4a5fd4873f0e584da28c159f0fb5d",
+    "contacts": "a5e9d8b43b39c91cab43228a1b23d561e2fd59eb1a7ab056537c48edfd065414",
+    "entities": "00050c9b69fbaaffb6c20b275cfc12532d44013c894970d399b5a679e96d17a9",
+    "actions": "8254f86cd256293b1231689ee79993c99790c18f9e60d2d65e05151ff7dd8240",
+    "camera_frames": "a94e5d2401d4f62c10030fa87558fd38864e223a4979ba8e6c84b7d79e59cb04",
+    "event_evidence": "5cfcfcade0d3a5c83e9ccc18ccf49e7defff21ff1f31f686d5fbdefbb4053ab7",
+    "windows_1s_hop250ms": "dbff2673d6e147a0f45ef2bea2cfa5211e1f4bcdc599cbdfdc75959db656a0e2",
+    "qa_flags": "35b03116fabd96346e4b654a8ac3ab35b4396cac2eac2603a0100bf5aeaa628c"
+  },
+  "findings": "Saucepan, stove, cupboard, bowl and dustpan overlays align; repaired cupboard components retain visible occlusions.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

@@ -1,0 +1,1 @@
+{"command":"PYTHONPATH=src:work/deps:work/track1_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -m pytest tests -q --basetemp=work/track1_refinement_pytest_release","log_sha256":"997c72df4e55bf1ed8740230ac969cff7ce2d8f91f8b4acac72a42fbbbb8a0e6","passed":true,"result":"20 passed in 5.69s","total":20}

@@ -1,0 +1,102 @@
+{
+  "source_videos_verified": [
+    {
+      "video_id": "P02_122",
+      "sha256": "6c722a829c46a3e22cc91e6da26411f7004762c94325e46c184c8c0c427b48f9",
+      "bytes": 2324348498
+    },
+    {
+      "video_id": "P03_112",
+      "sha256": "9ee96f0cf5fe39b176f51043157c484f9adb820d97df573b814c94e042bd9ebc",
+      "bytes": 1538640796
+    },
+    {
+      "video_id": "P04_109",
+      "sha256": "fc43f9a83772436d049a3b042b1208197927f8a7986e7ffbfba4820150cf4eb7",
+      "bytes": 2970427970
+    },
+    {
+      "video_id": "P08_09",
+      "sha256": "fc4f2f107a411d0f42ea6771b8dcebe5584bce60fc85547127e772d5e5a62c67",
+      "bytes": 2339201957
+    },
+    {
+      "video_id": "P11_16",
+      "sha256": "01b50d4548a7935d7b6717d56a4e8d80ca2fd26c757963976fd384f5a279a8f9",
+      "bytes": 1334649091
+    },
+    {
+      "video_id": "P18_03",
+      "sha256": "46485f3de703d921284e84aea05b52a1a6b8e1655811ebe0a1d78713506132eb",
+      "bytes": 1611750783
+    },
+    {
+      "video_id": "P22_117",
+      "sha256": "78d411d83b9c91b49bb06b0f40909616528b52d0da093948eb26cf9797cc4296",
+      "bytes": 2943951230
+    }
+  ],
+  "copied_RGB_arrays": [
+    {
+      "path": "dataset/partition_v2/P02_122.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P02_122.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/partition_v2/P03_112.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P03_112.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/partition_v2/P04_109.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P04_109.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/partition_v2/P08_09.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P08_09.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/partition_v2/P11_16.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P11_16.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/partition_v2/P18_03.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P18_03.rgb.npy",
+      "present": true
+    },
+    {
+      "path": "dataset/partition_v2/P22_117.rgb.npy",
+      "present": false
+    },
+    {
+      "path": "dataset/context_v3/P22_117.rgb.npy",
+      "present": false
+    }
+  ],
+  "missing_copies_not_restored": true,
+  "new_RGB_payload_bytes": 0,
+  "frames_streamed_losslessly_in_memory": true,
+  "historical_complete_payload_GB": 238.715,
+  "current_complete_partition_ready": false
+}

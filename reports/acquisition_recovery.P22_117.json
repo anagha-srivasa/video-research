@@ -1,0 +1,17 @@
+{
+  "path": "dataset/visor/P22_117_interpolations.zip",
+  "url": "https://data.bris.ac.uk/datasets/2v6cgv1x04ol22qp9rm9x2j6a7/Interpolations-DenseAnnotations/train/P22_117_interpolations.zip",
+  "bytes": 136828106,
+  "sha256": "604ab2e7b44d977128f0b04d6f03c827d3e96856bca3b4d11d00f7a229737112",
+  "md5": "59697a6ca844657ce4fdef3d8833f945",
+  "official_md5": null,
+  "official_md5_verified": false,
+  "zip_crc_verified": true,
+  "publisher_sha1": "df7eae0d5d23a136a13cf96d8637384c265e5f9d",
+  "publisher_sha1_verified": true,
+  "failed_fragment": "work/quarantine/P22_117.interrupted.7ecbeffd80dc.part",
+  "reused_candidate_prefix_bytes": 75497472,
+  "refetched_gap_start": 75497472,
+  "refetched_gap_end": 85556335,
+  "recovery": "Original published bytes reconstructed from local fragments and official HTTP ranges; full publisher SHA1 and CRC gate; no annotation or container editing."
+}

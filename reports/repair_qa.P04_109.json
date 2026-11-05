@@ -1,0 +1,14 @@
+{
+  "video_id": "P04_109",
+  "mask_uid": "180649a9898e62e32fdbf23575ba8bc9",
+  "timestamp_us": 227300000,
+  "repair_code": "self_intersection_make_valid_linework",
+  "quality_flags": [
+    "dense_time_inferred_from_sparse_anchor_and_native_ordinal",
+    "repair_contains_non_area_fragments",
+    "source_polygon_invalid"
+  ],
+  "policy_difference_pixels": 1,
+  "raw_polygons_preserved": true,
+  "mask_table_sha256": "3043b59bc6b08f85addf3835c60033062fbe236904bf9946542f7cee000e1523"
+}

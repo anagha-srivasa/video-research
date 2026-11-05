@@ -1,0 +1,7 @@
+{
+  "dataset_product_bytes": 238714905515,
+  "context_supplement_bytes": 31384864619,
+  "budget_bytes": 250000000000,
+  "compression": null,
+  "scope": "Original dataset product plus context supplement. Historical model artifacts, scratch and reports remain separate."
+}

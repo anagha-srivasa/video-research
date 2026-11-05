@@ -1,0 +1,1101 @@
+{
+  "code": {
+    "configs/track1_retrain.json": "fc9e80ddd513c52b1ac25123fe6c8956e39e0df47bd661afa77cb0380718b2dc",
+    "src/data_v2/geometry.py": "763844fb2dab6a528e96627e38b2f06ea110fa986c62120996c03130eb991b51",
+    "src/track1_lab/architecture.py": "2b38c0214bfd27f6ebf8cd2b00def73ecb609b665309cf3404607028b65754cb",
+    "src/track1_lab/causal_kinematics.py": "78ff4b8a8a2598447510fc74a4b24684551af02c3b4f418b9ba6764556df2e5a",
+    "src/track1_lab/geometry_contract.py": "ddd26578f6b692df867253f96674d0f06728ff34ab218dcfaf97bbdf55d73d90",
+    "src/track1_lab/history_detail.py": "be8a4b8c284df690df7e007c217ec1d2a329958160e925fdf1653f3ba973852f",
+    "src/track1_lab/temporal.py": "3eda1b43f9aa798d6b3bd6393d58a19ae5a8d3eb66799f1136284ea5d635f249",
+    "src/track1_lab/topology_certificate.py": "0363c641d31467ec215871d504dcdfd5189cf966dd110b0e7741e2f9c569f4a3",
+    "src/track1_retrain/__init__.py": "9169101c82324b6fa069dba6261c316aa7d084d74567229586bc588e6a566c17",
+    "src/track1_retrain/appearance.py": "89800f3ff75bd0c4e192f619f7e2075144e5c505b08c8e3b14e25f07732bb890",
+    "src/track1_retrain/common.py": "d220bb740eb9ed7c1d80b6f4df0f78a000f5a1925bfd41fdf0c8ebae48d52f36",
+    "src/track1_retrain/evaluation.py": "6042a0eab8c62b660814017f564aae4ce11a531555045ee6dbbf5de911b30484",
+    "src/track1_retrain/report.py": "2c618a7af863412adf24d491167bcac570869afe90dac029180094adf53e251e",
+    "src/track1_retrain/run.py": "074fe469665d9100b96377494bf6a93c10775009cd04729583c29c4ee8c345c1",
+    "src/track1_retrain/selection.py": "ff119da8defd8c3b996fa6ed30cda1eaf48251a6b6d2b862785cea87a5d76a94",
+    "src/track1_retrain/spatial.py": "61e69b6d8826070882090eddaad5664f644b79b4e05d753db2f09b0c5bdc92d3",
+    "src/track1_retrain/store.py": "8a116114d38d3287fa6a74a0992e00988c1021122ae6d03f5b75e4e4bb12b4c2",
+    "src/track1_retrain/temporal.py": "0ae724aca69a541e8f4e325c5ff27e69944cd5f3f02612e289ffa934c0e3a1a2"
+  },
+  "dataset_manifest_sha256": "9c988ddbb277f6297772ea3cd897b01bc15fcf55bfbee4d9561bb8c016e52ad6",
+  "files": {
+    "derived/track1_dataset_v2/appearance/P02_122.features.npy": {
+      "bytes": 52531328,
+      "sha256": "06ddd90fb27862f3d71b2362b100ea6864f309f2c6845914c6956bf7b08f6cb5"
+    },
+    "derived/track1_dataset_v2/appearance/P02_122.json": {
+      "bytes": 532,
+      "sha256": "11ee78072263e154533645907caed9038f88a92680eb3da09df97235b027b4e8"
+    },
+    "derived/track1_dataset_v2/appearance/P02_122.parquet": {
+      "bytes": 616003,
+      "sha256": "19d93b2ae1302c85d6f388de8a7f9477e12eb48f26716b32e98c3616dccee966"
+    },
+    "derived/track1_dataset_v2/appearance/P02_122.projected.npy": {
+      "bytes": 11673728,
+      "sha256": "34f9ccaf51e193cd62975eccefcf94dd76bfc37d59ec6e958cecc6e78302495a"
+    },
+    "derived/track1_dataset_v2/appearance/P03_112.features.npy": {
+      "bytes": 49678976,
+      "sha256": "51b6bed445b226b13f5054f62c81b68067e4f0c2a7ad6b947f650e9ff7c78033"
+    },
+    "derived/track1_dataset_v2/appearance/P03_112.json": {
+      "bytes": 532,
+      "sha256": "0e44af629fd9bf7188d9b15a994c6ea38b1c90e3fac21b26832ac3014997de0b"
+    },
+    "derived/track1_dataset_v2/appearance/P03_112.parquet": {
+      "bytes": 588239,
+      "sha256": "5e49e45f8eb08f50ce95f9e4b7073233355a4e470e5fff59c2a74e47de851ae9"
+    },
+    "derived/track1_dataset_v2/appearance/P03_112.projected.npy": {
+      "bytes": 11039872,
+      "sha256": "30e4a6343533b746190d18dec1b9361509b2a8ff58240e6cb52730f4ff188134"
+    },
+    "derived/track1_dataset_v2/appearance/P04_109.features.npy": {
+      "bytes": 82119296,
+      "sha256": "5aa771fecfcb046f24d93d4d27d4d3e065efff5f2a85d7a4ece9a43fae2dd521"
+    },
+    "derived/track1_dataset_v2/appearance/P04_109.json": {
+      "bytes": 532,
+      "sha256": "ae0893e28a33cfa99f01d378e63b4c4fb93b4ab10ba44d2c8f0b892dda4b0549"
+    },
+    "derived/track1_dataset_v2/appearance/P04_109.parquet": {
+      "bytes": 985465,
+      "sha256": "aefc3f4c2c2487765a4e5bddc0a2d0e5259967be626dedee09af2015ea02be22"
+    },
+    "derived/track1_dataset_v2/appearance/P04_109.projected.npy": {
+      "bytes": 18248832,
+      "sha256": "5ec5a612930425b4ff256091ddc70b9540c90a4477c936d04c676a9f31723464"
+    },
+    "derived/track1_dataset_v2/appearance/P08_09.features.npy": {
+      "bytes": 44937344,
+      "sha256": "f785e8bd0d8581656387d0bb2349d0682c04eed18039cbd639474effb63d5582"
+    },
+    "derived/track1_dataset_v2/appearance/P08_09.json": {
+      "bytes": 530,
+      "sha256": "47df58498f1c48c98d6683cb8bf69f6128aefacca41816a0414fe73add52b9ed"
+    },
+    "derived/track1_dataset_v2/appearance/P08_09.parquet": {
+      "bytes": 524269,
+      "sha256": "f7867713e509bc8c359f79dd81bd980f3429217b8a65b6dd6413451748b87286"
+    },
+    "derived/track1_dataset_v2/appearance/P08_09.projected.npy": {
+      "bytes": 9986176,
+      "sha256": "05fc51c2b0b6ba7c44efa6fa2ffeaf5657acea049153506e47d25de6f9cca1aa"
+    },
+    "derived/track1_dataset_v2/appearance/P11_16.features.npy": {
+      "bytes": 32993408,
+      "sha256": "1f0f45352611aba4adf4b4e9ecfb789221e736a82ef15ab9793f3ccd32781908"
+    },
+    "derived/track1_dataset_v2/appearance/P11_16.json": {
+      "bytes": 530,
+      "sha256": "85ee26f87b44320050bf422b485046a79fa0b367554fc8c27a33b05254b6ed4d"
+    },
+    "derived/track1_dataset_v2/appearance/P11_16.parquet": {
+      "bytes": 388895,
+      "sha256": "ddcdca3f433cf4c1fd9d1954a5d392256631560c6947aef13c2f783f5ae5d6be"
+    },
+    "derived/track1_dataset_v2/appearance/P11_16.projected.npy": {
+      "bytes": 7331968,
+      "sha256": "a255cf53c26005a1d7656139dd257d127dc823d5824b8e21a1624d19fb2462ad"
+    },
+    "derived/track1_dataset_v2/appearance/P18_03.features.npy": {
+      "bytes": 39016064,
+      "sha256": "fdc4c0a88302b7ad7c1fcb4f1b5c4c4b70fe93da018aadbf0c1431c53ced1659"
+    },
+    "derived/track1_dataset_v2/appearance/P18_03.json": {
+      "bytes": 530,
+      "sha256": "bde3437b575e99cbb5bcd814d0fb275834090749ed0ec1e87d59298469e04ece"
+    },
+    "derived/track1_dataset_v2/appearance/P18_03.parquet": {
+      "bytes": 457736,
+      "sha256": "f74df7bc368517b743e04dfb66ce9a5b5a84cc61fee2bf00489ad39fb9b37966"
+    },
+    "derived/track1_dataset_v2/appearance/P18_03.projected.npy": {
+      "bytes": 8670336,
+      "sha256": "d3d6a471f5f8550cd754af9fb493937f5016ac1721484713862152be51cecac1"
+    },
+    "derived/track1_dataset_v2/appearance/P22_117.features.npy": {
+      "bytes": 64000640,
+      "sha256": "099e0e3953775485f8c79aa22f487ef20943d1764fda73b4063c803bde898bb6"
+    },
+    "derived/track1_dataset_v2/appearance/P22_117.json": {
+      "bytes": 532,
+      "sha256": "ddc792ce5b3d89a1a7f35a88f8c43a25355a11171f53e394a2cd7ee2f376e159"
+    },
+    "derived/track1_dataset_v2/appearance/P22_117.parquet": {
+      "bytes": 752722,
+      "sha256": "f4a0285d356a284ca83dea39d94d71217b1662ac519387e6dcc069fa98ed7dd5"
+    },
+    "derived/track1_dataset_v2/appearance/P22_117.projected.npy": {
+      "bytes": 14222464,
+      "sha256": "b06ebda55e6742c641099effe8d6be1c6631bb0193184ebcee0d4bb2975d4327"
+    },
+    "derived/track1_dataset_v2/appearance/components.npy": {
+      "bytes": 589952,
+      "sha256": "83169df40a7882e59f0071915d26c7dd18a968081ae490aa222d8e893c176c0d"
+    },
+    "derived/track1_dataset_v2/appearance/mean.npy": {
+      "bytes": 4736,
+      "sha256": "997d0720d68928ea42cd539749e9c81a441005ee1ac8de0affe242344c106a7c"
+    },
+    "derived/track1_dataset_v2/calibration/m16.multipliers.npy": {
+      "bytes": 268,
+      "sha256": "101e37aeb11565b58df80bcf0bde79b7740e368e017fe9b87d643e6aacaa3ec1"
+    },
+    "derived/track1_dataset_v2/calibration/m32.multipliers.npy": {
+      "bytes": 396,
+      "sha256": "3f4e4f0ff0eb81cd83b24bb7151ccaf8e01e110924232a9cb8654b5a720a20e2"
+    },
+    "derived/track1_dataset_v2/calibration/model.json": {
+      "bytes": 5916,
+      "sha256": "a7b04dd74da75229e24c72083d8a5e6e78698103af11607e9ccf7b5c0f904431"
+    },
+    "derived/track1_dataset_v2/calibration/scales.json": {
+      "bytes": 1989,
+      "sha256": "db8eef97f94f98dfe60a3d2c388c26c529f22c216d2b6fe9005295de3717e715"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.appearance_coefficients.npy": {
+      "bytes": 6250624,
+      "sha256": "894e0d0324898297df7c8535c6d162e65e68b75c70bbadbdf62240152e3093ce"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.coefficient_cov.npy": {
+      "bytes": 3418368,
+      "sha256": "1d25eb3d24c5b03c4a1738921f710b2439f1b0721772189e15c099ddb4d9b7e2"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.coefficients.npy": {
+      "bytes": 854688,
+      "sha256": "187f855279bc8e73b95e62eaa7d0e380b5e46c689a435cceef6e37cbfcda7272"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.detail.npy": {
+      "bytes": 36752,
+      "sha256": "83dee1b3ba7026b3f1ed8b5dda671c1a835211ee71ab043af7e4f33ca2fdabf2"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.detail_transform.npy": {
+      "bytes": 128312,
+      "sha256": "01824d3fe297fcd1d209f1db3059efadbc39fa96b8693f0ab773dcb947c7dec7"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.geometry_coefficients.npy": {
+      "bytes": 854688,
+      "sha256": "0a14780b249ac6e5007156cea15370b2eadbf7e9e53f776d7ef6186502b98624"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.kinematic_cov.npy": {
+      "bytes": 97792,
+      "sha256": "aac8cd8f9666edd11ca3992ff0753fab9d2b578d829505ec7b17bc55bdd48b5c"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.kinematic_position.npy": {
+      "bytes": 12336,
+      "sha256": "3d351484d973024e7a955d77bf61abdac5c07a8640f4a5637f74883330bdfd1b"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.kinematic_velocity.npy": {
+      "bytes": 12336,
+      "sha256": "c123d549e7df7b787c31cdf60e4676498e0b6794e9efd67fd099eeb790c689f7"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.parquet": {
+      "bytes": 966957,
+      "sha256": "5c5863e78bd3b7c9027e90d4a38299810d8b109d937b7d691a297263da71a032"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.xi.npy": {
+      "bytes": 1660416,
+      "sha256": "dbc4a68a63c4fef60c9aa0093ee197967f19ebefe7cfbbbfcd8378354f8b39cc"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m16.xi_dot.npy": {
+      "bytes": 1660416,
+      "sha256": "f945a631e26057499d452224b2ae4d86003e39ce475f4ce1341f737385f8e712"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.appearance_coefficients.npy": {
+      "bytes": 6250624,
+      "sha256": "30d41d9efb65d49567b438b646915433c281d61ed4c12c6dfd5622c238117fab"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.coefficient_cov.npy": {
+      "bytes": 6543616,
+      "sha256": "a002ea0dd84850de355fe497a5e6e2f29e9ad0cb9a1153c9cb9919d5b8ec67fa"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.coefficients.npy": {
+      "bytes": 1636000,
+      "sha256": "060aa9b7ddb007bed1635700a600b2b34ed103a502342438abf47f6e4345b9d6"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.detail.npy": {
+      "bytes": 36752,
+      "sha256": "b40a773967e8e031f1883d2f0a8702e40f1a69ab822b894bebd27ba70e340849"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.detail_transform.npy": {
+      "bytes": 128312,
+      "sha256": "0ff0ad495d6d3524ac7a947da5700c9193469e2b67a5c91e75ca0a949cc80951"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.geometry_coefficients.npy": {
+      "bytes": 1636000,
+      "sha256": "c0820dcfbbc154831a125fb4a0e5fca8ff8ce192b6f3407a9a8538d38eb079a3"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.kinematic_cov.npy": {
+      "bytes": 97792,
+      "sha256": "aac8cd8f9666edd11ca3992ff0753fab9d2b578d829505ec7b17bc55bdd48b5c"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.kinematic_position.npy": {
+      "bytes": 12336,
+      "sha256": "3d351484d973024e7a955d77bf61abdac5c07a8640f4a5637f74883330bdfd1b"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.kinematic_velocity.npy": {
+      "bytes": 12336,
+      "sha256": "c123d549e7df7b787c31cdf60e4676498e0b6794e9efd67fd099eeb790c689f7"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.parquet": {
+      "bytes": 365493,
+      "sha256": "b42d4c1cb8e3e2cddddb0abe38d6278b14595909e045618a442effbdac2017b2"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.xi.npy": {
+      "bytes": 3223040,
+      "sha256": "1da13deca8b3621e66410868c2f5f67efa521fe4afce873582d479348f24fbf8"
+    },
+    "derived/track1_dataset_v2/functional/P02_122.m32.xi_dot.npy": {
+      "bytes": 3223040,
+      "sha256": "00bb0aea8a728e6708fca9d4aa7a051e6ba2353ec86e9a0911b3426004c30a4d"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.appearance_coefficients.npy": {
+      "bytes": 6451328,
+      "sha256": "75736b45ccf4952e4d7d4e17e8dd3ae0f2e0587225bca0d2eb0e598d90622d7e"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.coefficient_cov.npy": {
+      "bytes": 3528128,
+      "sha256": "838c069a7f18cc359933f14cbbde82b59573f3ce9e760a6b3a2cadda91648457"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.coefficients.npy": {
+      "bytes": 882128,
+      "sha256": "92b27e2142cf5b1a3ed86a93482dd1d773f91e7c10f3994fc9160697bccfe7a2"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.detail.npy": {
+      "bytes": 37928,
+      "sha256": "f6de48895ed1112fd764d02ca8a66f5a83e6b0bb7eb0bfb8d02b5488f990b0b4"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.detail_transform.npy": {
+      "bytes": 132428,
+      "sha256": "f4a4d9e7728b98e222c048071ca5dcf5d0bdb23f5dda9471137e76b014a45912"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.geometry_coefficients.npy": {
+      "bytes": 882128,
+      "sha256": "f8a9389b2b3a6b832f965f7b15a993a15a79bd08c69c9e23374117848f863d72"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.kinematic_cov.npy": {
+      "bytes": 100928,
+      "sha256": "67a053f3f2e5584940b264684f3646b1d389b44979f4813dbc8e5c384784ef5d"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.kinematic_position.npy": {
+      "bytes": 12728,
+      "sha256": "96f333eb89b1cf9c9cda1801195c1f6779f9ee132f5169877d879a550144dd43"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.kinematic_velocity.npy": {
+      "bytes": 12728,
+      "sha256": "c64ae28c14861f2069187532171eb906ca521dc06c4c95c266b15ad134fbbb28"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.parquet": {
+      "bytes": 811642,
+      "sha256": "6c5e39d7937bcf567de3e412f83a240e7e314407a3b7a8b5fa6169d078b2e923"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.xi.npy": {
+      "bytes": 1713728,
+      "sha256": "f6629a07fe883595096b4cecb60df8b0d08fb133665732e3d3abab2865c7ecf6"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m16.xi_dot.npy": {
+      "bytes": 1713728,
+      "sha256": "757a2d6f31b65eff1de72e1bcc29e1fab6fbbe3b7f674f387117f72189d7ec81"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.appearance_coefficients.npy": {
+      "bytes": 6451328,
+      "sha256": "79abcbeca94e579284c1c9302f3ea8c746a86befc82c7ebde3982a9da7beb929"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.coefficient_cov.npy": {
+      "bytes": 6753728,
+      "sha256": "75e286954a04a851521b4b7de43ce92d3f85f7ec4a9e24a70efb2db0ae58c286"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.coefficients.npy": {
+      "bytes": 1688528,
+      "sha256": "6bc06e62e9ccb4d3438256a1cdd3f96b138aabafe66e6515e0a579c2da444e92"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.detail.npy": {
+      "bytes": 37928,
+      "sha256": "fbbbbb78ea008b66bff5151efc8ceb2a365b73f1d8b57e2a186dee277cebe689"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.detail_transform.npy": {
+      "bytes": 132428,
+      "sha256": "aba00970410acae0e60f0191a2d1ad70282c81d594b43cf95c4f17e3415c7315"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.geometry_coefficients.npy": {
+      "bytes": 1688528,
+      "sha256": "9129fafaf5e9d642825d611fc87fb89cd36a2e8aad742f9255fb02ba3e1ab5de"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.kinematic_cov.npy": {
+      "bytes": 100928,
+      "sha256": "67a053f3f2e5584940b264684f3646b1d389b44979f4813dbc8e5c384784ef5d"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.kinematic_position.npy": {
+      "bytes": 12728,
+      "sha256": "96f333eb89b1cf9c9cda1801195c1f6779f9ee132f5169877d879a550144dd43"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.kinematic_velocity.npy": {
+      "bytes": 12728,
+      "sha256": "c64ae28c14861f2069187532171eb906ca521dc06c4c95c266b15ad134fbbb28"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.parquet": {
+      "bytes": 351974,
+      "sha256": "982b2b47cd08fd76f73271ced80f702834fc57a5398588d363e613411226dade"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.xi.npy": {
+      "bytes": 3326528,
+      "sha256": "d470fe5d87b4a6441913433437eccec57923f0d12a54e38d63f47d29f5650d58"
+    },
+    "derived/track1_dataset_v2/functional/P03_112.m32.xi_dot.npy": {
+      "bytes": 3326528,
+      "sha256": "29940a902cd7143c987d450085815cb0b946494119f8f26df1ca2e2bbf85b6eb"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.appearance_coefficients.npy": {
+      "bytes": 9719936,
+      "sha256": "a2751b130eaacf5e7b62d2b1d8d08c890558c295d9f91a754b0b6420b99f1226"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.coefficient_cov.npy": {
+      "bytes": 5315648,
+      "sha256": "c9983825f30171d10520683b3018050681ab496f48b85702a4ed4e1e2ab6dcb2"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.coefficients.npy": {
+      "bytes": 1329008,
+      "sha256": "afa296305e53e04bf38307bb84e6b463b43c0c10fff6f209f32f62eabe56adce"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.detail.npy": {
+      "bytes": 57080,
+      "sha256": "2fe451920bda1694dcc22819ef71e6980669717dc6368b1441fdcc958963c7e9"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.detail_transform.npy": {
+      "bytes": 199460,
+      "sha256": "6b26ecff20b512e8db2ecbe1bd8828ef8a8a7c3971a990d83ae107746fa8c9df"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.geometry_coefficients.npy": {
+      "bytes": 1329008,
+      "sha256": "631b6e60dc9c0b23f1ec9e3d0ffab82764a4f88d1f1338b211e423f7e061a1ad"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.kinematic_cov.npy": {
+      "bytes": 152000,
+      "sha256": "970874c877b460b4a8d2e17915ead79dee218f8d62c13d0fcaccfa28a48f755f"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.kinematic_position.npy": {
+      "bytes": 19112,
+      "sha256": "bbfc1e1a8d26ba99406c80754eb9ab8b8ddfd0ec6b6744acd6b377acdf337c13"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.kinematic_velocity.npy": {
+      "bytes": 19112,
+      "sha256": "b60e197efdedc4b4fa2f146ec3bd82b9b7f1d851e439d07bd7098fc73ac338ae"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.parquet": {
+      "bytes": 1232193,
+      "sha256": "7143837da4dd8826f55caeaff0ae5ff8f12b83c184aca298551471e22291cb4d"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.xi.npy": {
+      "bytes": 2581952,
+      "sha256": "0fd50df049ebf390faea74a4c8c2de10a0de83f2e1ff82b8843573e882b7f59b"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m16.xi_dot.npy": {
+      "bytes": 2581952,
+      "sha256": "93eded3380deef98e5fa3edaf9da0a2ff77797effee4223fe91262028ee2a3db"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.appearance_coefficients.npy": {
+      "bytes": 9719936,
+      "sha256": "74259615d967d263f4b2f17d49af79c221e9b3b17a777cf5453716a9bbfff559"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.coefficient_cov.npy": {
+      "bytes": 10175552,
+      "sha256": "7add2a734cf472a2dc79212a27c8a3fb598cfd4c602d0a39b5277e8ed2e0de6f"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.coefficients.npy": {
+      "bytes": 2543984,
+      "sha256": "0a381931701b68b72d0798e51764bde120f1ac755b7cea45bbb4ee1386a6ad91"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.detail.npy": {
+      "bytes": 57080,
+      "sha256": "148ce6239b33780fbb1116e0a1c6adef3f99de582588e172b75b6a3e18d8db25"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.detail_transform.npy": {
+      "bytes": 199460,
+      "sha256": "78b9144dd3ace219db11786b6cbed28b9dda3bb4aa9ff43d20668eaf74dcda00"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.geometry_coefficients.npy": {
+      "bytes": 2543984,
+      "sha256": "be3d167e49b59981b1bb8ca9045248ebe3ce92f44bcd2a31d569b08531de7ee1"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.kinematic_cov.npy": {
+      "bytes": 152000,
+      "sha256": "970874c877b460b4a8d2e17915ead79dee218f8d62c13d0fcaccfa28a48f755f"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.kinematic_position.npy": {
+      "bytes": 19112,
+      "sha256": "bbfc1e1a8d26ba99406c80754eb9ab8b8ddfd0ec6b6744acd6b377acdf337c13"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.kinematic_velocity.npy": {
+      "bytes": 19112,
+      "sha256": "b60e197efdedc4b4fa2f146ec3bd82b9b7f1d851e439d07bd7098fc73ac338ae"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.parquet": {
+      "bytes": 518152,
+      "sha256": "b08738535f8ae3f241b3417b3dba89b5f3e977902573dd8fbbb22c146bd6e44b"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.xi.npy": {
+      "bytes": 5011904,
+      "sha256": "0235897985a907ed3628067d59d7e1f800e58d4a2c32e252f4144d98c0232fe3"
+    },
+    "derived/track1_dataset_v2/functional/P04_109.m32.xi_dot.npy": {
+      "bytes": 5011904,
+      "sha256": "67e8f29cac72a30a7a5b0fc97b6801996951ce6e7cd0482ed3387b006845a114"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.appearance_coefficients.npy": {
+      "bytes": 4128896,
+      "sha256": "25b44db5257bb1ef42f43d9f7614d217cbb6b826878fca3b14dd8b2502ca1886"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.coefficient_cov.npy": {
+      "bytes": 2258048,
+      "sha256": "9120473a7f7b5ed066a4a0d01580551ddbcb51287d668c042396eb8e824f67e9"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.coefficients.npy": {
+      "bytes": 564608,
+      "sha256": "93e2afdd1640efdc6afb841670fcf6c074931b53e96c459a23cced1f0a1c1b31"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.detail.npy": {
+      "bytes": 24320,
+      "sha256": "ee08da848f98d925727788ce88623b11ca6d39f8a11c491a7d8561fe7bf45094"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.detail_transform.npy": {
+      "bytes": 84800,
+      "sha256": "f5c3a9d6bcb02f864ebbd4252847d9834f62f42e34adac469280ec8c4a664e1b"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.geometry_coefficients.npy": {
+      "bytes": 564608,
+      "sha256": "73cf306ee9bb13eb0bc4dc9faf4739ca33c7d128912e94ad61f562d622d14069"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.kinematic_cov.npy": {
+      "bytes": 64640,
+      "sha256": "751fee9d3c0c4b85606a286984a77cfa039d6e10d4703838f12f578ee6b175e5"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.kinematic_position.npy": {
+      "bytes": 8192,
+      "sha256": "759714f5b655cfe657cdc55bf7ad18cddcb9dac4dae8249db8f639e56a8d4113"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.kinematic_velocity.npy": {
+      "bytes": 8192,
+      "sha256": "25ef60b7faf35ad5013c0e2887cf86e2431f12abcc756ece3b47c41452c1f35e"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.parquet": {
+      "bytes": 619807,
+      "sha256": "5c4707ff3144efa824570815d59d63065828b732901345ef08da3bef766880a5"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.xi.npy": {
+      "bytes": 1096832,
+      "sha256": "5d38f0403b958ec685d0fe37fbb392253c7e59723d00e0251ea793def0c6ea78"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m16.xi_dot.npy": {
+      "bytes": 1096832,
+      "sha256": "3045279a3f8f995d50efb4cf7a9ac08c7456da2fd3ada6627639d7be6484ab32"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.appearance_coefficients.npy": {
+      "bytes": 4128896,
+      "sha256": "ade72222c17b25069600bf39e3f53bd4270fe59ba18cd46888ba4b313af62412"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.coefficient_cov.npy": {
+      "bytes": 4322432,
+      "sha256": "d02098c9bd318519f77334e99e4903c48ac1967afdc791879c615c8393e89546"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.coefficients.npy": {
+      "bytes": 1080704,
+      "sha256": "b7d3fa5d7c92e8f722cb5145c84461ec05d7d64d4e599d91555413c59f9faeaa"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.detail.npy": {
+      "bytes": 24320,
+      "sha256": "020eb8a369fbfa7cd088b877aae01a68166f00d45f9e320deeba11141bbdd06e"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.detail_transform.npy": {
+      "bytes": 84800,
+      "sha256": "f31c17bcb47ef25121c8a17dc881b1c0f02abf46cd1f1eb6a31064e9db0a6ddc"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.geometry_coefficients.npy": {
+      "bytes": 1080704,
+      "sha256": "a29a557b2d76ebe984fbc04a8996bf819bb75085ab0d61b9c5d088de05faa640"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.kinematic_cov.npy": {
+      "bytes": 64640,
+      "sha256": "751fee9d3c0c4b85606a286984a77cfa039d6e10d4703838f12f578ee6b175e5"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.kinematic_position.npy": {
+      "bytes": 8192,
+      "sha256": "759714f5b655cfe657cdc55bf7ad18cddcb9dac4dae8249db8f639e56a8d4113"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.kinematic_velocity.npy": {
+      "bytes": 8192,
+      "sha256": "25ef60b7faf35ad5013c0e2887cf86e2431f12abcc756ece3b47c41452c1f35e"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.parquet": {
+      "bytes": 250903,
+      "sha256": "98972ebaa62bfb58fd8685b78cfc42b7ae843c8bfb48d39313115370fb7fd91a"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.xi.npy": {
+      "bytes": 2129024,
+      "sha256": "f9842954557181140aa5ba5f439154afa5164cf70862a913d23b5525859bc974"
+    },
+    "derived/track1_dataset_v2/functional/P08_09.m32.xi_dot.npy": {
+      "bytes": 2129024,
+      "sha256": "30ad53d3c54ea506772c4f00f6f75fbd29283451be40de9f4b7a9be86ba84905"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.appearance_coefficients.npy": {
+      "bytes": 3555456,
+      "sha256": "b59c24163ae095b6bb756d21b8b0fd2aad2d448d9e72a4cb2985e82fb96f3ee2"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.coefficient_cov.npy": {
+      "bytes": 1944448,
+      "sha256": "c9e4ab757a33a2456a2070144cbf6f39731c139b2b82a752e742bc469ee11ec6"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.coefficients.npy": {
+      "bytes": 486208,
+      "sha256": "fe04f0a75ffb3814542f435d2207f70098f876a3c517afb3c0fc79fbdc02a0fa"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.detail.npy": {
+      "bytes": 20960,
+      "sha256": "287f1facf77995cab2e0d5c01355288c1c51eb0513d55be12c2a38f9d895ab77"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.detail_transform.npy": {
+      "bytes": 73040,
+      "sha256": "a27cd74488ca0736ee2bc4f706e7d1ce0d5a60f9b6d113de8111ec419e6dd9a9"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.geometry_coefficients.npy": {
+      "bytes": 486208,
+      "sha256": "ad1242512ca9939ef61538d82e407d4c7ced8bf61d3b0359ea410f4d308d9e25"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.kinematic_cov.npy": {
+      "bytes": 55680,
+      "sha256": "cadbab9b0171ab8ce0ca47f578d95e138bb5ac6dc1cbc2285b7184907bee86b4"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.kinematic_position.npy": {
+      "bytes": 7072,
+      "sha256": "44b50a87fb7f3d8bc87ff851080b8c391c1d739ae551101760a30fc9aed77aef"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.kinematic_velocity.npy": {
+      "bytes": 7072,
+      "sha256": "336b321841cab3badd81e390b5723ec8728d31eb57c3bedb77786b6aa05164d6"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.parquet": {
+      "bytes": 503827,
+      "sha256": "1facc686c17f4e143252785fe7e839f2695879efc15bff508812b281b5336710"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.xi.npy": {
+      "bytes": 944512,
+      "sha256": "c1b0fc4b02585ed7e6438e2e82936663447f525cdd7b3c04a436dcf813840764"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m16.xi_dot.npy": {
+      "bytes": 944512,
+      "sha256": "12cb1df23e7609421a0019e3bcc90fe8f918d70b8bd2f45c441271d5b30f23a7"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.appearance_coefficients.npy": {
+      "bytes": 3555456,
+      "sha256": "687ab3ff67edb20208d8c357977ce9ebbaab551981a3cc8d998fb2f374a33753"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.coefficient_cov.npy": {
+      "bytes": 3722112,
+      "sha256": "1386647f805d5ce7b8142e03ef2dc893baff9492378f2f361905eaec2ac063d1"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.coefficients.npy": {
+      "bytes": 930624,
+      "sha256": "bda8121f19fe5afa4a4982e82169ac4f3a49ca3b544d29795c14b444dfeb2ac5"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.detail.npy": {
+      "bytes": 20960,
+      "sha256": "bdf7a2e1c1c204d8b2f880224300c21dba2c5308fbce14892c002cb14794ff11"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.detail_transform.npy": {
+      "bytes": 73040,
+      "sha256": "58b6b8fdca83cddabfad712a8e75c96a036f7a3fbebe794b82a85a9776e06b89"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.geometry_coefficients.npy": {
+      "bytes": 930624,
+      "sha256": "ef9023c359faef5e42ba59c7a5195bc0c671e0e8e0f7737fd3ecad041701e9de"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.kinematic_cov.npy": {
+      "bytes": 55680,
+      "sha256": "cadbab9b0171ab8ce0ca47f578d95e138bb5ac6dc1cbc2285b7184907bee86b4"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.kinematic_position.npy": {
+      "bytes": 7072,
+      "sha256": "44b50a87fb7f3d8bc87ff851080b8c391c1d739ae551101760a30fc9aed77aef"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.kinematic_velocity.npy": {
+      "bytes": 7072,
+      "sha256": "336b321841cab3badd81e390b5723ec8728d31eb57c3bedb77786b6aa05164d6"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.parquet": {
+      "bytes": 177465,
+      "sha256": "31313cdc58e62a90259563af8b1a2e39f07c8a0a1d2fc7dfb288101e5f169e31"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.xi.npy": {
+      "bytes": 1833344,
+      "sha256": "fc41a922e29507d58561e38743b0e323227c09b9afefce32491f7d90191bd5fa"
+    },
+    "derived/track1_dataset_v2/functional/P11_16.m32.xi_dot.npy": {
+      "bytes": 1833344,
+      "sha256": "44a563fd07f119c0ac53c47ad6ccdb1dd04e88fef412e34b851a613ca81f90c2"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.appearance_coefficients.npy": {
+      "bytes": 3850368,
+      "sha256": "7b9b14ae5963b5f2a4ecc0c3a7f8a03ed7a3358d38b2fe980f28d07a12f63488"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.coefficient_cov.npy": {
+      "bytes": 2105728,
+      "sha256": "b9e3845ff73f813680ed6c72e42e12aeb74737998aa894e9c3996c61e62a52a9"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.coefficients.npy": {
+      "bytes": 526528,
+      "sha256": "036520ca15d476856d71ed75b192a5ddaa81fe09c0f7d7380ee27720910eb152"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.detail.npy": {
+      "bytes": 22688,
+      "sha256": "b4f132ea7ae88807169d20f67cba77f463212f00873bd70ae819184f51b0bc0f"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.detail_transform.npy": {
+      "bytes": 79088,
+      "sha256": "994d6061833bfae1e80e4115b9ead5aff644a7ec6cc3ca6515743b257b4fb5c0"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.geometry_coefficients.npy": {
+      "bytes": 526528,
+      "sha256": "9ea68445fc55bbb4afa93aa2948f0378acb598271cb62fd40b9f10c174133adf"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.kinematic_cov.npy": {
+      "bytes": 60288,
+      "sha256": "227f756f3b370a5d94420dd10c89f69c55dd594b145a5cb3faa02c5d9f23b8d9"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.kinematic_position.npy": {
+      "bytes": 7648,
+      "sha256": "75916f3927f834411fbe98c00284799eaaea7ef5f0bfbb7891ea066c91b3947d"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.kinematic_velocity.npy": {
+      "bytes": 7648,
+      "sha256": "8469f6c56c27735b2b4445cc2214b4bc9729932bb4f11f30ef77efbbbb189946"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.parquet": {
+      "bytes": 587700,
+      "sha256": "c04e75dbdaa540dcdc563e676885b80acb04404d8568ba3ca28dbea5de57af3f"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.xi.npy": {
+      "bytes": 1022848,
+      "sha256": "b2d0188c26ef2676a9f4690dbc4eacdcd746eeb6ef23065cd9a154cf5a17d388"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m16.xi_dot.npy": {
+      "bytes": 1022848,
+      "sha256": "613f1e97d7751c84c0faf6f88999a2a6acd8e4789c6c82cab87db19ef06725de"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.appearance_coefficients.npy": {
+      "bytes": 3850368,
+      "sha256": "9b38c5e3934ffd2412b3f0e65cd7bddd881417761778499d93d48ec1e2fc901b"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.coefficient_cov.npy": {
+      "bytes": 4030848,
+      "sha256": "233085f2485b6f3a8eb9532dd16c57b42ac1f4ec71aaeea31d2fa98bf240babd"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.coefficients.npy": {
+      "bytes": 1007808,
+      "sha256": "3667ff44b188ae8a31ab7525a7e94ff088ca1f87481906c9b9df213ef494ebe9"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.detail.npy": {
+      "bytes": 22688,
+      "sha256": "983ab7092c775468ba67bf763fb451d6cd6eb5b728810550c3c0f3586577d018"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.detail_transform.npy": {
+      "bytes": 79088,
+      "sha256": "b63ca4bdd67aac656b204c6d6e145f0c36af1ed5818eb557d5913aa8b4e2cf3e"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.geometry_coefficients.npy": {
+      "bytes": 1007808,
+      "sha256": "d079486b629964dc18713da5fc57c96faaed00d17ff99e524fff658233c642fb"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.kinematic_cov.npy": {
+      "bytes": 60288,
+      "sha256": "227f756f3b370a5d94420dd10c89f69c55dd594b145a5cb3faa02c5d9f23b8d9"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.kinematic_position.npy": {
+      "bytes": 7648,
+      "sha256": "75916f3927f834411fbe98c00284799eaaea7ef5f0bfbb7891ea066c91b3947d"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.kinematic_velocity.npy": {
+      "bytes": 7648,
+      "sha256": "8469f6c56c27735b2b4445cc2214b4bc9729932bb4f11f30ef77efbbbb189946"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.parquet": {
+      "bytes": 312805,
+      "sha256": "d5da51f2585b8f13f10ef5deadde19f3c13ef5d9612f5a43d49fe9a3779587df"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.xi.npy": {
+      "bytes": 1985408,
+      "sha256": "42e86650bfc1211fe610dae4152b50e2f4e91ea23755d349b666bc577d96135d"
+    },
+    "derived/track1_dataset_v2/functional/P18_03.m32.xi_dot.npy": {
+      "bytes": 1985408,
+      "sha256": "89c483b8ae9e217cc208555edf4150e7e58177bf6ce2211aabf54ddac83e2104"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.appearance_coefficients.npy": {
+      "bytes": 6951040,
+      "sha256": "0c3a7b2faac7eb0d6c7b7eeea825e2d655e4c7affe823d0afef1aea43faaa989"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.coefficient_cov.npy": {
+      "bytes": 3801408,
+      "sha256": "6aceec4202d379fb2c4aeec873c5e6e08a46bce213b65c24e9b8050208da5f62"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.coefficients.npy": {
+      "bytes": 950448,
+      "sha256": "3b2a5ea72e4d6c43ff76b7d6634878be139ad4a39eb389d8825983728df3dc3b"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.detail.npy": {
+      "bytes": 40856,
+      "sha256": "8daa8145b42e992d017a7906e79760f942525cdc58f1436639eafdc119c62207"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.detail_transform.npy": {
+      "bytes": 142676,
+      "sha256": "4d6450fe9c989b887c95d159a9572855707e75ee5202c6897b003c0960ed3cd2"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.geometry_coefficients.npy": {
+      "bytes": 950448,
+      "sha256": "d7bb7201e8604ad9d04b42dd116f1a02c0dcc2727788f0b6dafcf1c3feccc746"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.kinematic_cov.npy": {
+      "bytes": 108736,
+      "sha256": "9e68ad0c5b10b72a983c9360be7f693b34daa28f93f02bb856ffdd2f267fef48"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.kinematic_position.npy": {
+      "bytes": 13704,
+      "sha256": "be58222f5332bd4d460554afe6e5f25f127fb670c0b00d5a74f8641948d17d1c"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.kinematic_velocity.npy": {
+      "bytes": 13704,
+      "sha256": "a2d79e7e12e5e4a8fdef5f7175aa756463dfa994008d985884de69e344295e5b"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.parquet": {
+      "bytes": 1051632,
+      "sha256": "75d54d72ff783489eafca510a43da703eaf004a2f9c358a42fb787f73ddb6de8"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.xi.npy": {
+      "bytes": 1846464,
+      "sha256": "45d6dfa476387d0a0a8caab8c1960bb4d9cebe7062c3e014ce9b49a8e73be2fb"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m16.xi_dot.npy": {
+      "bytes": 1846464,
+      "sha256": "8ba8b815b6bcfdae98ddba87205e1379ed65f9177e72f344163782690814f76a"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.appearance_coefficients.npy": {
+      "bytes": 6951040,
+      "sha256": "5e4c4f8c6b18e3af162891708515e90c7599a2ea997acba8b9a45861fde8d144"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.coefficient_cov.npy": {
+      "bytes": 7276864,
+      "sha256": "55e251c3496f8c73af81258a70f7388ee5ff15b5d49f4fcc1d844231990866c7"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.coefficients.npy": {
+      "bytes": 1819312,
+      "sha256": "182d7126101d8a9eecee7dd0eba40d4c09e073e8a2fd3ae563a4847cd967ff6a"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.detail.npy": {
+      "bytes": 40856,
+      "sha256": "e9cc8ff163b31c27510a4c4d50ec873e699627f17edaf5a36c3b74ef910cda87"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.detail_transform.npy": {
+      "bytes": 142676,
+      "sha256": "bb3c861229f55827d60a867a68552cb2b4a84e9e75f808d5def8e50fa99867c3"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.geometry_coefficients.npy": {
+      "bytes": 1819312,
+      "sha256": "4e5100ff784b7e59e16e04f1c9c55b9825e3709fb2103b6e48fa474d6c37e686"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.kinematic_cov.npy": {
+      "bytes": 108736,
+      "sha256": "9e68ad0c5b10b72a983c9360be7f693b34daa28f93f02bb856ffdd2f267fef48"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.kinematic_position.npy": {
+      "bytes": 13704,
+      "sha256": "be58222f5332bd4d460554afe6e5f25f127fb670c0b00d5a74f8641948d17d1c"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.kinematic_velocity.npy": {
+      "bytes": 13704,
+      "sha256": "a2d79e7e12e5e4a8fdef5f7175aa756463dfa994008d985884de69e344295e5b"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.parquet": {
+      "bytes": 365224,
+      "sha256": "a0c5361ae16fe79d9b4b15542905e99e7700fa7a35a8e2fb06bac7ce7b58bf6b"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.xi.npy": {
+      "bytes": 3584192,
+      "sha256": "5810f8d1c00a84bd3e95cbab145a909a70e1fa84ff5cb774c752a5a0c2ed0dba"
+    },
+    "derived/track1_dataset_v2/functional/P22_117.m32.xi_dot.npy": {
+      "bytes": 3584192,
+      "sha256": "70d568ea94123c2b3a5c26201c55be62b3ae6291bf835846a64f98b7cd0f0053"
+    },
+    "derived/track1_dataset_v2/indices/train.length16.parquet": {
+      "bytes": 1782,
+      "sha256": "1e2fd2aea253000a118a0cfd589f50d33a0976b70398d873a3c707fff12fb414"
+    },
+    "derived/track1_dataset_v2/indices/train.length4.parquet": {
+      "bytes": 23914,
+      "sha256": "d6f971c78c73f1dda0f76eed93bd7a32c71e7f0b4e7839c928405c39b79c1c7f"
+    },
+    "derived/track1_dataset_v2/indices/validation.length16.parquet": {
+      "bytes": 1782,
+      "sha256": "1e2fd2aea253000a118a0cfd589f50d33a0976b70398d873a3c707fff12fb414"
+    },
+    "derived/track1_dataset_v2/indices/validation.length4.parquet": {
+      "bytes": 6856,
+      "sha256": "5672cd9a11cc57d156d7272dad82b139a69923b1559b86f362cb096abf9a2ff3"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.controls16.npy": {
+      "bytes": 1459328,
+      "sha256": "6302913bfe0b74f22bd969b29abfbad0066b78e86b057015bab2d134bc5c3045"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.controls32.npy": {
+      "bytes": 2918528,
+      "sha256": "4c0937cd9d176566ed502962b9ef46cf427efc9a72598137edebba4f3518140a"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.h16.npy": {
+      "bytes": 1596128,
+      "sha256": "c7fbbc67330e7e7f6d3445df4079fe8c4bf71cefc9361c6ed2bff83fd9c6e905"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.h32.npy": {
+      "bytes": 3055328,
+      "sha256": "150f31f00fc6af7cb47377cadf23e9a643301c85327760cc0dbb8903280cc2c6"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.parquet": {
+      "bytes": 1221493,
+      "sha256": "e27ac3b9b485af09ab3cb951746b6f8a832e1d3a2eaaa08c24c6b8f2f3b518e6"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.variance16.npy": {
+      "bytes": 1596128,
+      "sha256": "75f92ffb497de600ecb265a62104354f22e0c52712b7b98e301d89b2eddc23ef"
+    },
+    "derived/track1_dataset_v2/spatial/P02_122.variance32.npy": {
+      "bytes": 3055328,
+      "sha256": "19b4ca352a3b861a24b320ad64f3e0c3645ae33853ee347da1e9a3b4b76f717b"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.controls16.npy": {
+      "bytes": 1380096,
+      "sha256": "6bb681f735f6a5b28f797e7f7f0c80d68ce595b839f7a0ce05a4d2c46aa409f2"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.controls32.npy": {
+      "bytes": 2760064,
+      "sha256": "b169046949299975de553e3da1dff95183a088810be367a116aa94433a533023"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.h16.npy": {
+      "bytes": 1509468,
+      "sha256": "d0b5a8a7ccadc4eb9f8b47fad99e5a9b77d253545ccf01e405c6312bfb46b263"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.h32.npy": {
+      "bytes": 2889436,
+      "sha256": "6fe8c976ad87f84ca827f067326786c0ed2430895a64c169ad3a1be626da9d58"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.parquet": {
+      "bytes": 1146757,
+      "sha256": "98d9ed8d45bcc7bc88f3726ac56ec4b48f078278bf5edd6934a93169c1288622"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.variance16.npy": {
+      "bytes": 1509468,
+      "sha256": "cb9b1276aa79b70ca51d5b279598eeab49dad11dc03710924c6993a761feea1f"
+    },
+    "derived/track1_dataset_v2/spatial/P03_112.variance32.npy": {
+      "bytes": 2889436,
+      "sha256": "6160616295dc35a4c43081fad7882dd91e71feff4ec663b5e71bf06964953a2f"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.controls16.npy": {
+      "bytes": 2281216,
+      "sha256": "14027f1e0181489d81e771420f3c6d445938fd9f3d0554cc6ec1e4df495f950d"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.controls32.npy": {
+      "bytes": 4562304,
+      "sha256": "ac0e5e5644736e52943107fc80181b5b9490e36ae3e9108bf0e395c9571a51f4"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.h16.npy": {
+      "bytes": 2495068,
+      "sha256": "8a33c6b445586cc0be5e318c3699c26af90f3a3d05e5c09418071fe9df6383b7"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.h32.npy": {
+      "bytes": 4776156,
+      "sha256": "8dc4ccc30a3efb9bdeed503630bec99cdfa1094c4d481727e4361a9f43eb0cb7"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.parquet": {
+      "bytes": 1941617,
+      "sha256": "6b2290b9ec3228e7839aba06c5f404822e4e19fae208141436d2eae59b6b68db"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.variance16.npy": {
+      "bytes": 2495068,
+      "sha256": "497df91db4cf12b1fc3db6b9542c505c24434cb7bc5cb9e27f8188ba92fda991"
+    },
+    "derived/track1_dataset_v2/spatial/P04_109.variance32.npy": {
+      "bytes": 4776156,
+      "sha256": "ae15f6682791036721744790827138ca4eb651dd49a2dfbd198e3bfe239d1f2a"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.controls16.npy": {
+      "bytes": 1248384,
+      "sha256": "b5aca8958286a88f94d02df0c09053ceaf3ad59b184437484422d1e18ed93efe"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.controls32.npy": {
+      "bytes": 2496640,
+      "sha256": "d5f48a3a3553f3c7d6a850421fef74bcbb44e9127ad78cc0965380a0da596920"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.h16.npy": {
+      "bytes": 1365408,
+      "sha256": "b65b744d39a9eaaf67369f538f15a0328d8605581564c36451e34096a489b261"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.h32.npy": {
+      "bytes": 2613664,
+      "sha256": "92ec641fba01216264879d2eb6e194b1569e0e75d9076c0f1b9586a3775a27ef"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.parquet": {
+      "bytes": 1017426,
+      "sha256": "e3bfac86833a845e31dd0e44cedf9086cdc709c61b4081392fb6cd5fff76443d"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.variance16.npy": {
+      "bytes": 1365408,
+      "sha256": "32095e8a27e1fa36b8101a116b28bcdfd52e06a3f74d513191defc5c9241d408"
+    },
+    "derived/track1_dataset_v2/spatial/P08_09.variance32.npy": {
+      "bytes": 2613664,
+      "sha256": "f3327a42e20107d4417ca98ca6b1eccea30910cdf0529f044a4d4ffd95f6c7a4"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.controls16.npy": {
+      "bytes": 916608,
+      "sha256": "d6b384aa5eeec8e8c596c37630ee016976295e9ce90fcc41f820e33a4df9bbaa"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.controls32.npy": {
+      "bytes": 1833088,
+      "sha256": "8143cba38d24c10365b41703fdd695ef5fb8068a78a5c8df60fe523413734b1e"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.h16.npy": {
+      "bytes": 1002528,
+      "sha256": "d53f26012929ada33d32dac7066db18b6aec6b3bcc71893ba493ba3c4b92dd83"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.h32.npy": {
+      "bytes": 1919008,
+      "sha256": "f00b7c0b81c8e3323702516ccb7ed14da2bfaefeeb486e36877b3292c9815310"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.parquet": {
+      "bytes": 766251,
+      "sha256": "9224bfc46d82dac811d790f8f5e4f4c8f29ab3a79c5f3de0f491be37007f3c3a"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.variance16.npy": {
+      "bytes": 1002528,
+      "sha256": "eea1eeca19929cc5063e10ff3576491c16c85c7149fe19dd9f0b80153a84210e"
+    },
+    "derived/track1_dataset_v2/spatial/P11_16.variance32.npy": {
+      "bytes": 1919008,
+      "sha256": "b16f6c616a8f637288b6388dae41f231a010690ac904416a4d93283c316c2408"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.controls16.npy": {
+      "bytes": 1083904,
+      "sha256": "55ce1415c17353a9458a1d04675144a07ce7a2da2a1593dead1afa4462958185"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.controls32.npy": {
+      "bytes": 2167680,
+      "sha256": "8364121e3c22e30af2034d5c8338a3aaf8deb5a3f39d576a2495e32ddfcf171c"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.h16.npy": {
+      "bytes": 1185508,
+      "sha256": "97b951e1c73215be6f1819efbb284abcf56d4a08c563bd1d52545d76e9d4d99f"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.h32.npy": {
+      "bytes": 2269284,
+      "sha256": "704c490b64c931672b57a1fd3eea5213f8023a720eb608a0f2b1d7fb5a35528f"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.parquet": {
+      "bytes": 870284,
+      "sha256": "51dd89e2dbaa716413c1962f5b4ef992bb50cfd0664598a5bdb12123c0607dae"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.variance16.npy": {
+      "bytes": 1185508,
+      "sha256": "283c5481c1d2430cb3930ef209652eea241dbddc037596ea8be498b120d50c5c"
+    },
+    "derived/track1_dataset_v2/spatial/P18_03.variance32.npy": {
+      "bytes": 2269284,
+      "sha256": "cdd8342b14cd318aa4318d2f99879ee28529cfc534326faa04b605de29c1d080"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.controls16.npy": {
+      "bytes": 1777920,
+      "sha256": "5a1120d5259d8617bf34aad032105908267caa01f54d7966452865927057183e"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.controls32.npy": {
+      "bytes": 3555712,
+      "sha256": "f0483761d73a3ec86690c23fa82d96f7a93b3f907e2e4c5405bf42636807a170"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.h16.npy": {
+      "bytes": 1944588,
+      "sha256": "54a376335c381d98c8a2ba1bda6a8a90287dffbdac08928f2d9093ce35c040d1"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.h32.npy": {
+      "bytes": 3722380,
+      "sha256": "bb14dba2c3e2bba16ebd36a6b44688978e904180ad2fb1298f58a0414e3cacf7"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.parquet": {
+      "bytes": 1508852,
+      "sha256": "44e8fe79fff6fc3b68a36d447b6227d2d12472c0afef3130ff943f31d35001ff"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.variance16.npy": {
+      "bytes": 1944588,
+      "sha256": "6f68dae718a6f5ffe9c8f49e24413e2f97754a81cb74cc4fd513d759ef59d6d7"
+    },
+    "derived/track1_dataset_v2/spatial/P22_117.variance32.npy": {
+      "bytes": 3722380,
+      "sha256": "6770ef3430e74acc222efed266fb14fe79395c6fbe7c6ec941713638e0545569"
+    },
+    "derived/track1_dataset_v2/status.json": {
+      "bytes": 442,
+      "sha256": "89de91679791daa72b4c7e703693a4332980c73f101ae720802c36ab628bf150"
+    }
+  },
+  "scientific_acceptance": false,
+  "source_observation_mode": "retrospective",
+  "state": "open_not_finalized",
+  "track2_started": false,
+  "version": "track1_dataset_v2_development1",
+  "evidence_sha256": {
+    "reports/track1_retrain/functional.P18_03.m16.json": "47a0bc89a63f5812e50aecbed2544c79cc5b951af5de0e0b6b0c69b007f2eac0",
+    "reports/track1_retrain/functional.P11_16.m32.json": "03351d8d92a20d1ee33bd0264446a0f276b3db2ddafb3da36edbb999b5f8bc12",
+    "reports/track1_retrain/functional.P04_109.m32.json": "2378ac06a3f3c3fea1f6cfaea3a77090de6b237956d7fe6da6e265628742df7f",
+    "reports/track1_retrain/functional.P02_122.m16.json": "40f4467cf59359e30036c425c80a54972c34f2a188e8e8c9ca69c4cc6ffd40e4",
+    "reports/track1_retrain/functional.P08_09.m16.json": "db02303205fa20aa125b3d411747a2da84762a23884ca1d727b6973c8879ab8b",
+    "reports/track1_retrain/search.json": "af64366fe30a79e6365d0ee8ab79ae05ccbcf1b9e7bfd15f4eebc7d56d7da693",
+    "reports/track1_retrain/functional.P03_112.m32.json": "4658f4b7f56c55510214b8929c9ab551bd36f36a408de22c47ef86686cbaa46c",
+    "reports/track1_retrain/resources_summary.json": "4eaf7a2cec88982767dade906491d4c022cf18e485a53d9384fc8fc605cdca2a",
+    "reports/track1_retrain/results.json": "d020685c1b1209fe99898541b409d3d020e33d6da4705541b46528b1242f4b34",
+    "reports/track1_retrain/functional.P22_117.m32.json": "24301b2adc8689fd9b01bb70e4290e09131b39b5fabadf4ba7aee09cada6c701",
+    "reports/track1_retrain/functional.P18_03.m32.json": "31df37b32f2dde9ab664ca15ce3699f43e1ef3ba753fc21a40f3965845281af4",
+    "reports/track1_retrain/functional.P11_16.m16.json": "61b7dbfa15795524c8d6ad0f8dde784c4b41b4d256ad5d8a778e0e8bced3c6de",
+    "reports/track1_retrain/functional.json": "914fdf6e36f1d7f7585fe563ab364eae7e3da5ce1d547db1949e9af959d5fe46",
+    "reports/track1_retrain/functional.P04_109.m16.json": "c266ecbd59a48359a7da876ca17b54bf57a340e06f749097ee1cb343b6ae6af0",
+    "reports/track1_retrain/functional.P02_122.m32.json": "2483f252eee82039e9cbf885f839be9ed3a39999e5ad500592d2272f1e8d37eb",
+    "reports/track1_retrain/functional.P08_09.m32.json": "ec876e31b94cf34e571a2fa535c213d96032ee3182492dc3e95e65306c764df8",
+    "reports/track1_retrain/verification.json": "e2ae78340a7f14663b8ad95457e11265ee86c3fc20e92ff395c9f4bd259349ac",
+    "reports/track1_retrain/geometry_selection.json": "352f29b09c0330e100127ca1d0f92eff67715d5b4166f1bd19d8dd6014e1c788",
+    "reports/track1_retrain/functional.P03_112.m16.json": "b0d6f76816efbebd9ded6880a11df5f45137ac4de2413de90b9b9ca927eabba8",
+    "reports/track1_retrain/spatial.json": "ffb76b8d30408591ff21e58e06cc0ee59820291f47a8bc9a74b42bc5c9956532",
+    "reports/track1_retrain/reader_checks.json": "d736f06bb23ea6e041497bf62ae1064b59f44e1a4e617c2ddd9882220581f203",
+    "reports/track1_retrain/appearance.json": "2dc382f586054a86c2256bd33327b981c064ff0560218b8debcc97d87f90a252",
+    "reports/track1_retrain/baseline_integrity.json": "c02cbbfb89aa56eab1092878fa7a41c98cbc91e5c417146108d26d817c9a2abb",
+    "reports/track1_retrain/evaluation.json": "c2df017360f9ccec3067f100aa1976e1bd3ff7cea500268c2b46886bf3445c89",
+    "reports/track1_retrain/functional.P22_117.m16.json": "c04fd5367dd44dc6406126ce4bc45fc9f3a90ca9d16a6b2c680748b30b182abb"
+  },
+  "tests": {
+    "passed": 68,
+    "log_sha256": "4411028d70c42c3b40243912d46b67033124707c3146c6c93e10a070d2fe4659"
+  },
+  "environment": {
+    "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "torch": "2.13.0",
+    "pyarrow": "25.0.1",
+    "shapely": "2.2.0",
+    "metal_available": false
+  },
+  "execution_scripts": {
+    "work/track1_retrain/monitor.py": "5554182f42cfa770ea0307678cea738c4ea8110af38e42563215e27ab5617686",
+    "work/track1_retrain/benchmark.py": "1ad6f466a48eea5578c60e4ab321a4c9df9e6acf621d602d1dc7d81ad205b349",
+    "work/track1_retrain/final_evidence.py": "357bfe8de156d263ef7928912ac122f340296f9e7e6105ca946acfe6f2e3d6e3",
+    "work/track1_retrain/smoke.py": "4f932c48ca20b918ba3b03a659ab7d8e17313ea7cfa189784877158b37e16ea6"
+  }
+}

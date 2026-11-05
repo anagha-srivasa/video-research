@@ -1,0 +1,17 @@
+{
+  "path": "dataset/visor/P27_105_interpolations.zip",
+  "url": "https://data.bris.ac.uk/datasets/2v6cgv1x04ol22qp9rm9x2j6a7/Interpolations-DenseAnnotations/val/P27_105_interpolations.zip",
+  "bytes": 94763098,
+  "sha256": "6ceb9748d93d3a9ecd27beb9318cea0dab5e252c0c019972e874bdf90eb40d08",
+  "md5": "4c745193f8022f601a97d3a24812cf78",
+  "official_md5": null,
+  "official_md5_verified": false,
+  "zip_crc_verified": true,
+  "publisher_sha1": "62e87ee1836f83ebce21d4cc928041104f77f158",
+  "publisher_sha1_verified": true,
+  "failed_fragment": "work/quarantine/P27_105.interrupted.b6a0ac67af96.part",
+  "reused_candidate_prefix_bytes": 62914560,
+  "refetched_gap_start": 62914560,
+  "refetched_gap_end": 69041270,
+  "recovery": "Original published bytes reconstructed from local fragments and official HTTP ranges; full publisher SHA1 and CRC gate; no annotation or container editing."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "model": 16,
+    "reader": true,
+    "certified_decoder": true,
+    "kinematics_without_functional_support": true
+  },
+  {
+    "model": 32,
+    "reader": true,
+    "certified_decoder": true,
+    "kinematics_without_functional_support": true
+  }
+]

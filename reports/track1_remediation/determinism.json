@@ -1,0 +1,10 @@
+{
+  "source": "context",
+  "video_id": "P18_03",
+  "rebuilt_files": {
+    "/Users/anagha/projects/video_research/derived/track1_remediation/context/P18_03.geometry.parquet": "828da1c373dec737953886bf42d44b22e2d79bc3d262e922e9d85896ce07b850",
+    "/Users/anagha/projects/video_research/derived/track1_remediation/context/P18_03.coefficients.npy": "9fdd7c23bede9ca815714d3374a774f2709065c6d1a5c1b1184b45bbece8cc7e"
+  },
+  "all_hashes_match": true,
+  "scope": "One full video candidate geometry rebuild from existing pointwise inputs; not a clean full dataset rebuild"
+}

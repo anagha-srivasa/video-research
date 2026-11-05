@@ -1,0 +1,41 @@
+{
+  "reserved_participants": [
+    "P01",
+    "P05",
+    "P07"
+  ],
+  "excluded_exposed_participants": [
+    "P02",
+    "P03",
+    "P04",
+    "P06",
+    "P08",
+    "P11",
+    "P18",
+    "P21",
+    "P22",
+    "P27",
+    "P30"
+  ],
+  "eligible_metadata_videos": [
+    "P01_01",
+    "P01_03",
+    "P01_05",
+    "P01_09",
+    "P01_103",
+    "P01_104",
+    "P01_107",
+    "P05_01",
+    "P05_08",
+    "P07_08",
+    "P07_101",
+    "P07_103",
+    "P07_110"
+  ],
+  "scope": "Prospective whole-participant exclusion from development. Metadata only; no new RGB or annotations read/downloaded.",
+  "acquired": false,
+  "independently_annotated": false,
+  "locked_acceptance_set": false,
+  "preregistration_and_reviewer_reliability_required": true,
+  "track2_started": false
+}

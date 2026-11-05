@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "reviewer_A": "user; identity entered when reviewing",
+  "reviewer_B": "unassigned independent reviewer",
+  "adjudicator": "unassigned; distinct reviewer identity required",
+  "roles": [
+    "A",
+    "B",
+    "adjudicator"
+  ],
+  "blinding": "Reviewer service serves raw RGB and the current role annotations only. No candidate outputs, source masks, scores or inferred contact status are served.",
+  "source_failure_audit": "Separate phase after reference adjudication is hash-locked; source overlays never establish the reference.",
+  "required_phases": [
+    "pre_contact",
+    "first_contact",
+    "sustained_contact",
+    "release",
+    "occluded_contact",
+    "high_speed_contact",
+    "small_object_contact"
+  ],
+  "contact_scope": "Visible native-image boundaries and projected separation; physical contact is separately judged and may remain unknown. No hidden-boundary or depth inference.",
+  "motion_scope": "Fixed physical landmark through time; never a moving visible-mask centroid. Manual events are time intervals, not forced exact instants.",
+  "sampling": "Browse all native frames. Aim for anchors every 40 ms in motion episodes; record invisibility rather than interpolate. Review a pilot before scaling.",
+  "source_failure_categories": [
+    "none",
+    "fragmentation",
+    "missing_component",
+    "wrong_identity",
+    "boundary_error",
+    "source_occlusion_ambiguity",
+    "unknown"
+  ],
+  "scientific_acceptance": false,
+  "locked_fresh_evaluation": false,
+  "track2_started": false,
+  "tasks": 183,
+  "contact_tasks": 163,
+  "motion_identity_tasks": 20,
+  "prior_exposure_policy": "Record prior candidate exposure per case. Raw-only service blinding does not erase prior familiarity; reviewer B should be independently naive."
+}

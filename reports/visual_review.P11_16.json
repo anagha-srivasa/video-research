@@ -1,0 +1,27 @@
+{
+  "video_id": "P11_16",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "932b0a164067df8eceb2f41bba4cf8d0bad454bb00e2b462eaa446b6b7d76db2",
+  "repair_image_sha256": "1d9d6e925e2ad47ea1e71037891a33860e76531fda521498494a4fc00694eb96",
+  "table_hashes": {
+    "videos": "50c201758dd889eca50a8f895da4a6bd2b88d73b8d0ad110ad8a48d3cad6378e",
+    "frames": "290d73069fad820195e64c933d5db2d1fb7412c48dba7e01038082167666aabd",
+    "annotation_frames": "187a5bbf4955ff3e54855254eb23730d75ec96ec65a9c8171db42f15c7fe7693",
+    "masks": "fe8cff2291b5d4f0b12d1f5466ae17fb0f9c66fb6c856a7eb69bca282b3b161f",
+    "contacts": "b8e9258e7f64101c0a0f9ed34efc7e3b8f910225837d1acec3ff5dda15705399",
+    "entities": "e91a769673e51b662e0062d2e2e0665a7ea90e920e19e23be46e347fd9c26cbd",
+    "actions": "0d85d50f877df6be674736e7cc771add18a5b2acbddc3f4faad56d4de60730b1",
+    "camera_frames": "5489d9dd85ce8861eff92eee37fb48fda8914068710e2700d09011e976efa7e6",
+    "event_evidence": "e00c6b98a947052899bd4419b63ad12395ed05f2165a6d881eff851a7de395cc",
+    "windows_1s_hop250ms": "c4286548398316482e5aa70903c7e2cd33166bdd141bcc58a34762cc1467c8a7",
+    "qa_flags": "a09ee16d907216444c6d67964706f961f71d3e209d6e4afe735de15d5045c2f1"
+  },
+  "findings": "Kettle, hob, chopping board, drying rack, sink and hands align; repaired cupboard retains foreground occlusion.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

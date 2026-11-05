@@ -1,0 +1,1 @@
+{"float32_coefficients_and_covariances_exact":true,"max_temporal_coefficient_error":0.0,"max_temporal_covariance_error":0.0,"passed":true,"scope":"Deterministic stratified row samples across every video, including invalid windows; not a full-store second build.","spatial_full_source_refits":264,"temporal_full_observation_refits":528}

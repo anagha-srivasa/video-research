@@ -1,0 +1,17 @@
+{
+  "version": "dataset_v2_development",
+  "seed": 20261029,
+  "train": ["P02_122", "P03_112", "P04_109", "P11_16", "P22_117"],
+  "validation": ["P08_09", "P18_03"],
+  "budget_bytes": 250000000000,
+  "rgb_budget_bytes": 180000000000,
+  "disk_reserve_bytes": 20000000000,
+  "clip_seconds": 2,
+  "workers": 4,
+  "ram_limit_gib": 16,
+  "min_available_gib": 5,
+  "storage": "uncompressed_npy_and_uncompressed_parquet",
+  "annotation_mode": "retrospective_source_contours",
+  "finalized": false,
+  "track2_started": false
+}

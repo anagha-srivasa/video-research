@@ -1,0 +1,25 @@
+schema: track1_refinement_v2
+seed: 20261029
+workers: 12
+memory_budget_gib: 20
+minimum_available_gib: 5
+spatial_cases_per_kind: {manual_sparse: 160, dense_gt_endpoint: 40, dense_interpolated: 40}
+temporal_cases_per_video: 192
+max_windows_per_track: 3
+baseline_config: configs/track1.yaml
+cache: work/track1_refinement
+reports: reports/track1_refinement
+train: [P02_122, P03_112, P04_109, P11_16, P22_117]
+validation: [P08_09, P18_03]
+test: [P06_108, P21_01, P27_105, P30_07]
+protocols: [single, gap100, endpoint100]
+holdout_centres: [0.25, 0.5, 0.75]
+protocol_revision: 2
+spatial_control_points: 16
+temporal_degree: 3
+selection:
+  spatial_max_self_intersection_fraction: 0.02
+  minimum_relative_validation_improvement: 0.01
+  temporal_endpoint_weight: 0.25
+  uncertainty_target: 0.95
+  plateau_rounds: 2

@@ -1,0 +1,174 @@
+{
+  "samples": [
+    {
+      "video_id": "P02_122",
+      "pts_raw": 430200,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P02_122",
+      "pts_raw": 33393600,
+      "storage_row": 2050,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P02_122",
+      "pts_raw": 66650400,
+      "storage_row": 4099,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P03_112",
+      "pts_raw": 248400,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P03_112",
+      "pts_raw": 14196600,
+      "storage_row": 2044,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P03_112",
+      "pts_raw": 44465400,
+      "storage_row": 4087,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P04_109",
+      "pts_raw": 10832400,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P04_109",
+      "pts_raw": 29088000,
+      "storage_row": 2050,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P04_109",
+      "pts_raw": 61056000,
+      "storage_row": 4099,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P08_09",
+      "pts_raw": 2073071,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P08_09",
+      "pts_raw": 19765746,
+      "storage_row": 2023,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P08_09",
+      "pts_raw": 35428393,
+      "storage_row": 4045,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P11_16",
+      "pts_raw": 70070,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P11_16",
+      "pts_raw": 10726716,
+      "storage_row": 2055,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P11_16",
+      "pts_raw": 20389369,
+      "storage_row": 4110,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P18_03",
+      "pts_raw": 354354,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P18_03",
+      "pts_raw": 10653643,
+      "storage_row": 2023,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P18_03",
+      "pts_raw": 23784761,
+      "storage_row": 4045,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P22_117",
+      "pts_raw": 8575200,
+      "storage_row": 0,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P22_117",
+      "pts_raw": 45592200,
+      "storage_row": 2050,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    },
+    {
+      "video_id": "P22_117",
+      "pts_raw": 86565600,
+      "storage_row": 4099,
+      "exact": true,
+      "max_channel_error": 0,
+      "mean_channel_error": 0.0
+    }
+  ],
+  "all_exact": true,
+  "method": "Independent software seek/decode versus sequential stored RGB"
+}

@@ -1,0 +1,150 @@
+{
+  "cohort": "Common nearest/canonical-CV/source-polygon-CV queries; does not require cubic or linear support",
+  "validation_metrics": [
+    {
+      "model": 16,
+      "horizon": 0.1,
+      "method": "canonical_cv_transport",
+      "queries": 58,
+      "mean_video_iou": 0.6515,
+      "mean_video_position_rmse_px": 106.18
+    },
+    {
+      "model": 16,
+      "horizon": 0.1,
+      "method": "cv_source_polygon_transport",
+      "queries": 58,
+      "mean_video_iou": 0.6518,
+      "mean_video_position_rmse_px": 106.18
+    },
+    {
+      "model": 16,
+      "horizon": 0.1,
+      "method": "nearest_geometry",
+      "queries": 58,
+      "mean_video_iou": 0.6425,
+      "mean_video_position_rmse_px": 50.98
+    },
+    {
+      "model": 16,
+      "horizon": 0.25,
+      "method": "canonical_cv_transport",
+      "queries": 42,
+      "mean_video_iou": 0.4422,
+      "mean_video_position_rmse_px": 293.3
+    },
+    {
+      "model": 16,
+      "horizon": 0.25,
+      "method": "cv_source_polygon_transport",
+      "queries": 42,
+      "mean_video_iou": 0.4413,
+      "mean_video_position_rmse_px": 293.3
+    },
+    {
+      "model": 16,
+      "horizon": 0.25,
+      "method": "nearest_geometry",
+      "queries": 42,
+      "mean_video_iou": 0.4631,
+      "mean_video_position_rmse_px": 124.58
+    },
+    {
+      "model": 16,
+      "horizon": 0.5,
+      "method": "canonical_cv_transport",
+      "queries": 29,
+      "mean_video_iou": 0.3156,
+      "mean_video_position_rmse_px": 296.09
+    },
+    {
+      "model": 16,
+      "horizon": 0.5,
+      "method": "cv_source_polygon_transport",
+      "queries": 29,
+      "mean_video_iou": 0.314,
+      "mean_video_position_rmse_px": 296.09
+    },
+    {
+      "model": 16,
+      "horizon": 0.5,
+      "method": "nearest_geometry",
+      "queries": 29,
+      "mean_video_iou": 0.2937,
+      "mean_video_position_rmse_px": 258.94
+    },
+    {
+      "model": 32,
+      "horizon": 0.1,
+      "method": "canonical_cv_transport",
+      "queries": 81,
+      "mean_video_iou": 0.6424,
+      "mean_video_position_rmse_px": 107.64
+    },
+    {
+      "model": 32,
+      "horizon": 0.1,
+      "method": "cv_source_polygon_transport",
+      "queries": 81,
+      "mean_video_iou": 0.6424,
+      "mean_video_position_rmse_px": 107.64
+    },
+    {
+      "model": 32,
+      "horizon": 0.1,
+      "method": "nearest_geometry",
+      "queries": 81,
+      "mean_video_iou": 0.6521,
+      "mean_video_position_rmse_px": 73.04
+    },
+    {
+      "model": 32,
+      "horizon": 0.25,
+      "method": "canonical_cv_transport",
+      "queries": 65,
+      "mean_video_iou": 0.4466,
+      "mean_video_position_rmse_px": 250.39
+    },
+    {
+      "model": 32,
+      "horizon": 0.25,
+      "method": "cv_source_polygon_transport",
+      "queries": 65,
+      "mean_video_iou": 0.446,
+      "mean_video_position_rmse_px": 250.39
+    },
+    {
+      "model": 32,
+      "horizon": 0.25,
+      "method": "nearest_geometry",
+      "queries": 65,
+      "mean_video_iou": 0.4969,
+      "mean_video_position_rmse_px": 132.63
+    },
+    {
+      "model": 32,
+      "horizon": 0.5,
+      "method": "canonical_cv_transport",
+      "queries": 44,
+      "mean_video_iou": 0.2904,
+      "mean_video_position_rmse_px": 303.64
+    },
+    {
+      "model": 32,
+      "horizon": 0.5,
+      "method": "cv_source_polygon_transport",
+      "queries": 44,
+      "mean_video_iou": 0.2891,
+      "mean_video_position_rmse_px": 303.64
+    },
+    {
+      "model": 32,
+      "horizon": 0.5,
+      "method": "nearest_geometry",
+      "queries": 44,
+      "mean_video_iou": 0.3281,
+      "mean_video_position_rmse_px": 271.67
+    }
+  ],
+  "independent_motion_reference": false
+}

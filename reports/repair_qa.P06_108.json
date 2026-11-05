@@ -1,0 +1,12 @@
+{
+  "video_id": "P06_108",
+  "mask_uid": "70de636e6d382c8ab2bc776c4c0c8ae1",
+  "timestamp_us": 473500000,
+  "repair_code": "self_intersection_make_valid_linework",
+  "quality_flags": [
+    "source_polygon_invalid"
+  ],
+  "policy_difference_pixels": 3,
+  "raw_polygons_preserved": true,
+  "mask_table_sha256": "efcf88e83bfa75411bd988e0bb4d64024c0f2542c3df25d28428073e4b1f1224"
+}

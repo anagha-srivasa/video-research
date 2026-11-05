@@ -1,0 +1,13 @@
+{
+  "tests": 69,
+  "tests_passed": true,
+  "test_log": "work/track1_readiness/tests_all.log",
+  "baseline_entries": 741,
+  "baseline_integrity": "baseline_integrity.json",
+  "rgb_samples": 21,
+  "rgb_parity": "context_rgb_parity.json",
+  "source_snapshot_files": 18,
+  "source_snapshot": "work/track1_readiness/v2_source_snapshot",
+  "scientific_acceptance": false,
+  "track2_started": false
+}

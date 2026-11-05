@@ -1,0 +1,459 @@
+For your finalized Track 1 — Uncertainty-Aware Spatio-Temporal Functional Entity Encoding, evaluation must go substantially beyond segmentation IoU or reconstruction loss.
+
+Track 1 is responsible for transforming video frames into a geometrically meaningful, temporally smooth, uncertainty-aware functional representation that Tracks 2–4 can trust.
+
+I recommend evaluating it across 12 metric families, covering the entire path from frame alignment to the final `FunctionalEntityState`.
+
+One important distinction: the ideal mathematical value and a realistic acceptance threshold are not the same thing. For example, zero trajectory error is ideal, but a practical threshold depends on image resolution, object scale, annotation quality, visibility, and camera calibration.
+
+The numerical targets below are therefore proposed engineering gates for your pilot, not published EPIC-KITCHENS/VISOR benchmark standards. They should be calibrated against a carefully reviewed, manually annotated validation subset.
+
+## 1. Executive scorecard: the most important Track 1 metrics
+
+| Metric                         | Proposed target                                                       | Priority |
+| ------------------------------ | --------------------------------------------------------------------- | -------- |
+| Timestamp alignment error      | ≤ 0.5 frame; ideally ≤ 0.25 frame                                     | Critical |
+| Mask IoU                       | ≥ 0.85; stretch ≥ 0.90                                                | Critical |
+| Boundary F-score (BF-score)    | ≥ 0.85; stretch ≥ 0.90                                                | Critical |
+| Boundary Chamfer distance      | ≤ 1–2% of object scale                                                | High     |
+| Spline self-intersection rate  | ≈ 0% for simple contours                                              | High     |
+| Center position NRMSE          | ≤ 2–3% of frame diagonal                                              | Critical |
+| Temporal endpoint NRMSE        | ≤ 3% of frame diagonal                                                | Critical |
+| Velocity error                 | ≤ 5–10% of reference motion scale                                     | Critical |
+| 95% uncertainty coverage       | ≈ 95%                                                                 | Critical |
+| Covariance calibration         | NIS consistent with expected χ²                                       | Critical |
+| Track IDF1                     | ≥ 0.90; stretch ≥ 0.95                                                | Critical |
+| Track fragmentation            | As low as possible; ≤ 1 per 100 visible track-seconds as a pilot gate | High     |
+| Temporal reconstruction R²     | ≥ 0.95 on sufficiently observed windows                               | Critical |
+| High-frequency residual energy | Low without suppressing genuine events                                | High     |
+| Window consistency             | Within predicted covariance                                           | Critical |
+| Valid functional-state yield   | ≥ 90% of eligible windows                                             | Critical |
+| End-to-end latency             | Within your deployment budget                                         | High     |
+
+Do not use these thresholds as one universal pass/fail score. Report them separately for hands, rigid objects, deformable objects, small objects, occluded objects, and fast-moving entities. A model can have excellent average IoU while failing precisely on the hands and interaction boundaries that matter most for semantic video understanding.
+
+## 2. Comprehensive metric catalog
+
+### Family A — Dataset integrity, temporal synchronization and annotation quality
+
+These metrics are evaluated before any Track 1 learning or fitting. Errors here can make an otherwise correct mathematical model look inaccurate.
+
+| Metric                              | Definition / measurement                                                 | Ideal or proposed target                           |
+| ----------------------------------- | ------------------------------------------------------------------------ | -------------------------------------------------- |
+| Timestamp alignment MAE             | Mean absolute error between frame and annotation timestamps              | 0; ≤ 0.5 frame                                     |
+| P95 alignment error                 | 95th percentile of absolute alignment errors                             | ≤ 1 frame                                          |
+| Frame-mapping validity              | Fraction of mappings resolving to the correct frame                      | 100%                                               |
+| Duplicate/missing frame rate        | Invalid frames divided by expected frames                                | 0%; investigate every gap                          |
+| Annotation provenance coverage      | Fraction with known manual/interpolated/unlabeled status                 | 100%                                               |
+| Manual annotation agreement         | IoU or boundary agreement between independent annotators                 | As high as possible; establishes empirical ceiling |
+| Camera metadata completeness        | Frames with valid intrinsic/extrinsic data when required                 | 100% for geometry-dependent evaluation             |
+| Camera-pose validity rate           | Fraction with trustworthy pose estimates                                 | Report separately; no universal target             |
+| Split contamination                 | Shared participant/video/near-duplicate samples across prohibited splits | 0                                                  |
+| Uncertainty provenance completeness | States with known source and validity of covariance estimates            | 100%                                               |
+
+VISOR-specific requirement: report metrics separately for manually annotated contours, interpolated contours, and any pseudo-labeled frames. Interpolated masks are not independent ground truth.
+
+For your 11-participant pilot, participant-held-out evaluation is particularly important; splitting overlapping temporal windows randomly would produce highly optimistic results.
+
+### Family B — Camera canonicalization and geometric coordinate validity
+
+Track 1 canonicalizes geometry before fitting temporal functions. The objective is to remove nuisance camera motion without erasing actual subject motion.
+
+| Metric                               | Definition                                                                    | Ideal / proposed target                                   |
+| ------------------------------------ | ----------------------------------------------------------------------------- | --------------------------------------------------------- |
+| Static-background reprojection error | Median residual displacement of matched stationary points after stabilization | 0; aim ≤ 1–2 px at evaluation resolution                  |
+| P95 background reprojection error    | 95th percentile static-point residual                                         | ≤ 3–5 px as initial gate                                  |
+| Camera transform cycle error         | Error of composing forward/backward transforms                                | Approximately 0                                           |
+| Relative-scale drift                 | Change in recovered scale for a stationary reference                          | 0; ≤ 1–2% where metric scale is valid                     |
+| Static-object drift                  | Displacement of a stationary object in canonical coordinates                  | Approximately 0                                           |
+| Foreground motion preservation       | Difference between recovered entity motion and independently measured motion  | Approximately 0                                           |
+| Transform condition number           | Numerical conditioning of camera/geometry transform                           | Finite, bounded; monitor tail                             |
+| Geometry-validity calibration        | Whether flagged valid/invalid geometry agrees with measured reliability       | High AUROC and calibrated probabilities                   |
+| Pose reprojection error              | Reprojection residual for EPIC-Fields geometry when available                 | As low as possible; compare with pose-estimation baseline |
+| Coordinate-frame consistency         | Agreement between transformed points across valid frames                      | Within propagated uncertainty                             |
+
+A critical failure mode is overstabilization: the background becomes perfectly stationary because the model has also suppressed meaningful object movement.
+
+Therefore, background reprojection error must be paired with foreground motion preservation.
+
+### Family C — Frame-level segmentation and silhouette fidelity
+
+[How to Measure Model Performance in Computer Vision | Encord](https://images.openai.com/static-rsc-4/lt5UsLI3UxXLrNzizLI7PvyzkwcbCN0Lim1Vb8tcrs1HWfzYdJ0-aqNOrXslhJblAR4bvwbz7CzxE3diUXrxTS_f72FzARtbD8lzRt4OnR1GL0j57TZWmRRh1C-UP7Iflakn5lKJKpnkK0jtBiau0bXV7iToTYzh5Yp6mTwglYA?purpose=inline)
+
+Region agreement: IoU and Dice
+
+[GitHub - gitcsq/segmentation-WeizmannHorse · GitHub](https://images.openai.com/static-rsc-4/v5uTKYB1YRgjMOFydAKinsWDpKR9t5DIRshjkBVDDfCjV_p0RYMA8COwV5IHA4HIYFF-k_g-1t7nDkQ7LnTVYCfKpmHt7pppmsoWCZCCy0jpYW9nk8LJCxDh7iEbZDgObgRpRo1OPZqTYfl84Q2ZBklfzgG7Kt7HOZfjkyK4zxw?purpose=inline)
+
+Boundary agreement: F-score and distance
+
+| Metric                     | Formula / interpretation                                    | Ideal / proposed target        |
+| -------------------------- | ----------------------------------------------------------- | ------------------------------ |
+| Mask IoU                   | \\(\lvert M\cap G\rvert/\lvert M\cup G\rvert\\)             | 1; ≥ 0.85                      |
+| Dice coefficient           | \\(2\lvert M\cap G\rvert/(\lvert M\rvert+\lvert G\rvert)\\) | 1; ≥ 0.92                      |
+| Boundary precision         | Fraction of predicted boundary points close to reference    | 1; ≥ 0.85                      |
+| Boundary recall            | Fraction of reference boundary points recovered             | 1; ≥ 0.85                      |
+| Boundary F-score           | Harmonic mean of boundary precision and recall              | 1; ≥ 0.85                      |
+| Symmetric Chamfer distance | Mean nearest-boundary distance in both directions           | 0; ≤ 1–2% object scale         |
+| ASSD                       | Average symmetric surface distance                          | 0; ≤ 1–2% object scale         |
+| HD95                       | 95th percentile symmetric boundary distance                 | 0; ≤ 5% object scale           |
+| Relative area error        | \\(\lvert A\_{\rm pred}-A\_{\rm gt}\rvert/A\_{\rm gt}\\)    | 0; ≤ 5–10%                     |
+| Centroid displacement      | Distance between predicted and reference centroids          | 0; ≤ 2% object scale           |
+| Small-object IoU           | IoU on small-object subset                                  | Maximize; report independently |
+| Occluded-boundary error    | Error specifically on partially occluded contour regions    | Minimize; report by visibility |
+
+For boundary metrics, define the tolerance in a resolution- and scale-aware way, such as a fixed percentage of object bounding-box diagonal. Otherwise, scores from different image sizes are not comparable.
+
+### Family D — Periodic cubic B-spline reconstruction
+
+Your boundary is represented by
+
+\\[ \gamma_f(u)=\sum\_{m=0}^{M-1}P\_{f,m}B_m(u). \\]
+
+The fitted curve should approximate the observed silhouette while remaining stable and geometrically valid.
+
+| Metric                            | Meaning                                                            | Ideal / proposed target                     |
+| --------------------------------- | ------------------------------------------------------------------ | ------------------------------------------- |
+| Spline-to-contour Chamfer         | Fitted spline versus observed contour                              | 0; ≤ 1–2% object scale                      |
+| Spline-to-manual-contour distance | Fitted spline versus independently annotated boundary              | 0; ≤ 2% object scale                        |
+| Normal-direction residual         | Error projected onto boundary normal                               | 0; ≤ 1–2% object scale                      |
+| Tangential residual               | Error projected onto boundary tangent                              | 0; interpret carefully                      |
+| Closure error                     | \\(\\\|\gamma(0)-\gamma(1)\\\|\\)                                  | Numerical zero                              |
+| Periodic derivative mismatch      | Difference in derivatives at seam                                  | Numerical zero through required order       |
+| Self-intersection rate            | Fraction of simple-object contours with invalid crossings          | 0                                           |
+| Orientation consistency           | Fraction retaining expected clockwise/counterclockwise orientation | 100%                                        |
+| Curvature error                   | Difference in contour curvature at matched locations               | 0; noise-sensitive                          |
+| Curvature roughness               | Integral of squared curvature or appropriate regularizer           | Controlled, not necessarily minimized       |
+| Control-point stability           | Sensitivity of control points to small annotation perturbations    | Low                                         |
+| Fit condition number              | Conditioning of weighted regularized spline system                 | Bounded; no unstable outliers               |
+| Normalized fit residual           | Residual measured relative to observation covariance               | Statistically consistent with assumed noise |
+
+Important: if closure and derivative continuity are enforced by the periodic basis, these are primarily implementation invariants, not learned performance achievements.
+
+A visually smooth contour is not necessarily accurate. Over-regularization may erase fingers, handles, narrow protrusions, and contact-relevant geometry.
+
+### Family E — Spatial wavelet and shape encoding
+
+This evaluates whether the multiscale representation preserves useful geometric detail without allowing noise to dominate.
+
+| Metric                           | Meaning                                                              | Ideal / proposed target                     |
+| -------------------------------- | -------------------------------------------------------------------- | ------------------------------------------- |
+| Wavelet reconstruction error     | Original control points versus inverse-transformed coefficients      | Numerical zero if transform is invertible   |
+| Shape reconstruction IoU         | Reconstructed silhouette versus reference mask                       | As high as full-resolution representation   |
+| Retained-energy ratio            | Fraction of shape energy captured by retained coefficients           | ≥ 95–99%, subject to detail requirements    |
+| Compression ratio                | Original feature size divided by retained feature size               | Maximize subject to quality constraints     |
+| High-frequency noise ratio       | Energy attributable to annotation jitter                             | Low                                         |
+| Fine-detail preservation         | Error on handles, fingers and other high-curvature regions           | Low                                         |
+| Multiscale stability             | Change in features under small geometric perturbations               | Low                                         |
+| Translation/rotation consistency | Expected feature behavior under coordinate transformations           | Exact where invariant/equivariant by design |
+| Shape discriminability           | Retrieval accuracy for genuinely different object shapes             | High, evaluated on held-out entities        |
+| Cross-resolution agreement       | Consistency when processing the same object at different resolutions | Within sampling error                       |
+
+The most important experiment here is a rate–distortion curve: progressively retain fewer wavelet coefficients and measure contour error, small-feature loss, and downstream contact-boundary sensitivity.
+
+A 99% energy retention score can still be unacceptable if the discarded 1% contains a cup handle or fingertip.
+
+### Family F — Uncertainty ribbons and covariance calibration
+
+This is one of the most important differentiators of your Track 1.
+
+For a predicted boundary point \\(\hat p\\), normal vector \\(n\\), and point covariance \\(\Sigma_p\\),
+
+\\[ \sigma_n^2=n^\top\Sigma_p n. \\]
+
+The ribbon should represent actual geometric uncertainty, not merely produce visually plausible confidence bands.
+
+| Metric                         | Meaning                                                                  | Ideal / proposed target                   |
+| ------------------------------ | ------------------------------------------------------------------------ | ----------------------------------------- |
+| 50% interval coverage          | Fraction of true normal displacements inside predicted 50% interval      | 50%                                       |
+| 90% interval coverage          | Fraction inside predicted 90% interval                                   | 90%                                       |
+| 95% interval coverage          | Fraction inside predicted 95% interval                                   | 95%                                       |
+| Coverage deviation             | \\(\lvert\text{observed coverage}-\text{nominal}\rvert\\)                | 0; ≤ 3–5 percentage points initially      |
+| Mean interval width            | Average uncertainty ribbon width                                         | As narrow as possible at correct coverage |
+| Interval score                 | Proper scoring rule balancing width and missed coverage                  | Minimize                                  |
+| Gaussian NLL                   | Negative log-likelihood of reference observations                        | Minimize on held-out data                 |
+| Mahalanobis consistency        | Whether squared normalized errors match their assumed distribution       | Match reference distribution              |
+| Covariance PSD violations      | Fraction with negative covariance eigenvalues beyond tolerance           | 0                                         |
+| Covariance conditioning        | Ratio of largest to smallest eigenvalue                                  | Finite; avoid numerical instability       |
+| Error–uncertainty correlation  | Whether larger predicted uncertainty corresponds to larger actual errors | Positive; assess ranking and calibration  |
+| Risk–coverage AUC              | Error remaining when high-uncertainty predictions are rejected           | Minimize                                  |
+| Occlusion uncertainty response | Whether uncertainty increases appropriately under occlusion              | Positive response, calibrated             |
+| Uncertainty sharpness          | Mean predictive dispersion at fixed calibration                          | Minimize                                  |
+
+The best uncertainty model is not the one producing the narrowest ribbons. It is the one that achieves the claimed coverage with the narrowest defensible intervals.
+
+For correlated contour points, pointwise 95% coverage does not imply that the entire contour lies inside its ribbon 95% of the time. If you need whole-contour guarantees, evaluate simultaneous coverage separately.
+
+### Family G — Entity identity and spatial tracking
+
+If the preprocessing pipeline already supplies entity identities, distinguish upstream tracking quality from the accuracy of the functional encoder itself.
+
+| Metric                      | Meaning                                                  | Ideal / proposed target                      |
+| --------------------------- | -------------------------------------------------------- | -------------------------------------------- |
+| IDF1                        | Identity-aware tracking F-score                          | 1; ≥ 0.90                                    |
+| HOTA                        | Combined detection and association tracking quality      | 1; improve over baseline                     |
+| AssA                        | HOTA association accuracy component                      | 1; maximize                                  |
+| DetA                        | HOTA detection accuracy component                        | 1; maximize                                  |
+| ID switches                 | Incorrect identity changes                               | 0                                            |
+| Fragmentations              | Number of interruptions to continuous tracks             | 0                                            |
+| Track recall                | Fraction of annotated entity lifespan recovered          | 1; ≥ 0.95 on eligible visible intervals      |
+| Track precision             | Fraction of predicted entity lifespan correctly assigned | 1; ≥ 0.95                                    |
+| Center trajectory NRMSE     | Position error normalized by a declared spatial scale    | 0; ≤ 2–3% frame diagonal                     |
+| Velocity direction error    | Angle between predicted and reference velocity           | 0°; ≤ 10–15° on sufficiently moving entities |
+| Occlusion recovery accuracy | Correct identity recovery after disappearance            | 1; maximize                                  |
+| False merge / split rate    | Erroneous identity merging or splitting                  | 0                                            |
+
+Velocity-direction error should exclude nearly stationary entities, because direction becomes ill-defined as speed approaches zero.
+
+### Family H — Temporal Legendre projection quality
+
+Your finalized temporal representation uses degree-3 Legendre polynomials over 1-second windows with 0.25-second hops:
+
+\\[ \hat h_k(t)=\sum\_{j=0}^{3}C\_{k,j}L_j(\tau_k(t)). \\]
+
+This is arguably the most important family for deciding whether Track 1 is ready for Track 2.
+
+| Metric                                        | Meaning                                                         | Ideal / proposed target                         |
+| --------------------------------------------- | --------------------------------------------------------------- | ----------------------------------------------- |
+| Temporal reconstruction RMSE                  | Error between observed state and polynomial reconstruction      | 0; normalize by feature scale                   |
+| Temporal reconstruction \\(R^2\\)             | Explained temporal variance                                     | 1; ≥ 0.95 on well-observed, nonconstant windows |
+| Endpoint position error                       | \\(\\\|\hat h_k(t_k^{end})-h(t_k^{end})\\\|\\)                  | 0; ≤ 3% frame diagonal for position             |
+| Endpoint velocity error                       | Difference between polynomial derivative and reference velocity | 0; ≤ 5–10% reference motion scale               |
+| Endpoint acceleration error                   | Second derivative versus smoothed reference acceleration        | 0; establish empirical threshold                |
+| Temporal fit NLL                              | Likelihood under propagated fitting uncertainty                 | Minimize                                        |
+| Normalized residual consistency               | Whitened residual distribution                                  | Match assumed noise distribution                |
+| Polynomial coefficient covariance calibration | Empirical coefficient errors versus estimated covariance        | Correct nominal coverage                        |
+| Window validity rate                          | Fraction of eligible windows producing reliable coefficients    | ≥ 90% initial gate                              |
+| Sparse-window degradation                     | Error versus number of valid observations                       | Graceful degradation                            |
+| Occlusion robustness                          | Error versus occluded fraction of the window                    | Controlled and calibrated                       |
+| High-frequency residual energy                | Motion energy not represented by cubic projection               | Monitor against actual motion                   |
+| Numerical conditioning                        | Conditioning of weighted design matrix                          | Stable; no catastrophic tail                    |
+| Robust-outlier sensitivity                    | Effect of corrupted frames on fitted coefficients               | Low                                             |
+
+For the position endpoint,
+
+\\[ \hat h_k^{end}=\phi(1)^\top C_k. \\]
+
+For the velocity endpoint, because the physical window lasts one second,
+
+\\[ \hat{\dot h}\_k^{end}=2\phi'(1)^\top C_k. \\]
+
+The derivative is therefore with respect to physical time, not merely normalized Legendre time.
+
+A crucial qualification: high \\(R^2\\) on the frames used for fitting does not prove generalization. Also report reconstruction on held-out observations inside a window, and endpoint extrapolation errors over short future intervals where appropriate.
+
+### Family I — Overlapping-window consistency and temporal continuity
+
+Since adjacent windows overlap by 75%, the same physical time is represented by multiple Legendre polynomials.
+
+For two overlapping windows \\(k\\) and \\(k+1\\), compare their predictions at the same physical timestamp \\(t\\):
+
+\\[ d\_{k,k+1}(t)=\hat h_k(t)-\hat h\_{k+1}(t). \\]
+
+| Metric                         | Meaning                                                          | Ideal / proposed target         |
+| ------------------------------ | ---------------------------------------------------------------- | ------------------------------- |
+| Overlap position disagreement  | RMS difference of overlapping-window predictions                 | 0; within predicted uncertainty |
+| Overlap velocity disagreement  | RMS difference of derivatives at identical timestamps            | 0; within predicted uncertainty |
+| Overlap covariance consistency | Whether differences agree with joint predictive covariance       | Calibrated                      |
+| Boundary jump magnitude        | Position discontinuity at representation handoffs                | 0                               |
+| Derivative jump magnitude      | Velocity discontinuity at handoffs                               | 0                               |
+| Temporal jitter index          | High-frequency fluctuations not supported by observations        | Low                             |
+| Static-object drift            | Spurious temporal motion for stationary objects                  | Approximately 0                 |
+| Fast-event retention           | Fraction of brief annotated movements retained in representation | High                            |
+| Motion onset timing error      | Delay between annotated motion onset and detected change         | 0; ≤ 0.25 s as an initial gate  |
+| Motion offset timing error     | Delay at motion cessation                                        | 0; ≤ 0.25 s                     |
+
+Important mathematical caveat: overlapping-window estimates are correlated because they share frames. Their covariance cannot generally be added as though they were independent.
+
+Also, continuity is desirable but not absolute: a real collision, abrupt grasp, or fast hand movement can produce a genuine change in velocity. A metric that rewards excessive smoothing may harm downstream event recognition.
+
+### Family J — Missing observations, occlusion and robustness
+
+| Metric                                | Meaning                                               | Ideal / proposed target          |
+| ------------------------------------- | ----------------------------------------------------- | -------------------------------- |
+| Performance versus missing-frame rate | Error at 0%, 10%, 25%, 50% missing observations       | Small, predictable degradation   |
+| Performance versus occlusion duration | Error as a function of consecutive missing time       | Graceful degradation             |
+| Performance versus mask perturbation  | Sensitivity to boundary annotation noise              | Low                              |
+| Performance versus camera jitter      | Sensitivity to synthetic camera perturbations         | Low after valid canonicalization |
+| Performance versus scale change       | Stability under resolution changes                    | High                             |
+| Performance versus viewpoint change   | Stability under valid geometric transformations       | High                             |
+| Outlier breakdown curve               | Fit degradation as corrupted-frame fraction increases | Robust                           |
+| Confidence under corruption           | Whether uncertainty grows with corruption             | Calibrated increase              |
+| Invalid-state rejection recall        | Detection of states that should not be trusted        | High                             |
+| Invalid-state false rejection         | Correct states unnecessarily discarded                | Low                              |
+
+For this family, plot performance degradation curves rather than relying on one numerical threshold.
+
+A Track 1 encoder that degrades smoothly and reports increased uncertainty is preferable to one that maintains attractive-looking outputs while silently becoming inaccurate.
+
+### Family K — Appearance pooling and foreground/background contamination
+
+Appearance is contextual information in Track 1; it should not automatically be treated as a physical dynamical state.
+
+| Metric                         | Meaning                                                             | Ideal / proposed target               |
+| ------------------------------ | ------------------------------------------------------------------- | ------------------------------------- |
+| Foreground pooling precision   | Fraction of appearance-pooling weight assigned to actual foreground | 1; ≥ 0.95 as a proposed gate          |
+| Foreground coverage            | Fraction of reliable object interior represented                    | High, subject to conservative masking |
+| Background contamination       | Pooling weight assigned to background                               | 0; ≤ 5% initial gate                  |
+| Appearance consistency         | Embedding similarity across views of same entity                    | High                                  |
+| Identity discriminability      | Same-entity versus different-entity retrieval accuracy              | High                                  |
+| Occlusion robustness           | Appearance embedding stability under partial occlusion              | High                                  |
+| Appearance leakage sensitivity | Effect of background replacement on embedding                       | Low                                   |
+| Geometry–appearance separation | Whether appearance changes spuriously alter geometric state         | Minimal                               |
+
+Be careful not to optimize appearance consistency so aggressively that the encoder becomes insensitive to semantically meaningful changes, such as an object opening, filling, or changing state.
+
+### Family L — System readiness, efficiency and reproducibility
+
+| Metric                           | Meaning                                                | Ideal / proposed target                      |
+| -------------------------------- | ------------------------------------------------------ | -------------------------------------------- |
+| Preprocessing throughput         | Frames or entity-windows processed per second          | Above project-specific budget                |
+| Per-window latency               | Time to produce one `FunctionalEntityState`            | Below deployment budget                      |
+| Peak memory                      | Maximum RAM/VRAM used                                  | Within available hardware                    |
+| Failed-fit rate                  | Percentage of spline or Legendre fitting failures      | 0                                            |
+| Nonfinite-output rate            | NaN or Inf in coefficients, derivatives or covariances | 0                                            |
+| Covariance PSD validity          | Fraction of covariance matrices numerically PSD        | 100%                                         |
+| Deterministic rerun agreement    | Difference between identical runs                      | Numerical tolerance for deterministic stages |
+| Schema validity                  | Outputs satisfying required interface                  | 100%                                         |
+| Timestamp monotonicity           | Correct chronological ordering of states               | 100%                                         |
+| Coordinate metadata completeness | States containing frame and geometry-validity metadata | 100%                                         |
+| Evaluation reproducibility       | Same data, code and configuration yield same metrics   | 100% within declared tolerance               |
+| Valid-state yield                | Usable states divided by eligible states               | ≥ 90% initial gate                           |
+
+A useful distinction: not every part of Track 1 requires training. Weighted spline fitting, wavelet transforms and regularized Legendre least squares may be deterministic. Their evaluation should focus on numerical correctness, reconstruction, robustness and uncertainty calibration. Trainable segmentation, appearance, geometry-confidence or uncertainty-estimation modules require separate learning curves and generalization checks.
+
+## 3. How to evaluate the statistical validity of your uncertainty
+
+A good diagnostic for multivariate estimates is the normalized estimation error squared (NEES):
+
+\\[ \operatorname{NEES}\_k = (\hat x_k-x_k^{GT})^\top \Sigma_k^{-1} (\hat x_k-x_k^{GT}). \\]
+
+For a correctly specified Gaussian model with \\(d\\) evaluated dimensions and independent reference truth, the expected NEES is approximately \\(d\\).
+
+Illustrative calibration diagnostic for a 2D position state
+
+Illustrative hypothetical values, not measured results.
+
+02468OverconfidentCalibratedUnderconfident
+
+Expected mean NEES ≈ 2 for a calibrated 2D Gaussian position estimate. Higher values suggest underestimated uncertainty; lower values suggest overly broad covariance, assuming the estimator and reference model are otherwise valid.
+
+For a 2D position vector, approximately 95% of individual squared Mahalanobis errors should lie below the \\(\chi^2_2\\) 95th-percentile threshold, about 5.99.
+
+However, reference annotation uncertainty must be included when it is non-negligible. Evaluating against noisy polygons as if they were exact truth can make a properly calibrated estimator appear miscalibrated.
+
+For temporal coefficients, use the relevant coefficient covariance and degrees of freedom, and avoid treating overlapping windows as independent observations when constructing confidence intervals.
+
+## 4. Recommended evaluation dashboard
+
+I would build the Track 1 dashboard around six top-level views, with every metric filterable by entity type, visibility, participant, video and annotation provenance.
+
+Track 1 Evaluation Dashboard
+
+Illustrative layout
+
+Geometry
+
+Mask IoU / BF-score
+
+Manual annotations
+
+Functional fit
+
+Temporal R² / endpoint RMSE
+
+Held-out observations
+
+Uncertainty
+
+95% coverage / NEES
+
+Calibration and sharpness
+
+Tracking
+
+IDF1 / HOTA
+
+Identity and association
+
+Continuity
+
+Overlap disagreement
+
+Shared physical timestamps
+
+Reliability
+
+Valid-state yield
+
+Failures and latency
+
+For training curves, track both training and participant-held-out validation performance. In particular, plot segmentation error, held-out temporal reconstruction loss, uncertainty NLL, 95% coverage, and valid-state yield against training step or preprocessing version.
+
+## 5. Track 1 acceptance gates before starting Track 2
+
+Instead of combining all metrics into one score, use the following staged gates.
+
+Track 1 readiness checklist
+
+0 / 5 verified
+
+Gate 1 — Data integrity
+
+Correct timestamps, no forbidden split leakage, complete provenance and coordinate metadata.
+
+100% valid schema; zero known leakage
+
+Gate 2 — Spatial geometry
+
+Accurate manual-mask reconstruction, valid periodic splines, reliable canonicalization.
+
+IoU ≥ 0.85; BF-score ≥ 0.85; negligible invalid contours
+
+Gate 3 — Temporal fidelity
+
+Accurate endpoint position and velocity; acceptable overlap consistency; genuine motion preserved.
+
+R² ≥ 0.95 on well-observed windows; position error ≤ 3% frame diagonal
+
+Gate 4 — Uncertainty reliability
+
+Coverage matches nominal confidence, covariance is valid, unreliable states are flagged.
+
+95% coverage approximately 92–98%; zero significant PSD violations
+
+Gate 5 — Downstream readiness
+
+Reliable entity identity, usable states and stable interfaces to Track 2.
+
+IDF1 ≥ 0.90; valid-state yield ≥ 90%
+
+&#x20;Copy readiness checklist
+
+These are initial gates, not a substitute for assessing performance by object class and motion regime. In particular, the \\(R^2\\) gate should not be applied to nearly constant trajectories, where \\(R^2\\) can be undefined or unstable.
+
+## 6. Four ablations that I consider essential
+
+Before freezing Track 1 outputs for Koopman training, run these controlled comparisons:
+
+| Ablation                                             | What it establishes                                                                   | Primary metrics                                    |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Uniform vs confidence-weighted Legendre fitting      | Whether covariance-aware weighting improves reconstruction and robustness             | Held-out RMSE, endpoint error, NLL                 |
+| Direct contours vs B-spline + wavelet representation | Whether the functional shape representation preserves important details efficiently   | Boundary F-score, compression, small-feature error |
+| Raw image coordinates vs canonicalized coordinates   | Whether camera compensation removes nuisance motion without suppressing real movement | Static drift, foreground motion error              |
+| Point estimates vs propagated uncertainty            | Whether uncertainty improves reliability and selective prediction                     | Coverage, NLL, risk–coverage AUC                   |
+
+For the weighted-fitting ablation, compare methods on identical observation sets and use the same temporal windows. For the representation ablation, compare under matched memory or feature-dimensionality budgets where possible.
+
+## 7. Final recommendation: which metrics matter most?
+
+For your architecture, I would prioritize these five above all others:
+
+1. Held-out endpoint position and velocity error — because these are the immediate physical quantities consumed by the dynamical model.
+2. Uncertainty calibration — because Track 2 prediction errors and Track 3 contact reasoning depend on knowing when Track 1 is unreliable.
+3. Boundary accuracy, especially near contacts — because a small contour error near a fingertip or object handle can change the inferred interaction.
+4. Overlapping-window consistency — because Track 2 receives a 4 Hz state stream derived from highly overlapping windows.
+5. Participant-held-out generalization — because strong within-video reconstruction does not establish that the representation works on unseen subjects and environments.
+
+The decisive Track 1 success criterion is not merely reconstructing the input accurately. It is producing a stable, calibrated, physically interpretable state stream that preserves the motion and geometry needed for downstream dynamical and relational reasoning.
+
+I would also retain a small manually verified, high-frame-rate reference set for endpoint velocity, short events, and contact-boundary evaluation. With 1-second cubic fitting and 0.25-second output hops, some fast movements can be smoothed or aliased; that limitation cannot be detected reliably using only reconstruction metrics computed from the same low-frequency representation.

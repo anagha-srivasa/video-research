@@ -1,0 +1,118 @@
+{
+  "samples": [
+    {
+      "video_id": "P02_122",
+      "split": "train",
+      "mask_uid": "aee70f59cfedc400898ab4fc7c10f470",
+      "timestamp_us": 179400000,
+      "hole_count": 11,
+      "bbox_native": [
+        714,
+        657,
+        1205,
+        1080
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    },
+    {
+      "video_id": "P03_112",
+      "split": "train",
+      "mask_uid": "a79c8dae38e1ec0225acc40ce5d03597",
+      "timestamp_us": 493700000,
+      "hole_count": 6,
+      "bbox_native": [
+        216,
+        660,
+        749,
+        1080
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    },
+    {
+      "video_id": "P04_109",
+      "split": "train",
+      "mask_uid": "3a2330aae91d982416e55ce5e2b955b2",
+      "timestamp_us": 247160000,
+      "hole_count": 3,
+      "bbox_native": [
+        278,
+        373,
+        1332,
+        852
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    },
+    {
+      "video_id": "P11_16",
+      "split": "train",
+      "mask_uid": "1332e292d9dc28681665e8baa1287e9d",
+      "timestamp_us": 265698767,
+      "hole_count": 6,
+      "bbox_native": [
+        743,
+        467,
+        937,
+        835
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    },
+    {
+      "video_id": "P22_117",
+      "split": "train",
+      "mask_uid": "ecb74d318d0719b5fdcbe6b64bcf3c2c",
+      "timestamp_us": 472860000,
+      "hole_count": 8,
+      "bbox_native": [
+        266,
+        278,
+        999,
+        1035
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    },
+    {
+      "video_id": "P08_09",
+      "split": "validation",
+      "mask_uid": "e795b93d8315fd3fb6cd4452a19cd6d1",
+      "timestamp_us": 161761600,
+      "hole_count": 5,
+      "bbox_native": [
+        1268,
+        646,
+        1637,
+        1080
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    },
+    {
+      "video_id": "P18_03",
+      "split": "validation",
+      "mask_uid": "f8108ee7fc8065a9fe6e775edd9ad98b",
+      "timestamp_us": 162328833,
+      "hole_count": 14,
+      "bbox_native": [
+        887,
+        728,
+        1074,
+        1025
+      ],
+      "source_kind": "manual_sparse",
+      "availability": "retrospective_source_mask",
+      "identity_verified": false
+    }
+  ],
+  "coverage": "one manual hole-bearing example per development video; not full annotation acceptance",
+  "visual_only_resized": true
+}

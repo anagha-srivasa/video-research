@@ -1,0 +1,8 @@
+{
+  "controlled_memory_guard_stops": 1,
+  "oom_observed": false,
+  "all_phase_measured_peak_tree_rss_gib": 20.074264526367188,
+  "post_reader_fix_measured_peak_tree_rss_gib": 7.6136016845703125,
+  "minimum_available_gib": 16.11614990234375,
+  "scope": "summed process-tree RSS, includes shared/mmap pages; not unique physical allocation"
+}

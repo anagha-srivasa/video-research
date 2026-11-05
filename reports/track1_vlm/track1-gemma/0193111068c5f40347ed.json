@@ -1,0 +1,75 @@
+{
+  "task_id": "0193111068c5f40347ed",
+  "cue": "right hand / sponge",
+  "model": "track1-gemma",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    214,
+    226,
+    238
+  ],
+  "image_sha256": [
+    "7489696d6e87eb67756db7301101fc19a04e622e8a980d9ffbc2e9670da8737c",
+    "c017db5045e9367bb062f7a3df13528244fbb7bfcb60c242b4f7a1f2488a770b",
+    "f6fdf42cfc21afe5c3f37845b1c93377af1330e92282960e247dda0e35903c2f"
+  ],
+  "prompt_sha256": "7f6788721969d01f2945ee446522a8768873fd53ed92498cd25121d9ff44cfdf",
+  "source_sha256": "4f10aa2451d81f6afca8d6b93790f2754964831fdf8bf008e7db90f395c3a296",
+  "seconds": 37.002705097198486,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1759,
+    "completion_tokens": 558,
+    "total_tokens": 2317,
+    "completion_tokens_details": {
+      "reasoning_tokens": 399
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-n0ey8xreabgkylmqfrvsa",
+    "object": "chat.completion",
+    "created": 1793359019,
+    "model": "track1-gemma",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"entities_found\": true,\n  \"description\": \"The right hand is gripping a yellow sponge and using it to scrub a dark tray in a sink.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"partial\",\n  \"object_edge_visibility\": \"partial\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The right hand's fingers are wrapped around the yellow sponge, showing clear physical contact as it is being used to scrub the tray.\"\n}\n```",
+          "reasoning_content": "The user wants me to review the CENTER frame for the interaction between the 'right hand' and a 'sponge'.\n\n1.  **Identify the entities**:\n    *   **Right hand**: The hand on the right side of the image, holding the yellow object.\n    *   **Sponge**: The yellow object being held by the right hand.\n\n2.  **Analyze the CENTER frame**:\n    *   The right hand is clearly visible.\n    *   The yellow sponge is clearly visible.\n    *   The right hand's fingers are wrapped around the sponge.\n    *   The sponge is being pressed against a dark tray.\n    *   The contact between the right hand and the sponge is direct and visible.\n\n3.  **Evaluate visibility**:\n    *   `entities_found`: True.\n    *   `object_visible`: True (sponge is visible).\n    *   `hand_edge_visibility`: The edges of the right hand are mostly visible, though some parts are occluded by the sponge. I'll mark it as 'partial' or 'visible'. Actually, the fingers are clearly visible around the sponge.\n    *   `object_edge_visibility`: The edges of the sponge are partially occluded by the hand.\n    *   `projected_relation`: The hand is overlapping the sponge from the camera's perspective.\n    *   `physical_contact`: Visible evidence of the hand gripping the sponge.\n\n4.  **Refine descriptions**:\n    *   `description`: The right hand is gripping a yellow sponge and using it to scrub a dark tray in a sink.\n    *   `uncertainty_reasons`: None significant.\n    *   `recommended_action`: usable_description.\n    *   `evidence`: The right hand's fingers are wrapped around the yellow sponge, which is in direct contact with the hand.",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1759,
+      "completion_tokens": 558,
+      "total_tokens": 2317,
+      "completion_tokens_details": {
+        "reasoning_tokens": 399
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-gemma"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "The right hand is gripping a yellow sponge and using it to scrub a dark tray in a sink.",
+    "object_visible": true,
+    "hand_edge_visibility": "partial",
+    "object_edge_visibility": "partial",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [],
+    "recommended_action": "usable_description",
+    "evidence": "The right hand's fingers are wrapped around the yellow sponge, showing clear physical contact as it is being used to scrub the tray."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

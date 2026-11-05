@@ -1,0 +1,38 @@
+{
+  "finalized": false,
+  "track2_started": false,
+  "default_model_replaced": false,
+  "candidates": {
+    "A": {
+      "status": "experimental_optional_view",
+      "full_window_epoch_recovery_demonstrated": false,
+      "source_topology_events_explicit": true,
+      "physical_causes_verified": false
+    },
+    "B": {
+      "status": "not_promoted",
+      "reason": "Short-horizon/quiet improvements trade against event recall and longer-horizon accuracy; background compensation does not consistently beat nearest or the raw bank"
+    },
+    "C": {
+      "status": "numerically_ready_development_reader",
+      "reason": "Unchanged core plus masked, bounded geometry segments. Strict compound long-sequence evidence remains sparse"
+    },
+    "D": {
+      "status": "independent_reference_missing",
+      "reason": "Source-chain association proxies and 163 categorical-contact review proposals do not establish true identity/contact accuracy"
+    }
+  },
+  "gates": {
+    "spatial": "fresh independent mask acceptance pending; current new-segment measurements are in-sample",
+    "continuity": "partial: discrete source resets preserved; true lineage unresolved",
+    "motion": "not_passed: switching event recall drops in exact synthetic stress",
+    "contact": "missing independent boundaries/sign/onset/release labels",
+    "identity": "missing independent identity and consequential contact-swap references",
+    "uncertainty": "uncalibrated motion/geometry/discrete hypotheses; no finite participant-level simultaneous 95% threshold",
+    "sequence_usability": "partial: overlapping windows, only two repeatedly used validation participants",
+    "leakage": "fresh reserved participants not acquired or inspected; validation exploratory",
+    "reproducibility": "one geometry-video deterministic refit and numerical checks; no full clean dataset rebuild",
+    "resources": "measured development limits only"
+  },
+  "scientific_acceptance": false
+}

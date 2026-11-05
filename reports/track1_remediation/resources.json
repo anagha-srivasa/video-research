@@ -1,0 +1,9 @@
+{
+  "scope": "Final complete four-candidate development pass",
+  "samples": 16,
+  "peak_tree_rss_gib": 4.2714385986328125,
+  "minimum_available_gib": 18.61749267578125,
+  "minimum_disk_free_gb": 35.727085568,
+  "rss_includes_shared_mapping_pages": true,
+  "oom_observed": false
+}

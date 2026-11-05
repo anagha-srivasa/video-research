@@ -1,0 +1,27 @@
+{
+  "video_id": "P08_09",
+  "passed": true,
+  "reviewer": "Codex visual inspection",
+  "scope": "Sampled six-frame cross-source overlays and three-panel repair inspection; not exhaustive frame-level annotation validation.",
+  "image_sha256": "dfe38021fa0fd345dc01d3ac980df2a83c291513ee9677e447b7b1309c27569b",
+  "repair_image_sha256": "bafed8c537a768a4f58931f4595a7aefbe0464e711b158629f108e53aef53c85",
+  "table_hashes": {
+    "videos": "8e4d4f7ab45017d012798da351a93d5363902d945e5c4f78d6e67b545af3a04a",
+    "frames": "761dd41bd295f83f4724726bb60ba67ce2d1fdc34698ea1d335929591d31af9f",
+    "annotation_frames": "fec4b70d2dfdbd778ec62a97e3867a431ec63de2494f17c59b637656e4f1e46d",
+    "masks": "e19f0e01121a2dc6204752ec77bb15050ebb5401e35353660bf8d023b5a68ba8",
+    "contacts": "66cdae3b5abcf74c6c1889617658e8bdbaa7aae9cdfd63d08ed556ac1d2ae431",
+    "entities": "aa268e047d57d1760cb6e6e8fee92579ab27dec1fa18ba147e27a45866bdd227",
+    "actions": "17b5d281e21d792d5d14514ad653fd2ba2e8b0e4acaf3836877b0f67f5431316",
+    "camera_frames": "7526de848c8cf48cc2081b53c238a3ab57c857d0e2b125fd9755e3e4ee14a3a3",
+    "event_evidence": "9343aa27d149048479f9b10cb6eb493a9a24eab0c73afba1811af80324892bfc",
+    "windows_1s_hop250ms": "1dec9481bb636dd7b50bf53c39baaf96a22be58d9c9e22b429f529f1f3ae3059",
+    "qa_flags": "0b287950cdbd2d8caa591dbe090e90a9c02fdf163eb692ac8b8b9024fa5f2373"
+  },
+  "findings": "Hands, hob, pan, fridge and cup align at native irregular timestamps; largest sparse endpoint error is displayed. Repaired fridge occlusion preserved.",
+  "limitations": [
+    "Camera resize/crop remains unverified.",
+    "Source mask scopes are not verified temporal tracks.",
+    "Repaired raster is a documented interpretation; raw polygons remain unchanged."
+  ]
+}

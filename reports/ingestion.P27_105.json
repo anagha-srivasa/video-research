@@ -1,0 +1,88 @@
+{
+  "video_id": "P27_105",
+  "passed": true,
+  "cases": [
+    {
+      "mask_uid": "0019c9533eb6f696743e9a58edcc474a",
+      "source_kind": "manual_sparse",
+      "geometry_status": "clipped_for_rasterisation",
+      "timestamp_us": 41500000,
+      "raster_area": 156220,
+      "passed": true
+    },
+    {
+      "mask_uid": "00927ad64c4d1fcae59e87b08aece7f0",
+      "source_kind": "manual_sparse",
+      "geometry_status": "valid",
+      "timestamp_us": 805920000,
+      "raster_area": 28686,
+      "passed": true
+    },
+    {
+      "mask_uid": "002a7849770ffd0952b8347be8fa0757",
+      "source_kind": "dense_gt_endpoint",
+      "geometry_status": "valid",
+      "timestamp_us": 142360000,
+      "raster_area": 12474,
+      "passed": true
+    },
+    {
+      "mask_uid": "004b5b81d146ff051f087bf8be3089b9",
+      "source_kind": "dense_gt_endpoint",
+      "geometry_status": "valid",
+      "timestamp_us": 516500000,
+      "raster_area": 9366,
+      "passed": true
+    },
+    {
+      "mask_uid": "0000dfd9c3f98695a6c1cff1d8d2fc84",
+      "source_kind": "dense_interpolated",
+      "geometry_status": "valid",
+      "timestamp_us": 262620000,
+      "raster_area": 1949,
+      "passed": true
+    },
+    {
+      "mask_uid": "0000f3a232e29cd355f3acb3348415b8",
+      "source_kind": "dense_interpolated",
+      "geometry_status": "valid",
+      "timestamp_us": 74960000,
+      "raster_area": 8562,
+      "passed": true
+    },
+    {
+      "mask_uid": "00021586180c0efbd7be206ad538916b",
+      "source_kind": "dense_interpolated",
+      "geometry_status": "repaired_for_rasterisation",
+      "timestamp_us": 742900000,
+      "raster_area": 233769,
+      "passed": true
+    },
+    {
+      "mask_uid": "0004a8979a59d677f6d85742826b62c5",
+      "source_kind": "dense_interpolated",
+      "geometry_status": "repaired_for_rasterisation",
+      "timestamp_us": 750640000,
+      "raster_area": 4653,
+      "passed": true
+    },
+    {
+      "mask_uid": "00019382617f17a3d45847db4e33cc11",
+      "quarantine_rejected": true,
+      "passed": true
+    }
+  ],
+  "table_hashes": {
+    "videos": "6a700761623399169e2864c6fda8201b591db386f8b5618eebb37f9eebb7cf4c",
+    "frames": "3f15e78662f87d5139daa3ca739663607540e8aa10ef03a818ba3b6965c27292",
+    "annotation_frames": "c194b6c22774bcc6181d50d27762687d8cc751b3842c61e62b923552969a853a",
+    "masks": "6d6fef7c02a35e8e6021d0424a4ddf0f02e8a707e8c8f7cf3efb74839989dcfa",
+    "contacts": "034a1423e31038432b52ab705d7d9ad6986ccfd28075ffdea2caf0f5278f1482",
+    "entities": "44a2f7a22d850810af449ec9bfe78b793a60f70d7efb71268add138c18fe0600",
+    "actions": "ffa6f2c7894d314294184339f011226b917a607712ba681cf1e75eb270464e12",
+    "camera_frames": "20ffa244473dd7663980d277e624f913fea8adfb0cb0182c9064bd41245eee6f",
+    "event_evidence": "47aff3c09e28c3b05e01ae56addf4b55939952332bdcd39172223b9bbf77363e",
+    "windows_1s_hop250ms": "99925fbaf03204f3db185a1c9fe960a382aebd2f9763f8326d8e782f891d0027",
+    "qa_flags": "eab79358d602682146f879d2e67b3130c6da0e7a05e353f36d4c743a5bc8f83a"
+  }
+}

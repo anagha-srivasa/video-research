@@ -1,0 +1,75 @@
+{
+  "task_id": "08e17e0c76b64ddec06c",
+  "cue": "left hand / saucepan lid",
+  "model": "track1-gemma",
+  "annotation_kind": "machine_only_not_independent_reference",
+  "human_reference_eligible": false,
+  "frame_indices": [
+    146,
+    158,
+    170
+  ],
+  "image_sha256": [
+    "25f614c2a0b8fcf0ba54673f60fc643e2fad8b08075dc1fe5d938cfb93b59782",
+    "44461d2524ea78795280c06f31b201d2ad22f3539461b66d57ab747780000e7b",
+    "dfd1e0b8d06ece743edc74f0849130070ca0c5ff6622aa2c9326ad6cf4dc6a1d"
+  ],
+  "prompt_sha256": "1a0583065cde56b8a1f4afc047e1ce5498fc45c85d7f2abb93a1540b75577bb3",
+  "source_sha256": "4f10aa2451d81f6afca8d6b93790f2754964831fdf8bf008e7db90f395c3a296",
+  "seconds": 38.08213138580322,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1760,
+    "completion_tokens": 545,
+    "total_tokens": 2305,
+    "completion_tokens_details": {
+      "reasoning_tokens": 406
+    }
+  },
+  "raw_response": {
+    "id": "chatcmpl-re242za9dto3kwxubbd4j",
+    "object": "chat.completion",
+    "created": 1793359226,
+    "model": "track1-gemma",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "```json\n{\n  \"entities_found\": true,\n  \"description\": \"The left hand is gripping the handle of the glass saucepan lid.\",\n  \"object_visible\": true,\n  \"hand_edge_visibility\": \"visible\",\n  \"object_edge_visibility\": \"visible\",\n  \"projected_relation\": \"overlap\",\n  \"physical_contact\": \"visible_evidence\",\n  \"uncertainty_reasons\": [],\n  \"recommended_action\": \"usable_description\",\n  \"evidence\": \"The left hand is clearly seen holding the handle of the saucepan lid.\"\n}\n```",
+          "reasoning_content": "The user wants me to review the CENTER frame for the interaction between the 'left hand' and the 'saucepan lid'.\n\n1.  **Identify the entities**:\n    *   **Left hand**: Visible on the left side of the image, holding the handle of the lid.\n    *   **Saucepan lid**: The glass lid being held by the left hand.\n\n2.  **Analyze the interaction in the CENTER frame**:\n    *   The left hand is gripping the handle of the saucepan lid.\n    *   The fingers of the left hand are wrapped around the handle.\n    *   The handle is part of the lid.\n    *   There is clear physical contact between the hand and the lid's handle.\n\n3.  **Evaluate visibility**:\n    *   **Left hand**: Visible.\n    *   **Saucepan lid**: Visible.\n    *   **Hand edge**: The edges of the hand are visible where they meet the handle.\n    *   **Object edge**: The edges of the lid are visible.\n    *   **Projected relation**: The hand is overlapping the handle of the lid from this perspective.\n    *   **Physical contact**: Visible evidence of the hand gripping the handle.\n\n4.  **Determine the final values for the JSON**:\n    *   `entities_found`: true\n    *   `description`: The left hand is gripping the handle of the glass saucepan lid.\n    *   `object_visible`: true\n    *   `hand_edge_visibility`: visible\n    *   `object_edge_visibility`: visible\n    *   `projected_relation`: overlap\n    *   `physical_contact`: visible_evidence\n    *   `uncertainty_reasons`: []\n    *   `recommended_action`: usable_description\n    *   `evidence`: The left hand is clearly seen holding the handle of the saucepan lid.",
+          "tool_calls": []
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1760,
+      "completion_tokens": 545,
+      "total_tokens": 2305,
+      "completion_tokens_details": {
+        "reasoning_tokens": 406
+      }
+    },
+    "stats": {},
+    "system_fingerprint": "track1-gemma"
+  },
+  "schema_valid": true,
+  "error": null,
+  "annotation": {
+    "entities_found": true,
+    "description": "The left hand is gripping the handle of the glass saucepan lid.",
+    "object_visible": true,
+    "hand_edge_visibility": "visible",
+    "object_edge_visibility": "visible",
+    "projected_relation": "overlap",
+    "physical_contact": "visible_evidence",
+    "uncertainty_reasons": [],
+    "recommended_action": "usable_description",
+    "evidence": "The left hand is clearly seen holding the handle of the saucepan lid."
+  },
+  "requires_human_confirmation": true,
+  "boundaries_provided": false,
+  "event_timing_provided": false
+}

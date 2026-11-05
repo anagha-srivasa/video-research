@@ -1,0 +1,397 @@
+{
+  "task": "contour-conditioned retrospective functional entity encoding",
+  "observations": 79270,
+  "training_observations": 61051,
+  "validation_observations": 18219,
+  "native_rgb_frames": 28591,
+  "attempted_states": 19974,
+  "valid_functional_states": 3485,
+  "source_complete_certified_geometry_states": 1631,
+  "sequence_counts": {
+    "train/length16": 0,
+    "train/length4": 396,
+    "validation/length16": 0,
+    "validation/length4": 63
+  },
+  "parameters": {
+    "16": {
+      "families": {
+        "position": {
+          "loss": "huber",
+          "regularization": 0.3333333333333333
+        },
+        "scale": {
+          "loss": "l2",
+          "regularization": 0.3333333333333333
+        },
+        "shape": {
+          "loss": "huber",
+          "regularization": 0.3333333333333333
+        }
+      },
+      "neutral_detail": {
+        "count": 3,
+        "strength": 0.01
+      }
+    },
+    "32": {
+      "families": {
+        "position": {
+          "loss": "l2",
+          "regularization": 0.3333333333333333
+        },
+        "scale": {
+          "loss": "huber",
+          "regularization": 0.3333333333333333
+        },
+        "shape": {
+          "loss": "huber",
+          "regularization": 0.3333333333333333
+        }
+      },
+      "neutral_detail": {
+        "count": 3,
+        "strength": 0.01
+      }
+    }
+  },
+  "spatial_validation": [
+    {
+      "boundary_fscore_2px": 0.6522294590149937,
+      "iou": 0.891744947527307,
+      "masks": 149,
+      "method": "frozen_v2_16",
+      "split": "validation"
+    },
+    {
+      "boundary_fscore_2px": 0.7123803428234332,
+      "iou": 0.9014693470321546,
+      "masks": 149,
+      "method": "refit16",
+      "split": "validation"
+    },
+    {
+      "boundary_fscore_2px": 0.8842038033603564,
+      "iou": 0.9731855047306054,
+      "masks": 149,
+      "method": "refit32",
+      "split": "validation"
+    }
+  ],
+  "temporal_validation": [
+    {
+      "mask_iou": 0.8989792790571507,
+      "method": "linear",
+      "model": 16,
+      "position_nrmse": 0.007411542595018613,
+      "probes": 320,
+      "protocol": "single",
+      "scale_nrmse": 0.013969228359435044,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7966693324207149,
+      "method": "locked_v2_fitter",
+      "model": 16,
+      "position_nrmse": 0.03306326244405039,
+      "probes": 320,
+      "protocol": "single",
+      "scale_nrmse": 0.04431908740152221,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8703937529121968,
+      "method": "nearest",
+      "model": 16,
+      "position_nrmse": 0.014943892211997638,
+      "probes": 320,
+      "protocol": "single",
+      "scale_nrmse": 0.027195709756833268,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7974222844398033,
+      "method": "refit_cubic",
+      "model": 16,
+      "position_nrmse": 0.03308348910227053,
+      "probes": 320,
+      "protocol": "single",
+      "scale_nrmse": 0.04431908740152249,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.802735634927517,
+      "method": "refit_with_neutral_detail",
+      "model": 16,
+      "position_nrmse": 0.030409978739790768,
+      "probes": 320,
+      "protocol": "single",
+      "scale_nrmse": 0.044319087401522496,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8799279263255919,
+      "method": "linear",
+      "model": 16,
+      "position_nrmse": 0.012941595343048094,
+      "probes": 313,
+      "protocol": "gap100",
+      "scale_nrmse": 0.027526968501920716,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7855607770088082,
+      "method": "locked_v2_fitter",
+      "model": 16,
+      "position_nrmse": 0.03900846324294308,
+      "probes": 313,
+      "protocol": "gap100",
+      "scale_nrmse": 0.05955431935504821,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8231333800655155,
+      "method": "nearest",
+      "model": 16,
+      "position_nrmse": 0.03051244955175884,
+      "probes": 313,
+      "protocol": "gap100",
+      "scale_nrmse": 0.04688845725762761,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7862729103385839,
+      "method": "refit_cubic",
+      "model": 16,
+      "position_nrmse": 0.0390753668601409,
+      "probes": 313,
+      "protocol": "gap100",
+      "scale_nrmse": 0.05955431935504812,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7913274439342748,
+      "method": "refit_with_neutral_detail",
+      "model": 16,
+      "position_nrmse": 0.03601498877655129,
+      "probes": 313,
+      "protocol": "gap100",
+      "scale_nrmse": 0.059554319355048124,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7487067343030582,
+      "method": "linear",
+      "model": 16,
+      "position_nrmse": 0.04364882132112942,
+      "probes": 226,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.06101375323540325,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.6350437940120788,
+      "method": "locked_v2_fitter",
+      "model": 16,
+      "position_nrmse": 0.10061519669517954,
+      "probes": 226,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.11303608583433793,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7711599246488599,
+      "method": "nearest",
+      "model": 16,
+      "position_nrmse": 0.04986542766782236,
+      "probes": 226,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.05495691728580805,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.6347523955718049,
+      "method": "refit_cubic",
+      "model": 16,
+      "position_nrmse": 0.10062144555019362,
+      "probes": 226,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.11303608583433805,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.6352808763444657,
+      "method": "refit_with_neutral_detail",
+      "model": 16,
+      "position_nrmse": 0.10034312393337004,
+      "probes": 226,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.11303608583433805,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.9531319144822603,
+      "method": "linear",
+      "model": 32,
+      "position_nrmse": 0.005230449640494716,
+      "probes": 127,
+      "protocol": "single",
+      "scale_nrmse": 0.019089264869617376,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8670335023730742,
+      "method": "locked_v2_fitter",
+      "model": 32,
+      "position_nrmse": 0.02313521267785721,
+      "probes": 127,
+      "protocol": "single",
+      "scale_nrmse": 0.05273619222835398,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.9160976446726707,
+      "method": "nearest",
+      "model": 32,
+      "position_nrmse": 0.012188632437857706,
+      "probes": 127,
+      "protocol": "single",
+      "scale_nrmse": 0.03690280309628429,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8669057657672772,
+      "method": "refit_cubic",
+      "model": 32,
+      "position_nrmse": 0.02313521267785721,
+      "probes": 127,
+      "protocol": "single",
+      "scale_nrmse": 0.053241899922836115,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8729166465789744,
+      "method": "refit_with_neutral_detail",
+      "model": 32,
+      "position_nrmse": 0.021660840247030303,
+      "probes": 127,
+      "protocol": "single",
+      "scale_nrmse": 0.053241899922836115,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.9388355548535889,
+      "method": "linear",
+      "model": 32,
+      "position_nrmse": 0.009838945022892974,
+      "probes": 128,
+      "protocol": "gap100",
+      "scale_nrmse": 0.02959893726293164,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8527732764194836,
+      "method": "locked_v2_fitter",
+      "model": 32,
+      "position_nrmse": 0.02870270503036318,
+      "probes": 128,
+      "protocol": "gap100",
+      "scale_nrmse": 0.06205252512733794,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8713887248398182,
+      "method": "nearest",
+      "model": 32,
+      "position_nrmse": 0.025902147190784375,
+      "probes": 128,
+      "protocol": "gap100",
+      "scale_nrmse": 0.04854516114524478,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8527953085359015,
+      "method": "refit_cubic",
+      "model": 32,
+      "position_nrmse": 0.02870270503036318,
+      "probes": 128,
+      "protocol": "gap100",
+      "scale_nrmse": 0.06205638216104788,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8580128656366202,
+      "method": "refit_with_neutral_detail",
+      "model": 32,
+      "position_nrmse": 0.02694599112012256,
+      "probes": 128,
+      "protocol": "gap100",
+      "scale_nrmse": 0.06205638216104788,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8271390190918433,
+      "method": "linear",
+      "model": 32,
+      "position_nrmse": 0.03215691002277212,
+      "probes": 97,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.04355781862517504,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7122266205344383,
+      "method": "locked_v2_fitter",
+      "model": 32,
+      "position_nrmse": 0.08226247852236684,
+      "probes": 97,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.08156512916317109,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.8288329507000742,
+      "method": "nearest",
+      "model": 32,
+      "position_nrmse": 0.03579449754390338,
+      "probes": 97,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.04147866199029299,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7122633398491875,
+      "method": "refit_cubic",
+      "model": 32,
+      "position_nrmse": 0.08226247852236684,
+      "probes": 97,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.08103766975627505,
+      "split": "validation"
+    },
+    {
+      "mask_iou": 0.7129825245379013,
+      "method": "refit_with_neutral_detail",
+      "model": 32,
+      "position_nrmse": 0.08212611904976379,
+      "probes": 97,
+      "protocol": "endpoint100",
+      "scale_nrmse": 0.08103766975627505,
+      "split": "validation"
+    }
+  ],
+  "numerical_ready": true,
+  "legacy_sequence16_ready": false,
+  "scientific_acceptance": false,
+  "finalized": false,
+  "track2_started": false,
+  "tests_passed": 68,
+  "resources": {
+    "controlled_memory_guard_stops": 1,
+    "oom_observed": false,
+    "all_phase_measured_peak_tree_rss_gib": 20.074264526367188,
+    "post_reader_fix_measured_peak_tree_rss_gib": 7.6136016845703125,
+    "minimum_available_gib": 16.11614990234375,
+    "scope": "summed process-tree RSS, includes shared/mmap pages; not unique physical allocation"
+  }
+}

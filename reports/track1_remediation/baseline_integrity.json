@@ -1,0 +1,11 @@
+{
+  "checked": {
+    "reports/freeze_manifest.json": 292,
+    "reports/track1_freeze_manifest.json": 271,
+    "reports/track1_refinement/freeze_manifest.json": 178,
+    "reports/track1_retrain/manifest.json": 256,
+    "reports/track1_readiness/manifest.json": 355
+  },
+  "all_hashes_match": true,
+  "old_defaults_preserved": true
+}
