@@ -1,0 +1,37 @@
+{
+  "records": [
+    {
+      "family": "kinematic_mlp",
+      "device": "cpu",
+      "supported": true,
+      "median_train_step_ms": 0.43008299689972773,
+      "p95_ms": 0.4449018000741489
+    },
+    {
+      "family": "kinematic_mlp",
+      "device": "mps",
+      "supported": true,
+      "median_train_step_ms": 2.118312506354414,
+      "p95_ms": 3.3532798021042254
+    },
+    {
+      "family": "kinematic_gru",
+      "device": "cpu",
+      "supported": true,
+      "median_train_step_ms": 0.7122505048755556,
+      "p95_ms": 0.7323776961129624
+    },
+    {
+      "family": "kinematic_gru",
+      "device": "mps",
+      "supported": true,
+      "median_train_step_ms": 3.833458002191037,
+      "p95_ms": 5.749954500060994
+    }
+  ],
+  "batch_size": 32,
+  "precision": "float32",
+  "fixture_only": true,
+  "cpu_threads": 1,
+  "metal_timing_synchronized": true
+}

@@ -1,0 +1,1 @@
+{"device":"cpu","minimum_available_gib":5,"numpy":"2.3.5","platform":"macOS-26.5.2-arm64-arm-64bit-Mach-O","precision":"float32","process_tree_rss_limit_gib":20,"python":"3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:11:29) [Clang 20.1.8 ]","torch":"2.13.0","workers":12}
