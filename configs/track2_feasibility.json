@@ -1,0 +1,58 @@
+{
+  "protocol_version": 1,
+  "cohort": "frozen_context_v3_m16_length4",
+  "amendment": "User approved frozen six-second contexts after base-v2 audit found zero future validation targets; model/seeds/participants unchanged",
+  "sequence_length": 4,
+  "horizons_us": [
+    250000,
+    500000,
+    1000000
+  ],
+  "seeds": [
+    17,
+    43,
+    89
+  ],
+  "models": [
+    "koopman",
+    "stable_koopman",
+    "gru",
+    "mlp"
+  ],
+  "latent_dimension": 32,
+  "hidden_dimension": 32,
+  "encoder_width": 64,
+  "batch_size": 32,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "gradient_clip": 1.0,
+  "maximum_epochs": 200,
+  "patience": 25,
+  "minimum_improvement": 1e-06,
+  "generator_epsilon": 0.0001,
+  "loss_weights": [
+    1.0,
+    0.25,
+    0.25,
+    0.05
+  ],
+  "fold_policy": "five leave-one-training-participant-out fits; final refit on all five for median best epoch count",
+  "workers": 12,
+  "cpu_threads_per_worker": 1,
+  "bootstrap_repetitions": 2000,
+  "appearance": false,
+  "detail": false,
+  "m32": false,
+  "full_track2_authorized": false,
+  "scientific_acceptance": false,
+  "device": "cpu",
+  "gates": {
+    "position_250_ratio": 0.9,
+    "position_500_max_ratio": 1.05,
+    "position_1000_bounded_ratio": 1.2,
+    "velocity_max_ratio": 1.05,
+    "worst_seed_position_max_ratio": 1.2,
+    "catastrophic_max_error_factor": 10.0,
+    "stable_spectral_abscissa_tolerance": 1e-05
+  }
+}

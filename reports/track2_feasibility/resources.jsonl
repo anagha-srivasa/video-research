@@ -1,0 +1,10 @@
+{"unix": 1793880476.061995, "pid": 78420, "tree_rss_gib": 0.3131561279296875, "available_gib": 23.949752807617188, "cpu_percent": 0.0, "disk_free_bytes": 410984497152}
+{"unix": 1793880481.0855758, "pid": 78420, "tree_rss_gib": 3.4999847412109375, "available_gib": 22.871368408203125, "cpu_percent": 49.6, "disk_free_bytes": 410976948224}
+{"unix": 1793880486.1107578, "pid": 78420, "tree_rss_gib": 6.5451507568359375, "available_gib": 21.672348022460938, "cpu_percent": 79.1, "disk_free_bytes": 410977165312}
+{"unix": 1793880491.134579, "pid": 78420, "tree_rss_gib": 7.02276611328125, "available_gib": 21.661178588867188, "cpu_percent": 78.4, "disk_free_bytes": 410976616448}
+{"unix": 1793880496.1604102, "pid": 78420, "tree_rss_gib": 7.471099853515625, "available_gib": 21.477447509765625, "cpu_percent": 79.9, "disk_free_bytes": 410976284672}
+{"unix": 1793880501.180094, "pid": 78420, "tree_rss_gib": 7.756805419921875, "available_gib": 21.57684326171875, "cpu_percent": 76.1, "disk_free_bytes": 410975670272}
+{"unix": 1793880506.201667, "pid": 78420, "tree_rss_gib": 3.936798095703125, "available_gib": 23.072601318359375, "cpu_percent": 68.5, "disk_free_bytes": 410971090944}
+{"unix": 1793880511.222432, "pid": 78420, "tree_rss_gib": 6.48687744140625, "available_gib": 21.970413208007812, "cpu_percent": 81.1, "disk_free_bytes": 410969153536}
+{"unix": 1793880516.241183, "pid": 78420, "tree_rss_gib": 0.60028076171875, "available_gib": 24.3890380859375, "cpu_percent": 30.7, "disk_free_bytes": 410962710528}
+{"unix": 1793881011.642102, "pid": 78750, "tree_rss_gib": 0.3128814697265625, "available_gib": 24.3084716796875, "cpu_percent": 0.0, "disk_free_bytes": 410968985600}
