@@ -1,0 +1,19 @@
+{
+  "supplied_report": "/Users/anagha/.codex/attachments/92260cd7-cb6e-4e59-928e-fff3393abe07/Pasted text.txt",
+  "supplied_report_sha256": "8f96ccb83dbe3756d713ac105550cb3a667cf8d724801f26703ecc9f8c3cd2bc",
+  "artifacts": {
+    "reports/track2_report_assessment/ASSESSMENT.md": "c4b3310045ca5d96da6ab673c0f5ec8eca29a6e6594564bc93a6e0444a25aed2",
+    "reports/track2_report_assessment/assessment.json": "c6de57180ed2ec344fd81249e3997a5e5dd9394dfb4e8dc9b71af7042950640c",
+    "reports/track2_report_assessment/episode_metrics.parquet": "ae7456db25f80f01cf43fb7b9ad9fcf85159781fd72345503e5672e5544b436a",
+    "reports/track2_report_assessment/independent_references.json": "e3678644ebef4fe45a9ae6bb8f50930608cacb645995b4c6ccdabb8c1f255e78",
+    "reports/track2_report_assessment/participant_metrics.parquet": "07eb78b2eaa499fd35f92d70908f21724ca012bcf23274169420a60b9c7e87d5",
+    "src/track2_assessment.py": "470efb8c4b20c80716f5d291e9b46141494ac6a02fe629b2baabdc2e6870293f",
+    "tests/test_track2_assessment.py": "61a0933d39d3c3394f3ef524dd066d8e2483fcb1e8c2d9dd2866a711fc2d2677",
+    "work/track2_report_assessment_tests.log": "1f842a3a2b5c1c06733723656d8dc8c77abd1184ae247b5986a31aedf5027b23"
+  },
+  "tests_passed": 120,
+  "training_started": false,
+  "model_inference_repeated": false,
+  "full_track2_go": false,
+  "scientific_acceptance": false
+}
