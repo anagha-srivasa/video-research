@@ -1,0 +1,1 @@
+{"geometry_sampled_endpoint_only":true,"missing_geometry_excluded":false,"no_contact_constraints":true,"records":[{"all_four_geometry":458,"any_geometry":668,"histories":1047,"no_geometry":379,"split":"train"},{"all_four_geometry":60,"any_geometry":132,"histories":224,"no_geometry":92,"split":"validation"}],"source_labels_retrospective":true}

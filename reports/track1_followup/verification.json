@@ -1,0 +1,1 @@
+{"no_training":true,"replay_schedules":270,"scope":"Engineering causality and geometry-contract checks; no independent scientific acceptance","synthetic_episodes":90,"test_command":"python3.13 -m pytest tests -q --basetemp=work/track1_followup/pytest_full","test_log_sha256":"e11044038e52a65a8d28da686aa08c9a506885bb0797d8b22f26c8673c8a2cfb","tests_passed":143}
