@@ -1,0 +1,2469 @@
+[
+  {
+    "video": "P02_122",
+    "mask_uid": "e432afffe8043dc79a1d51616d104dba",
+    "timestamp_us": 7100000,
+    "entity": "left hand",
+    "ring_points": [
+      650,
+      4
+    ]
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "680a85f044eea2665dda5b3c087cd344",
+    "timestamp_us": 7100000,
+    "entity": "oven",
+    "ring_points": [
+      1642
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "expanded_search_supported": true,
+    "expanded_search_allocation": [
+      16
+    ],
+    "expanded_search_candidates": [
+      {
+        "allocation": [
+          8
+        ],
+        "fit_valid": true,
+        "certified": false,
+        "certificate_attempted": false,
+        "retained_normalized_mse": 0.003591052827695126,
+        "coefficient_bytes": 304,
+        "objective": 0.003591052827695126
+      },
+      {
+        "allocation": [
+          16
+        ],
+        "fit_valid": true,
+        "certified": true,
+        "certificate_attempted": true,
+        "retained_normalized_mse": 0.0013147570568461339,
+        "coefficient_bytes": 560,
+        "objective": 0.0013147570568461339,
+        "certificate_failure": null
+      },
+      {
+        "allocation": [
+          24
+        ],
+        "fit_valid": true,
+        "certified": false,
+        "certificate_attempted": true,
+        "retained_normalized_mse": 0.00039927937438979396,
+        "coefficient_bytes": 816,
+        "objective": 0.00039927937438979396,
+        "certificate_failure": "local_injectivity_unresolved"
+      },
+      {
+        "allocation": [
+          32
+        ],
+        "fit_valid": true,
+        "certified": false,
+        "certificate_attempted": true,
+        "retained_normalized_mse": 0.00010780559903028501,
+        "coefficient_bytes": 1072,
+        "objective": 0.00010780559903028501,
+        "certificate_failure": "local_injectivity_unresolved"
+      }
+    ]
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "bb292b488c83531a9fd90bb0cdaf969d",
+    "timestamp_us": 13000000,
+    "entity": "right glove",
+    "ring_points": [
+      78,
+      46,
+      50,
+      116,
+      77
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "03d2bc6eadc85030fe34870bf02edb13",
+    "timestamp_us": 13000000,
+    "entity": "oven shelf",
+    "ring_points": [
+      614
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "fb582d75166d5c24a2596c6579ba27e6",
+    "timestamp_us": 26780000,
+    "entity": "left hand",
+    "ring_points": [
+      804
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "11d01a50e8783f69e2b3b419fb5bc0de",
+    "timestamp_us": 26780000,
+    "entity": "oven",
+    "ring_points": [
+      730
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "65cbd0f8f96f6be3192fd42606522b4c",
+    "timestamp_us": 26780000,
+    "entity": "glove",
+    "ring_points": [
+      745
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "1ef41227a4e339f4db47ed43ec37746e",
+    "timestamp_us": 41860000,
+    "entity": "right hand",
+    "ring_points": [
+      393
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "6b2372c5f5f74a393aca06a8573fa242",
+    "timestamp_us": 41860000,
+    "entity": "left hand",
+    "ring_points": [
+      59,
+      297,
+      4
+    ]
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "4648d9bef5302816e1eaa8d7b86ecc61",
+    "timestamp_us": 41860000,
+    "entity": "oven",
+    "ring_points": [
+      1843
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "576e7c3e05fae824c8839977970276f1",
+    "timestamp_us": 41860000,
+    "entity": "right glove",
+    "ring_points": [
+      662
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P02_122",
+    "mask_uid": "d933aa4a47764a967cd24277ab25fc6c",
+    "timestamp_us": 63000000,
+    "entity": "timer",
+    "ring_points": [
+      878
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "0e399bec6b910978cd3de7ee828d063e",
+    "timestamp_us": 3760000,
+    "entity": "right hand",
+    "ring_points": [
+      86,
+      132
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "d188aecb4e63c74e9aa4dd319a73eee6",
+    "timestamp_us": 3760000,
+    "entity": "spoon",
+    "ring_points": [
+      416
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "c7e339b177212dc36934c2917c25f4da",
+    "timestamp_us": 3760000,
+    "entity": "hob",
+    "ring_points": [
+      131,
+      1391
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": false,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": false,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "77eb1ea670ad9aa51e93311001e1ab42",
+    "timestamp_us": 3760000,
+    "entity": "saucepan",
+    "ring_points": [
+      928
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "f8a304f6b1c9a9af3e831d577428470f",
+    "timestamp_us": 3760000,
+    "entity": "mixture",
+    "ring_points": [
+      580
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "e06a7ae3289ffd3284a066796bf8fb59",
+    "timestamp_us": 4500000,
+    "entity": "left hand",
+    "ring_points": [
+      441
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "659e1fe3664afc3629345bafd2f7fca0",
+    "timestamp_us": 4500000,
+    "entity": "right hand",
+    "ring_points": [
+      108
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "95f2b42e3bbad279ad02e1d38cb712ee",
+    "timestamp_us": 4500000,
+    "entity": "spoon",
+    "ring_points": [
+      542
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "e0cff9ee57489c280ade3b722d80b324",
+    "timestamp_us": 4500000,
+    "entity": "hob",
+    "ring_points": [
+      586,
+      1745
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "c665dd5312e2cbf4d79f017e8bd2efe1",
+    "timestamp_us": 4500000,
+    "entity": "saucepan",
+    "ring_points": [
+      1485
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "4dcc89a26117d3358829e3be3b288aef",
+    "timestamp_us": 4500000,
+    "entity": "mixture",
+    "ring_points": [
+      684
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P03_112",
+    "mask_uid": "b865ab914974752464c88e187a8be523",
+    "timestamp_us": 8000000,
+    "entity": "spoon",
+    "ring_points": [
+      332
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "2312d5cfc1158d377e3052c2aa1a4014",
+    "timestamp_us": 143780000,
+    "entity": "left hand",
+    "ring_points": [
+      43,
+      12,
+      20,
+      375
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": false,
+      "ring_parent": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "595f610e64e907cce0e4399b7e3d2478",
+    "timestamp_us": 143780000,
+    "entity": "chopping board",
+    "ring_points": [
+      204,
+      1315,
+      4,
+      6,
+      301
+    ]
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "1c37f2652ffe4243c91e3f8275c90c8f",
+    "timestamp_us": 143780000,
+    "entity": "carrot bit/piece",
+    "ring_points": [
+      44,
+      213,
+      36,
+      75,
+      33,
+      58,
+      193,
+      35,
+      78,
+      216,
+      38,
+      298,
+      4
+    ]
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "6fc1bc6ef1fd43237b8140080dd3d6be",
+    "timestamp_us": 143780000,
+    "entity": "carrot",
+    "ring_points": [
+      142
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "2daf32f89261c06083b3493dfa49971b",
+    "timestamp_us": 143780000,
+    "entity": "right hand",
+    "ring_points": [
+      427
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "3ba1edde6f67a2f56785244cd047ce9b",
+    "timestamp_us": 143780000,
+    "entity": "knife",
+    "ring_points": [
+      578
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "8a93daadb5fbdaf741c9840174a3f245",
+    "timestamp_us": 143780000,
+    "entity": "measuring jug",
+    "ring_points": [
+      450
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "5a8d623d75a6d2a9fef1bffb1f1855cd",
+    "timestamp_us": 141780000,
+    "entity": "left hand",
+    "ring_points": [
+      931
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "615f06b324aea63d8299491b9b61b84b",
+    "timestamp_us": 141780000,
+    "entity": "chopping board",
+    "ring_points": [
+      144,
+      636,
+      177
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "3d6de950e14a6993047d3579e41d1275",
+    "timestamp_us": 141780000,
+    "entity": "carrot bit/piece",
+    "ring_points": [
+      36,
+      558,
+      4,
+      299
+    ]
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "d2ebd6b22c1df791dd3895997ee118e4",
+    "timestamp_us": 141780000,
+    "entity": "carrot",
+    "ring_points": [
+      166
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P04_109",
+    "mask_uid": "17bcabdd89d830e975108d6462d917ca",
+    "timestamp_us": 141780000,
+    "entity": "knife",
+    "ring_points": [
+      52,
+      164
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "9f01e27378f8529efbe9ac318105a74a",
+    "timestamp_us": 1317983,
+    "entity": "pan",
+    "ring_points": [
+      552
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "cdcde0410690e9a300260f22ecd9c6e7",
+    "timestamp_us": 1317983,
+    "entity": "left hand",
+    "ring_points": [
+      1010
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "a8f2a6ce8456d39546f687e89b2180f2",
+    "timestamp_us": 1317983,
+    "entity": "kettle",
+    "ring_points": [
+      696
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "74f8159669a73f8df5e7a9ea9e447fdb",
+    "timestamp_us": 1317983,
+    "entity": "hob",
+    "ring_points": [
+      44,
+      1134
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "11f22996c1ac60815199d3b3b17d7e6f",
+    "timestamp_us": 2152150,
+    "entity": "leek",
+    "ring_points": [
+      792,
+      6,
+      15,
+      4,
+      4
+    ]
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "cc71b63ed9e1594f032ed3c9261ffb41",
+    "timestamp_us": 2152150,
+    "entity": "pan",
+    "ring_points": [
+      631
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "93e822782a3c2caa51796bf810499b69",
+    "timestamp_us": 2152150,
+    "entity": "left hand",
+    "ring_points": [
+      688
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "9e8778ea7a7dd3344b281ef2a13b43f3",
+    "timestamp_us": 2152150,
+    "entity": "kettle",
+    "ring_points": [
+      914
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "1dd2b08dea682d5b066c8449c30cdd63",
+    "timestamp_us": 2152150,
+    "entity": "hob",
+    "ring_points": [
+      40,
+      1818
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": false,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "9a2635a16b75acd37433ec424cef9992",
+    "timestamp_us": 2152150,
+    "entity": "chopping board",
+    "ring_points": [
+      1393
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "c30597aa471b895b0b10440314ace7fc",
+    "timestamp_us": 10810800,
+    "entity": "left hand",
+    "ring_points": [
+      516,
+      4
+    ]
+  },
+  {
+    "video": "P11_16",
+    "mask_uid": "502fe430ae99877238e201a25a81b2ef",
+    "timestamp_us": 10810800,
+    "entity": "timer",
+    "ring_points": [
+      102
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "ab52acc75f9601beba679eefbed976f4",
+    "timestamp_us": 62320000,
+    "entity": "left hand",
+    "ring_points": [
+      818
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "5da94ad455b409f4c45f830a7811d5a8",
+    "timestamp_us": 62320000,
+    "entity": "right hand",
+    "ring_points": [
+      65
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "2ae0c57831f45f85add3324770575aaf",
+    "timestamp_us": 62320000,
+    "entity": "saucepan",
+    "ring_points": [
+      577
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "eb457d0344f2983097aa254455850e4a",
+    "timestamp_us": 62320000,
+    "entity": "drawer",
+    "ring_points": [
+      1593
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "b3fe1859b415a9ceb98d9bba3649cf8c",
+    "timestamp_us": 76300000,
+    "entity": "right hand",
+    "ring_points": [
+      476
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "6a5c07bdbbe7b4be6d4b238edf91c0ac",
+    "timestamp_us": 76300000,
+    "entity": "drawer",
+    "ring_points": [
+      540
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "5892ce9fd8828001c07e47ef6b2a17d6",
+    "timestamp_us": 89860000,
+    "entity": "chickpea",
+    "ring_points": [
+      174,
+      112
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": false,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "72885ba757bca4da12a929e1b827182e",
+    "timestamp_us": 89860000,
+    "entity": "left hand",
+    "ring_points": [
+      790
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "9c6ab0c3748364a26b997a3785b59459",
+    "timestamp_us": 89860000,
+    "entity": "right hand",
+    "ring_points": [
+      1033
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "110f41c476bf4ca3d0636bd8e0bd6330",
+    "timestamp_us": 89860000,
+    "entity": "ladle",
+    "ring_points": [
+      107
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "ddb78f763cf6ecc7ea32486ff058a81c",
+    "timestamp_us": 89860000,
+    "entity": "container",
+    "ring_points": [
+      630
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P22_117",
+    "mask_uid": "a76dc175bff76d88100ce5005af6a228",
+    "timestamp_us": 89860000,
+    "entity": "container lid",
+    "ring_points": [
+      220
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "7c2837c2fc3a901371af770a1193840d",
+    "timestamp_us": 333833500,
+    "entity": "bread",
+    "ring_points": [
+      467
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "7caa5744ccf6c9b62b866806117bd8ea",
+    "timestamp_us": 333833500,
+    "entity": "left hand",
+    "ring_points": [
+      857
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "56f5fd1e0a23205a7edc06f19a516422",
+    "timestamp_us": 333833500,
+    "entity": "right hand",
+    "ring_points": [
+      488
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "9e838477616616528f468a6239f96736",
+    "timestamp_us": 333833500,
+    "entity": "hob/cooktop/stovetop",
+    "ring_points": [
+      821,
+      143
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "6bdfc5ecbb081bc14ddfaa640e011918",
+    "timestamp_us": 333833500,
+    "entity": "frying pan",
+    "ring_points": [
+      666
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "ac28cef2dde8fab00254b39491961d54",
+    "timestamp_us": 333833500,
+    "entity": "kitchen towel",
+    "ring_points": [
+      197,
+      175
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "1d601ed08e9bc2684a649a49040b1dd2",
+    "timestamp_us": 330413417,
+    "entity": "bread",
+    "ring_points": [
+      351
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "ef9b50bf08927752524e0e6daabf0ed8",
+    "timestamp_us": 330413417,
+    "entity": "left hand",
+    "ring_points": [
+      412
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "941eeae63346ec94cbf89829ffc282bc",
+    "timestamp_us": 330413417,
+    "entity": "right hand",
+    "ring_points": [
+      849
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "9e4edef3f96330142bbae2fdd069a8b9",
+    "timestamp_us": 330413417,
+    "entity": "hob/cooktop/stovetop",
+    "ring_points": [
+      2201
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "abdfa21d602b202f940120f1e1d581c9",
+    "timestamp_us": 330413417,
+    "entity": "frying pan",
+    "ring_points": [
+      1047
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    }
+  },
+  {
+    "video": "P08_09",
+    "mask_uid": "96e28c1a71bbafe4d6b73ba1201a601c",
+    "timestamp_us": 332565567,
+    "entity": "bread",
+    "ring_points": [
+      487
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "419f32f939c601047a66308b6cdd538a",
+    "timestamp_us": 47897850,
+    "entity": "left hand",
+    "ring_points": [
+      523
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "529269ba9d56ee1c11b7e1a173853cf3",
+    "timestamp_us": 47897850,
+    "entity": "cupboard",
+    "ring_points": [
+      200
+    ],
+    "full_topology": {
+      "simple_loop_valid": false,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": false
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "9fd33523325a76603ea6daf3d213a89c",
+    "timestamp_us": 47897850,
+    "entity": "right hand",
+    "ring_points": [
+      484
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "fdca579a3650567fc01bcf68a5216794",
+    "timestamp_us": 56673283,
+    "entity": "fridge",
+    "ring_points": [
+      2063
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "expanded_search_supported": true,
+    "expanded_search_allocation": [
+      16
+    ],
+    "expanded_search_candidates": [
+      {
+        "allocation": [
+          8
+        ],
+        "fit_valid": true,
+        "certified": false,
+        "certificate_attempted": false,
+        "retained_normalized_mse": 0.0018372403129046175,
+        "coefficient_bytes": 304,
+        "objective": 0.0018372403129046175
+      },
+      {
+        "allocation": [
+          16
+        ],
+        "fit_valid": true,
+        "certified": true,
+        "certificate_attempted": true,
+        "retained_normalized_mse": 0.0005056791551272624,
+        "coefficient_bytes": 560,
+        "objective": 0.0005056791551272624,
+        "certificate_failure": null
+      },
+      {
+        "allocation": [
+          24
+        ],
+        "fit_valid": true,
+        "certified": false,
+        "certificate_attempted": true,
+        "retained_normalized_mse": 7.304807306068745e-05,
+        "coefficient_bytes": 816,
+        "objective": 7.304807306068745e-05,
+        "certificate_failure": "nonlocal_hull_separation_unresolved"
+      },
+      {
+        "allocation": [
+          32
+        ],
+        "fit_valid": true,
+        "certified": false,
+        "certificate_attempted": true,
+        "retained_normalized_mse": 2.3018268386181344e-05,
+        "coefficient_bytes": 1072,
+        "objective": 2.3018268386181344e-05,
+        "certificate_failure": "local_injectivity_unresolved"
+      }
+    ]
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "07560da54eb97c5e67051eac54c3da88",
+    "timestamp_us": 56673283,
+    "entity": "right hand",
+    "ring_points": [
+      255
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "b89afbe994130b2bf1b236746079a3f4",
+    "timestamp_us": 51067683,
+    "entity": "left hand",
+    "ring_points": [
+      289
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "b29805627e193456eec5c834a5873bc6",
+    "timestamp_us": 51067683,
+    "entity": "bowl",
+    "ring_points": [
+      693
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "84f5f23fc4ffaece98bd179aa4a36727",
+    "timestamp_us": 51067683,
+    "entity": "right hand",
+    "ring_points": [
+      57,
+      237
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1,
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "8c3c4515d6f95cb055ab411395e21dae",
+    "timestamp_us": 49499450,
+    "entity": "left hand",
+    "ring_points": [
+      1297,
+      4
+    ]
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "7ead38ea0b818023d428b87efc5c5afb",
+    "timestamp_us": 49499450,
+    "entity": "bowl",
+    "ring_points": [
+      552
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "92fc2bed168a033d62e69bec81c23ca8",
+    "timestamp_us": 56005950,
+    "entity": "fridge",
+    "ring_points": [
+      1771
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  },
+  {
+    "video": "P18_03",
+    "mask_uid": "65912c0070d07e8f015033f9aaf06e30",
+    "timestamp_us": 56005950,
+    "entity": "right hand",
+    "ring_points": [
+      612
+    ],
+    "full_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    },
+    "retained_topology": {
+      "simple_loop_valid": true,
+      "ring_orientation_valid": true,
+      "ring_containment_valid": true,
+      "ring_disjoint_valid": true,
+      "ring_parent": [
+        -1
+      ],
+      "ring_topology_valid": true
+    }
+  }
+]

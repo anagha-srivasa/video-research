@@ -1,0 +1,69 @@
+{
+  "scope": "Controlled algebra checks, not real-data or candidate performance",
+  "observable_rank": 2,
+  "state_dimension": 3,
+  "stopping_model": [
+    {
+      "rate": 0.1,
+      "horizon": 0.25,
+      "mean_duration": 0.24690087971667332,
+      "variance_duration": 0.0005079897869578048,
+      "optimal_toy_mse": 5.079897869578049,
+      "cv_toy_mse": 5.1759433348833035
+    },
+    {
+      "rate": 0.1,
+      "horizon": 0.5,
+      "mean_duration": 0.4877057549928599,
+      "variance_duration": 0.003963951396894455,
+      "optimal_toy_mse": 39.63951396894455,
+      "cv_toy_mse": 41.15099857190052
+    },
+    {
+      "rate": 1.0,
+      "horizon": 0.25,
+      "mean_duration": 0.22119921692859512,
+      "variance_duration": 0.004068948751664067,
+      "optimal_toy_mse": 40.68948751664067,
+      "cv_toy_mse": 48.98433857190187
+    },
+    {
+      "rate": 1.0,
+      "horizon": 0.5,
+      "mean_duration": 0.3934693402873666,
+      "variance_duration": 0.02558989911592424,
+      "optimal_toy_mse": 255.89899115924243,
+      "cv_toy_mse": 369.3868057473315
+    },
+    {
+      "rate": 10.0,
+      "horizon": 0.25,
+      "mean_duration": 0.09179150013761012,
+      "variance_duration": 0.005828370598814206,
+      "optimal_toy_mse": 58.28370598814206,
+      "cv_toy_mse": 308.58300027522023
+    },
+    {
+      "rate": 10.0,
+      "horizon": 0.5,
+      "mean_duration": 0.09932620530009145,
+      "variance_duration": 0.009325751300793826,
+      "optimal_toy_mse": 93.25751300793826,
+      "cv_toy_mse": 1698.652410600183
+    }
+  ],
+  "distillation": {
+    "causal_variance": 0.5,
+    "teacher_variance": 0.00980392156862745,
+    "omitted_between_teacher_mean_variance": 0.49019607843137253
+  },
+  "four_legendre_mode_endpoint_derivative_variance_factor": 1200,
+  "memory_counterexample": {
+    "constraints": 5,
+    "history_dimension": 20,
+    "nullity": 15,
+    "maximum_code_difference": 1.1006047837929049e-16,
+    "maximum_history_difference": 0.9381328362505492
+  },
+  "passed": true
+}

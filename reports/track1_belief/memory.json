@@ -1,0 +1,1 @@
+{"equal_memory_feature_count":6,"models":[],"neural_teacher_distillation":false,"offline_linear_auxiliary_probes":true,"physical_reference_count":0,"reference":"correlated algorithmic RGB proxy","results":[{"horizon":0.25,"status":"insufficient_training_support","training_rows":1}],"task_projection_rank":3,"validation_used_for_fitting":false}

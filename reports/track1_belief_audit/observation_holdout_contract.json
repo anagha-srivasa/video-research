@@ -1,0 +1,7 @@
+{
+  "original_vertices": 12,
+  "retained_vertices": 9,
+  "hidden_vertices": 3,
+  "fit_supported": true,
+  "evaluation_error": "ValueError: Each ring requires at least four finite xy points"
+}
