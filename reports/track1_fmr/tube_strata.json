@@ -1,0 +1,24 @@
+{
+  "scope": "Matched frame-pooled errors against exact synthetic positions; retrospective fitting, not online forecasting or physical-event validation.",
+  "strata": {
+    "endpoint_50ms": {
+      "matched_frames": 714,
+      "adaptive_rmse": 19.788880499024398,
+      "fixed_rmse": 20.211275330090576
+    },
+    "interior_100ms": {
+      "matched_frames": 11796,
+      "adaptive_rmse": 16.817544982408506,
+      "fixed_rmse": 16.828531034744408
+    },
+    "near_motion_onset_250ms": {
+      "matched_frames": 612,
+      "adaptive_rmse": 6.219785682286974,
+      "fixed_rmse": 5.09351208372189
+    }
+  },
+  "steady_episodes": 24,
+  "steady_adaptive_records": 81,
+  "steady_fixed_records": 504,
+  "scientific_acceptance": false
+}

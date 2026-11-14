@@ -1,0 +1,46 @@
+{
+  "scope": "Retrospective source-centroid proxy, one source-selected observed track within 50px at the first annotation, no subsequent identity switching. Source annotations are not independent physical identity truth.",
+  "completed_episodes": 20,
+  "summary": [
+    {
+      "split": "train",
+      "source_kind": "dense_interpolated",
+      "targets": 4161,
+      "initialized_targets": 0,
+      "same_id_available": 0,
+      "same_id_within_50px": 0,
+      "predicted_timestamps": 0,
+      "median_same_id_error_px": null
+    },
+    {
+      "split": "train",
+      "source_kind": "manual_sparse",
+      "targets": 74,
+      "initialized_targets": 0,
+      "same_id_available": 0,
+      "same_id_within_50px": 0,
+      "predicted_timestamps": 0,
+      "median_same_id_error_px": null
+    },
+    {
+      "split": "validation",
+      "source_kind": "dense_interpolated",
+      "targets": 1751,
+      "initialized_targets": 0,
+      "same_id_available": 0,
+      "same_id_within_50px": 0,
+      "predicted_timestamps": 0,
+      "median_same_id_error_px": null
+    },
+    {
+      "split": "validation",
+      "source_kind": "manual_sparse",
+      "targets": 19,
+      "initialized_targets": 0,
+      "same_id_available": 0,
+      "same_id_within_50px": 0,
+      "predicted_timestamps": 0,
+      "median_same_id_error_px": null
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Matched 30-frame training-participant proxy; oracle can change tracks each timestamp. Predicted-only segments carry an earlier shape assumption. No physical identity, causal prediction or confidence coverage verified.",
+  "same_input_and_tracker": true,
+  "results": [
+    {
+      "variant": "baseline_preview",
+      "source_targets": 30,
+      "any_tube": 9,
+      "within_50_px": 6,
+      "tube_count": 28,
+      "predicted_tubes": 0,
+      "bytes": 791705,
+      "median_nearest_px": 37.17591780812563
+    },
+    {
+      "variant": "candidate",
+      "source_targets": 30,
+      "any_tube": 30,
+      "within_50_px": 29,
+      "tube_count": 196,
+      "predicted_tubes": 168,
+      "bytes": 865544,
+      "median_nearest_px": 14.741179042973913
+    }
+  ]
+}

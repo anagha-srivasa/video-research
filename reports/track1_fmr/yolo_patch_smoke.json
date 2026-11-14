@@ -1,0 +1,20 @@
+{
+  "input_shape": [
+    96,
+    96,
+    3
+  ],
+  "score": 0.0,
+  "cold_seconds": 4.300901624985272,
+  "warm_seconds": [
+    0.02006712500588037,
+    0.015728749975096434,
+    0.014803250000113621,
+    0.013788207987090573,
+    0.012962540989974514
+  ],
+  "warm_median_seconds": 0.014803250000113621,
+  "mps_driver_gib": 1.365234375,
+  "available_gib": 18.605514526367188,
+  "scope": "one patch only; no semantic labels, no end-to-end query or accuracy claim"
+}

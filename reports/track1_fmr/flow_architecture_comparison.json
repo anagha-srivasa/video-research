@@ -1,0 +1,25 @@
+{
+  "scope": "Paired public-video bootstrap, exploratory; high-resolution settings were chosen using first three videos. Neither method establishes project physical identity or contact.",
+  "results": {
+    "all30": {
+      "videos": 30,
+      "highres_minus_60_mean_AJ": 0.0022700623516246922,
+      "paired_video_bootstrap95": [
+        -0.015715918482721306,
+        0.019055020765583734
+      ],
+      "highres_wins": 16,
+      "sixty_wins": 14
+    },
+    "remaining27": {
+      "videos": 27,
+      "highres_minus_60_mean_AJ": -0.0035400492926621315,
+      "paired_video_bootstrap95": [
+        -0.021078247195506196,
+        0.013293903861688345
+      ],
+      "highres_wins": 13,
+      "sixty_wins": 14
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "Retrospective oracle nearest-centroid proximity to source annotations; may switch tracks each frame; not causal tracking, independent identity, or physical truth.",
+  "completed_episodes": 20,
+  "summary": [
+    {
+      "split": "train",
+      "source_kind": "dense_interpolated",
+      "targets": 4161,
+      "target_timestamps_with_any_tube": 236,
+      "oracle_nearest_within_50px": 67,
+      "median_oracle_nearest_error_px": 120.29015414476378
+    },
+    {
+      "split": "train",
+      "source_kind": "manual_sparse",
+      "targets": 74,
+      "target_timestamps_with_any_tube": 16,
+      "oracle_nearest_within_50px": 0,
+      "median_oracle_nearest_error_px": 152.99458094393754
+    },
+    {
+      "split": "validation",
+      "source_kind": "dense_interpolated",
+      "targets": 1751,
+      "target_timestamps_with_any_tube": 63,
+      "oracle_nearest_within_50px": 18,
+      "median_oracle_nearest_error_px": 81.37300517225442
+    },
+    {
+      "split": "validation",
+      "source_kind": "manual_sparse",
+      "targets": 19,
+      "target_timestamps_with_any_tube": 4,
+      "oracle_nearest_within_50px": 0,
+      "median_oracle_nearest_error_px": 111.68677110869916
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "ledger_records": 10000,
+  "qualifying_candidates": 1,
+  "scored_patches": 1,
+  "score": 0.0,
+  "warm_end_to_end_seconds": [
+    0.02011520799715072,
+    0.01626274999580346,
+    0.015510291996179149,
+    0.014870792016154155,
+    0.014316833985503763
+  ],
+  "warm_median_seconds": 0.015510291996179149,
+  "filter_median_seconds": 0.001173041993752122,
+  "mps_driver_gib": 1.365234375,
+  "available_gib": 19.423171997070312,
+  "scope": "synthetic 10000-row ledger, one exploratory patch, no grounding labels; excludes first-load and text-prompt encoding"
+}

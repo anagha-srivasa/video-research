@@ -1,0 +1,27 @@
+{
+  "scope": "30-frame retrospective source-centroid diagnostic with one source-selected initial track ID and no later oracle identity switching; no independent physical truth.",
+  "results": [
+    {
+      "variant": "baseline_preview",
+      "seed_timestamp_us": 186000000,
+      "seed_distance_px": 135.1897378686017,
+      "selected_track_id": 2,
+      "postseed_targets": 30,
+      "target_times_with_same_id_tube": 2,
+      "same_id_within_50px": 0,
+      "predicted_timestamps": 0,
+      "median_same_id_error_px": 95.47541186686486
+    },
+    {
+      "variant": "candidate",
+      "seed_timestamp_us": 186000000,
+      "seed_distance_px": 135.1897378686017,
+      "selected_track_id": 2,
+      "postseed_targets": 30,
+      "target_times_with_same_id_tube": 28,
+      "same_id_within_50px": 6,
+      "predicted_timestamps": 26,
+      "median_same_id_error_px": 67.38918745172705
+    }
+  ]
+}

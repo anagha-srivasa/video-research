@@ -1,0 +1,8 @@
+{
+  "entries": 10000,
+  "matches": 183,
+  "index_build_seconds": 0.001260999997612089,
+  "current_full_query_median_seconds": 0.0005680205067619681,
+  "index_predicate_only_median_seconds": 7.812515832483768e-06,
+  "scope": "synthetic index microbenchmark, index build excluded from query, no semantic inference"
+}
