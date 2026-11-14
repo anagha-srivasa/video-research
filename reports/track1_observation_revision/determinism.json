@@ -1,0 +1,5 @@
+{
+  "episode_prediction_caches_checked": 120,
+  "means_and_support_bitwise_equal": true,
+  "scope": "Numerical rerun after geometry-only budget guard fix; timings excluded"
+}
