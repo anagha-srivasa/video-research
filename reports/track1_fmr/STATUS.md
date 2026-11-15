@@ -17,7 +17,7 @@ This is an experimental parallel implementation. No baseline is replaced or scie
 
 ## Implemented components and boundaries
 
-The current package has typed cloud and tube contracts, background-aligned flux proposals, a static edge heartbeat, a provisional constant-velocity belief tracker, event-triggered functional segments, sampled 2-D proximity, an explicit-outcome EVI calculation, optional certificate-bound geometry, structured candidate filtering, a lazy YOLOE adapter and variable-epoch collocation/JVP helpers. Detection regions are not certified objects. The visibility field and depth ordering are not independently known; the current region quality uses an unknown marker rather than an invented depth estimate. Covariance and re-identification scores are not calibrated.
+The current package has typed cloud and tube contracts, background-aligned flux proposals, a native-frame prompt-free YOLOE heartbeat, a provisional constant-velocity belief tracker, event-triggered functional segments, sampled 2-D proximity, an explicit-outcome EVI calculation, optional certificate-bound geometry, structured candidate filtering, a lazy YOLOE adapter and variable-epoch collocation/JVP helpers. Detection regions are not certified objects. The visibility field and depth ordering are not independently known; the current region quality uses an unknown marker rather than an invented depth estimate. Covariance and re-identification scores are not calibrated.
 
 The 2-D junction screen uses finite samples, so it is not a continuous-time collision proof. Physical-contact probability is left unknown when reference evidence is absent. A dimensionless contact probability cannot by itself be treated as a physical impulse. The full plan's blind discovery, calibrated EVI, EdgeTAM/depth, semantic grounding evaluation, complete Track 2 contract and all four falsification studies are not complete.
 
@@ -42,9 +42,9 @@ The synthetic matched historical reconstruction diagnostic (`tube_benchmark.json
 ## Reproduction
 
 ```sh
-PYTHONPATH=src:work/deps:work/track1_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m track1_fmr.evaluate --frames 30
-PYTHONPATH=src:work/deps:work/track1_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m track1_fmr.evaluate --frames 10 --mode blind
-PYTHONPATH=src:work/deps:work/track1_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m pytest tests/test_track1_fmr_belief.py tests/test_track1_fmr_tubes.py tests/test_track1_fmr_contracts.py tests/test_track1_fmr_measure.py -q --basetemp=work/track1_fmr_validation
+PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m track1_fmr.evaluate --frames 30
+PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m track1_fmr.evaluate --frames 10 --mode blind
+PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m pytest tests/test_track1_fmr_belief.py tests/test_track1_fmr_tubes.py tests/test_track1_fmr_contracts.py tests/test_track1_fmr_measure.py -q --basetemp=work/track1_fmr_validation
 ```
 
 ## 2026-11-14 continuation: bounded dorsal grid
@@ -59,4 +59,40 @@ Final diagnostic: native median 233.08 ms/frame versus grid median 9.75 ms/frame
 
 Validation: all 15 FMR tests passed, including grid exclusion dimensions, normalized centroid coordinates, exact native RGB crop selection, native default and invalid-grid rejection. Existing TorchScript deprecation warnings remain.
 
-Reproduce with `PYTHONPATH=src:work/deps:work/track1_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 scripts/exp_track1_fmr/01_bench_dorsal_grid.py`. Process enumeration must be permitted for the memory guard.
+Reproduce with `PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 scripts/exp_track1_fmr/01_bench_dorsal_grid.py`. Process enumeration must be permitted for the memory guard.
+
+## 2026-11-14 revised remediation: Stage 1 only
+
+The revised five-stage plan is sequential: Stage 2 and later remediation have **not** started because Stage 1 failed its real-video gate. Historical results above describe their saved source versions, not this candidate. The earlier grid candidate's edge heartbeat has now been removed from active FMR ingestion.
+
+Implemented normalized flux area bounds (`min_area_frac=0.0005`, `max_area_frac=0.40`), morphology radius (`radius_frac=0.012`), scale-relative feature spacing/LK window/RANSAC tolerance, mean-flux × sqrt(area fraction) × compactness ranking, bounding-box NMS at IoU > 0.5 and a combined maximum of 15 emitted proposals per frame. Compactness/saliency are engineering proxies, not measured physical saliency. Pixel sampling floors remain where required by discrete images.
+
+`PromptFreeHeartbeat` uses the official local `yoloe-26s-seg-pf.pt` checkpoint on native RGB every two seconds, discards labels, rasterizes native-normalized segmentation polygons on a common 160×160 measurement grid and produces provisional clouds. Using polygons avoids stretching model letterbox padding. It does not use a text encoder or an edge fallback. The adapter lazily loads weights; benchmark cold load/warmup is separately recorded. API/checkpoint reference: https://docs.ultralytics.com/models/yoloe/ . No 4 ms amortized inference assumption is asserted.
+
+Native remains the default flux resolution; 160 and 128 grids remain opt-in. The heartbeat is now semantic model inference, so the pipeline is no longer entirely blind/class-free in its discovery mechanism. A caller may inject an explicit proposal provider for tests or controlled comparisons. The model is local and automatic dependency installation is disabled.
+
+`01_bench_grid_invariance.py` locks episode IDs, parameters, code hashes, checkpoint hash and source-ledger hash in `protocol.json` before execution, refuses to overwrite a run directory, decodes each native frame once, alternates variant execution order, and records RGB hashes, decoded pixels, per-frame proposal counts and ingestion timings. A 50 ms process-tree RSS monitor checks the 18 GiB limit and writes a failure report on errors. Sampled peaks are not a continuous OS-enforced cap. Mean warm ingestion includes the scheduled heartbeat, proposal extraction and current tracker/tube work; cold model warmup and decoding are separately excluded. The same resident model is shared, but inference is executed separately for each variant. Both pipelines coexist in RSS measurements.
+
+Training smoke: one 30-frame P02_122 episode, ratio 1.0, grid mean 13.75 ms and 15 final tracks. All proposals came from the native heartbeat; neither flux path produced proposals. This is not a flux-continuity success.
+
+The predeclared five validation episodes (150 native RGB frames) produced:
+
+| Episode | Video | Grid/native emitted proposals | Grid mean ms/frame | Grid final provisional tracks | Local gate |
+| --- | --- | --- | --- | --- | --- |
+| `02b25bb6d59d53d1fbbcaa90` | P08_09 | 0.833 | 13.16 | 10 | FAIL |
+| `1a21d64b3bbbd12c58c4c76f` | P08_09 | 3.385 | 14.20 | 31 | FAIL |
+| `a8008818663cba7b980a57e9` | P08_09 | 1.000 | 14.23 | 15 | PASS |
+| `5d7739d543d8db9ffede8e0f` | P18_03 | 1.150 | 14.98 | 19 | PASS |
+| `5ff0a3abb4efec01a9311dd1` | P18_03 | 0.588 | 16.23 | 40 | FAIL |
+
+Sampled combined process-tree peak RSS: **1.89 GiB**. All five episodes had nonzero tracks; only two passed all local numeric checks. Ratios include heartbeat proposals, so per-source flux/heartbeat counts are also recorded to expose parity driven solely by shared semantic seeds. Confirmed/tentative counts are explicitly null: lifecycle confirmation and eviction belong to Stage 2 and are not implemented here. Provisional coasting is not observed target coverage.
+
+**Stage 1 remains unpromoted.** Normalizing thresholds alone did not establish scale-invariant region extraction. Next work is to test the prescribed smaller area fraction (`0.0002`) or SLIC grouping on training data, then freeze a new protocol before evaluation. These validation participants already appeared in earlier exploratory audits and have now been inspected again; they must not be represented as a fresh locked holdout for tuning subsequent variants. A fresh evaluation split would be needed for independent qualification. No downstream identity, point transport, covariance calibration, query-binding or contact result is implied by proposal counts. Innovation likelihood fitting alone cannot establish NEES without independent state truth.
+
+Verification: **17 FMR tests passed** (18 existing TorchScript deprecation warnings), including a two-resolution synthetic flux check, ranked NMS/cap behavior, native RGB heartbeat/crop coordinates and the existing belief/tube/ledger checks. Frozen `track1_encoder_revision` sources were untouched.
+
+Artifacts: `stage1_train_v1/` and `stage1_validation_v1/` contain pre-run protocols, progress and final results. Reproduce into a new tag (existing tags are immutable):
+
+```sh
+PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 scripts/exp_track1_fmr/01_bench_grid_invariance.py --split validation --device cpu --tag stage1_validation_replay
+```

@@ -51,7 +51,7 @@ def test_blind_pipeline_has_no_fabricated_contact():
     from track1_fmr.pipeline import Pipeline
     frame = np.zeros((100, 100, 3), np.uint8)
     frame[25:40, 25:40] = 255
-    pipeline = Pipeline()
+    pipeline = Pipeline(heartbeat=lambda rgb: [])
     first = pipeline.step(frame, 0.)
     second = pipeline.step(frame, .1)
     assert not first['identity_verified'] and not second['identity_verified']
@@ -102,19 +102,18 @@ def test_dorsal_grid_preserves_native_crop_coordinates(monkeypatch):
         mask = np.zeros(image.shape[:2], bool)
         h, w = mask.shape
         mask[h // 4:3 * h // 4, w // 4:3 * w // 4] = True
-        return [measure(image, mask)]
+        return [dict(measure=measure(image, mask), saliency=1., box=np.array([.25, .25, .75, .75]))]
 
     def flux(previous, current, excluded):
         assert previous.shape == current.shape == (160, 160, 3)
         assert excluded.shape == (160, 160)
         return dict(supported=True, clouds=[])
 
-    monkeypatch.setattr(module, 'static_heartbeat', heartbeat)
     monkeypatch.setattr(module, 'flux', flux)
-    pipeline = module.Pipeline(dorsal_grid=160)
+    pipeline = module.Pipeline(dorsal_grid=160, heartbeat=heartbeat)
     pipeline.step(frame, 0.)
     state = pipeline.tracker.tracks[0]
-    np.testing.assert_allclose(state.mean[:2], [79.5 / 160] * 2)
+    np.testing.assert_allclose(state.mean[:2], [319.5 / 640, 159.5 / 320])
     # Inspect the retained crop: it must come from the native RGB frame.
     builder = pipeline.builders[0]
     centre = state.mean[:2] * [640, 320]
@@ -125,8 +124,8 @@ def test_dorsal_grid_preserves_native_crop_coordinates(monkeypatch):
     np.testing.assert_array_equal(builder.best[1], cv2.resize(frame[top:bottom, left:right], (96, 96)))
     pipeline.step(frame, .1)
     assert pipeline.previous.shape == (160, 160, 3)
-    assert calls == [(160, 160, 3)]
-    native = module.Pipeline()
+    assert calls == [frame.shape]
+    native = module.Pipeline(heartbeat=heartbeat)
     native.step(frame, 0.)
     assert calls[-1] == frame.shape
     import pytest

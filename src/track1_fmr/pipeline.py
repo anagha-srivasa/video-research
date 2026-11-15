@@ -2,16 +2,17 @@
 import cv2
 import numpy as np
 from .belief_filter import BeliefTracker, advance
-from .dorsal_flux import flux, static_heartbeat
+from .dorsal_flux import flux, PromptFreeHeartbeat, proposal_nms
 from .lebesgue_tubes import FunctionalTubeBuilder
 from .junction_graph import candidates
 from track1_encoder_revision.events import InnovationEvidence
 
 
 class Pipeline:
-    def __init__(self, heartbeat_seconds=2., max_tracks=100, carry_prior=False, dorsal_grid=None):
+    def __init__(self, heartbeat_seconds=2., max_tracks=100, carry_prior=False, dorsal_grid=None, heartbeat=None):
         if heartbeat_seconds <= 0:
             raise ValueError('Heartbeat period must be positive')
+        self.heartbeat = heartbeat if heartbeat is not None else PromptFreeHeartbeat()
         self.period = heartbeat_seconds
         if dorsal_grid is not None and (isinstance(dorsal_grid, bool) or not isinstance(dorsal_grid, int) or dorsal_grid < 16):
             raise ValueError('Dorsal grid must be an integer >= 16, or None for native resolution')
@@ -32,7 +33,9 @@ class Pipeline:
         # Clouds use normalized coordinates; native pixels are retained only for crops.
         dorsal = rgb if self.dorsal_grid is None else cv2.resize(
             rgb, (self.dorsal_grid, self.dorsal_grid), interpolation=cv2.INTER_AREA)
-        clouds = []
+        proposals = []
+        flux_proposals = 0
+        heartbeat_proposals = 0
         if self.previous is not None:
             height, width = dorsal.shape[:2]
             excluded = np.zeros((height, width), np.uint8)
@@ -46,12 +49,17 @@ class Pipeline:
                 cv2.ellipse(excluded, centre, axes, angle, 0, 360, 1, -1)
             result = flux(self.previous, dorsal, excluded=excluded)
             if result['supported']:
-                clouds.extend(c['measure'] for c in result['clouds'])
+                proposals.extend(result['clouds'])
+                flux_proposals = len(result['clouds'])
             else:
                 self.failures.append((float(time), result['reason']))
         if time - self.last_heartbeat >= self.period:
-            clouds.extend(static_heartbeat(dorsal))
+            anchors = self.heartbeat(rgb)
+            proposals.extend(anchors)
+            heartbeat_proposals = len(anchors)
             self.last_heartbeat = float(time)
+        selected = proposal_nms(proposals)
+        clouds = [p['measure'] for p in selected]
         before = self.tracker.tracks.copy()
         updated = self.tracker.update(time, clouds)
         for track_id, state in updated['tracks'].items():
@@ -85,6 +93,9 @@ class Pipeline:
         return dict(observed=sum(s.status == 'OBSERVED' for s in updated['tracks'].values()),
                     coasting=sum(s.status == 'PREDICTED' for s in updated['tracks'].values()),
                     tracks=len(updated['tracks']), rejected_capacity=updated['rejected_capacity'],
+                    proposals=len(clouds), flux_proposals=flux_proposals,
+                    heartbeat_proposals=heartbeat_proposals,
+                    tentative=None, confirmed=None, lifecycle_implemented=False,
                     identity_verified=False)
 
     def close(self):
