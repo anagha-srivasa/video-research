@@ -26,6 +26,17 @@ class TubeBuilder:
         self.threshold, self.maximum_duration = threshold, maximum_duration
         self.samples, self.energy = [], 0.
 
+    def boundary_reason(self, time, innovation, status):
+        if not self.samples:
+            return None
+        if status != self.samples[-1][2]:
+            return 'visibility_transition'
+        if time - self.samples[0][0] >= self.maximum_duration:
+            return 'maximum_duration'
+        if self.energy + max(0., innovation - 4.605170186) > self.threshold:
+            return 'innovation'
+        return None
+
     def add(self, time, position, innovation, status, weight=1.):
         point = np.asarray(position, float)
         if (point.shape != (2,) or not np.isfinite(point).all() or not np.isfinite(time)
@@ -35,14 +46,7 @@ class TubeBuilder:
         if self.samples and time <= self.samples[-1][0]:
             raise ValueError('Times must increase')
         energy = self.energy + max(0., innovation - 4.605170186)
-        reason = None
-        if self.samples:
-            if status != self.samples[-1][2]:
-                reason = 'visibility_transition'
-            elif time - self.samples[0][0] >= self.maximum_duration:
-                reason = 'maximum_duration'
-            elif energy > self.threshold:
-                reason = 'innovation'
+        reason = self.boundary_reason(time, innovation, status)
         segment = self.close(reason) if reason else None
         self.samples.append((float(time), point.copy(), status, float(weight)))
         self.energy = 0. if reason else energy
@@ -74,6 +78,12 @@ class FunctionalTubeBuilder:
         self.last_observed_cloud = None
         self.unsupported_short_epochs = 0
         self.unsupported_geometry_epochs = 0
+
+    def wants_patch(self, state, innovation, quality):
+        if not np.isfinite(quality) or not 0 <= quality <= 1:
+            raise ValueError('Finite crop quality in [0,1] required')
+        return (self.best is None or quality > self.best[2]
+                or self.clock.boundary_reason(state.time, innovation, state.status) is not None)
 
     def add(self, state, cloud, innovation, patch=None, quality=None):
         if state.status == 'OBSERVED' and cloud is None:

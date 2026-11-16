@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "episodes": 20,
+  "all_saved_arrays_bit_identical_to_cold_model_run": true,
+  "current_source_and_checkpoint_hashes_match": true
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "reviewed_frames": 300,
+  "schema_valid_frames": 300,
+  "high_confidence_frames": 298,
+  "model": "qwen/qwen3.8-27b",
+  "manifest_and_image_hashes_verified": true,
+  "export_and_response_hashes_verified": true,
+  "calibration_input_hashes_verified": true,
+  "human_adjudicated": false,
+  "stage2_promoted": false
+}

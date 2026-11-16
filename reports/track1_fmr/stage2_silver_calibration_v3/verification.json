@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "input_observation_and_reference_hashes_verified": true,
+  "source_snapshot_hash_verified": true,
+  "model_reviews": 300,
+  "human_adjudicated": false,
+  "stage2_promoted": false
+}

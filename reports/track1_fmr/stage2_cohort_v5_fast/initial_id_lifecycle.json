@@ -1,0 +1,247 @@
+{
+  "episodes": [
+    {
+      "episode_id": "478cb915824f4d9b0d080594",
+      "fixed_id": 9,
+      "observations": 110,
+      "max_observed_count": 110,
+      "observed_span_seconds": 5.97999999999999,
+      "source_types": {
+        "proposal": 66,
+        "template_verified": 44,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "563d36281f617694be0661b2",
+      "fixed_id": 4,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "602e3a5f2330c9d441e0196e",
+      "fixed_id": 7,
+      "observations": 127,
+      "max_observed_count": 127,
+      "observed_span_seconds": 4.980000000000018,
+      "source_types": {
+        "proposal": 33,
+        "template_verified": 93,
+        "reid_proposal": 1
+      }
+    },
+    {
+      "episode_id": "08e34528abbcfdfcf4815dcc",
+      "fixed_id": 13,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "56a095b7330f4138f6f7cbc1",
+      "fixed_id": 6,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "c367308b2b46a9a784983f33",
+      "fixed_id": 7,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "373a95466622c143a266aad1",
+      "fixed_id": 14,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "a78db6ac755d136adbcda89c",
+      "fixed_id": 14,
+      "observations": 198,
+      "max_observed_count": 198,
+      "observed_span_seconds": 4.6200000000000045,
+      "source_types": {
+        "proposal": 8,
+        "template_verified": 190,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "d002d8161f728c02c35209a6",
+      "fixed_id": 9,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "02b25bb6d59d53d1fbbcaa90",
+      "fixed_id": 0,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "1a21d64b3bbbd12c58c4c76f",
+      "fixed_id": 5,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "a8008818663cba7b980a57e9",
+      "fixed_id": 11,
+      "observations": 2,
+      "max_observed_count": 2,
+      "observed_span_seconds": 0.05004999999999882,
+      "source_types": {
+        "proposal": 2,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "2e0103b8af579aa1e78c8ece",
+      "fixed_id": 9,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "5cc8ca97d8b6d36c724576ec",
+      "fixed_id": 13,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "743d7e429786fb97a376ff04",
+      "fixed_id": 3,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "5d7739d543d8db9ffede8e0f",
+      "fixed_id": 13,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "5ff0a3abb4efec01a9311dd1",
+      "fixed_id": 10,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "0d582e6b118aae21e3ae939f",
+      "fixed_id": 2,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "10a16e82240a55b6381a3d10",
+      "fixed_id": 11,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    },
+    {
+      "episode_id": "b5cdb477a76f2f093421570e",
+      "fixed_id": 5,
+      "observations": 1,
+      "max_observed_count": 1,
+      "observed_span_seconds": 0.0,
+      "source_types": {
+        "proposal": 1,
+        "template_verified": 0,
+        "reid_proposal": 0
+      }
+    }
+  ],
+  "initial_ids_never_reached_confirmation": 17,
+  "initial_ids_never_reached_archive_admission": 17,
+  "interpretation": "Provisional initial IDs with fewer than three observations cannot use confirmed-only stationary locks; fewer than five cannot be archived. This is lifecycle telemetry, not physical identity truth."
+}

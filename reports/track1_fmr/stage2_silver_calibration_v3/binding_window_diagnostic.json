@@ -1,0 +1,75 @@
+{
+  "rows": [
+    {
+      "episode_id": "02b25bb6d59d53d1fbbcaa90",
+      "timestamp_us": 459142017,
+      "observed_provisional_tracks": 5,
+      "confirmed_observed_tracks": 0,
+      "max_hits": 2
+    },
+    {
+      "episode_id": "02b25bb6d59d53d1fbbcaa90",
+      "timestamp_us": 459175383,
+      "observed_provisional_tracks": 3,
+      "confirmed_observed_tracks": 1,
+      "max_hits": 4
+    },
+    {
+      "episode_id": "02b25bb6d59d53d1fbbcaa90",
+      "timestamp_us": 459208750,
+      "observed_provisional_tracks": 9,
+      "confirmed_observed_tracks": 2,
+      "max_hits": 6
+    },
+    {
+      "episode_id": "02b25bb6d59d53d1fbbcaa90",
+      "timestamp_us": 459258800,
+      "observed_provisional_tracks": 9,
+      "confirmed_observed_tracks": 6,
+      "max_hits": 9
+    },
+    {
+      "episode_id": "02b25bb6d59d53d1fbbcaa90",
+      "timestamp_us": 459292167,
+      "observed_provisional_tracks": 9,
+      "confirmed_observed_tracks": 5,
+      "max_hits": 11
+    },
+    {
+      "episode_id": "5d7739d543d8db9ffede8e0f",
+      "timestamp_us": 147664183,
+      "observed_provisional_tracks": 7,
+      "confirmed_observed_tracks": 0,
+      "max_hits": 2
+    },
+    {
+      "episode_id": "5d7739d543d8db9ffede8e0f",
+      "timestamp_us": 147697550,
+      "observed_provisional_tracks": 7,
+      "confirmed_observed_tracks": 1,
+      "max_hits": 3
+    },
+    {
+      "episode_id": "5d7739d543d8db9ffede8e0f",
+      "timestamp_us": 147730917,
+      "observed_provisional_tracks": 8,
+      "confirmed_observed_tracks": 1,
+      "max_hits": 3
+    },
+    {
+      "episode_id": "5d7739d543d8db9ffede8e0f",
+      "timestamp_us": 147780967,
+      "observed_provisional_tracks": 1,
+      "confirmed_observed_tracks": 1,
+      "max_hits": 7
+    },
+    {
+      "episode_id": "5d7739d543d8db9ffede8e0f",
+      "timestamp_us": 147814333,
+      "observed_provisional_tracks": 2,
+      "confirmed_observed_tracks": 2,
+      "max_hits": 9
+    }
+  ],
+  "interpretation": "Confirmed-only binding requires at least three observed hits. These are lifecycle counts, not independent physical identities."
+}

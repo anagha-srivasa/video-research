@@ -1,0 +1,12 @@
+{
+  "active_episodes": 8,
+  "explanation": "Per-episode local_gate_passed retains the historical scale-IoU diagnostic. The revised qualification_passed field applies the user current three-metric gate.",
+  "mean_ingestion_ms": 10.395766609387161,
+  "passed": true,
+  "result_sha256": "5e5bd6653c78196dd14af92a797b352dab400582b6f8611815743418d99fdd4a",
+  "sampled_peak_rss_gib": 1.5910491943359375,
+  "scope": "User-defined Stage 1 engineering gate, not scientific identity/contact/calibration acceptance",
+  "source_snapshots": "source/src/track1_fmr; source/scripts/exp_track1_fmr/01_bench_grid_invariance.py",
+  "stage2_authorized": true,
+  "total_episodes": 8
+}

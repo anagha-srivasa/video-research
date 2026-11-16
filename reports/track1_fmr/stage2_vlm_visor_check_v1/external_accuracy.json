@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "video_id": "P02_122",
+      "timestamp_us": 10240000,
+      "reference_centroid": [
+        0.7066790004250882,
+        0.7616772198346814
+      ],
+      "vlm_label": {
+        "confidence": 0.9,
+        "reason": "The right hand is clearly visible, wearing a white protective glove, and is reaching into the oven. The centroid is estimated at the center of the gloved hand.",
+        "visible": true,
+        "x": 0.68,
+        "y": 0.35
+      },
+      "error_native_px": 447.5524105548049
+    },
+    {
+      "video_id": "P02_122",
+      "timestamp_us": 5780000,
+      "reference_centroid": [
+        0.41171733343223554,
+        0.9643250658432144
+      ],
+      "vlm_label": {
+        "confidence": 0.85,
+        "reason": "The right hand is visible at the bottom center of the image, holding a small object. The fingers and part of the palm are clearly distinguishable, allowing for a confident estimation of its centroid.",
+        "visible": true,
+        "x": 0.35,
+        "y": 0.95
+      },
+      "error_native_px": 119.50296838871115
+    },
+    {
+      "video_id": "P08_09",
+      "timestamp_us": 2352350,
+      "reference_centroid": [
+        0.6214760988287933,
+        0.855152153609393
+      ],
+      "vlm_label": {
+        "confidence": 0.85,
+        "reason": "The right hand is clearly visible in the lower-middle section of the image, with the fingers extended and positioned near the gas stovetop. The centroid is estimated based on the visible portion of the hand and wrist.",
+        "visible": true,
+        "x": 0.62,
+        "y": 0.85
+      },
+      "error_native_px": 6.244509651131893
+    },
+    {
+      "video_id": "P08_09",
+      "timestamp_us": 3887217,
+      "reference_centroid": [
+        0.6957733995567433,
+        0.8405700362193331
+      ],
+      "vlm_label": {
+        "confidence": 0.9,
+        "reason": "The right hand is clearly visible in the lower right portion of the image, holding a small metallic object. The centroid is estimated based on the visible palm and fingers.",
+        "visible": true,
+        "x": 0.7,
+        "y": 0.81
+      },
+      "error_native_px": 33.99833574859115
+    }
+  ],
+  "sample_size": 4,
+  "scope": "VLM anatomical hand-region centroid versus external VISOR hand-mask centroid; region-definition mismatch possible, including forearm and separately labelled gloves. Not reviewer qualification."
+}

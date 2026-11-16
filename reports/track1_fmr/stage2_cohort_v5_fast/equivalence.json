@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "episodes": 20,
+  "all_observation_and_support_arrays_bit_identical": true,
+  "current_sources_and_checkpoints_match": true
+}

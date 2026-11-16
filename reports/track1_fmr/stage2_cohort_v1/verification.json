@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "verified_source_and_artifact_hashes": true,
+  "recomputed_observed_only_counts": {
+    "decoded_frames": 6078,
+    "post_seed_frames": 6058,
+    "source_reference_eligible": 5985,
+    "observed_only_proxy_successes": 24
+  },
+  "finite_observation_rows": 22603,
+  "segments": {
+    "OBSERVED": 1630,
+    "PREDICTED": 0
+  },
+  "scientific_acceptance": false,
+  "verified_ledger_tags": {
+    "OBSERVED": 1630
+  }
+}

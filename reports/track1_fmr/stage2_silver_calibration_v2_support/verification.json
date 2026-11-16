@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "source_snapshot_hash_verified": true,
+  "observation_and_support_ledger_hashes_verified": true,
+  "dev_fit_reused_without_holdout_retuning": true,
+  "evaluable_fixed_id_frames": 0,
+  "stage2_promoted": false
+}

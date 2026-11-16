@@ -1,0 +1,46 @@
+{
+  "code_hashes": {
+    "scripts/exp_track1_fmr/01_bench_grid_invariance.py": "5fee5b2c46432b64d14efdce45b6ea233fbfe874e0dce3fcd65d567cccd4aaad",
+    "src/track1_fmr/__init__.py": "a0dbf67cc8adda7d4efccf9754ebc343b5dfece1d22b076e4a0eea4c004253e2",
+    "src/track1_fmr/batch_eval.py": "6f52f72cdfaa64b92ebd18ad9923c580a4fe4fbd19e22cf179f7cad70239289b",
+    "src/track1_fmr/belief_filter.py": "a6576553ca9d5fedd0dd7db60c1baf232e248e767da9b446da068552005d6936",
+    "src/track1_fmr/collocation.py": "715651897ec6b06f079d496939f7f6cc67ee23f1b5c342208365b44648a8697a",
+    "src/track1_fmr/contracts.py": "f49affe72274f9962c2555392834e8bbe28dd06eff29ac2df8871ba2bb2a55c0",
+    "src/track1_fmr/dorsal_flux.py": "0c8d11ab6f02b35d4bb8dfaeb80014e5b781965b4402f266c3b79c9abcaf3019",
+    "src/track1_fmr/evaluate.py": "053964542c9de09088f8417b34ca33d848fc83c4aa6c5b6637a3568f8a6fbddf",
+    "src/track1_fmr/foveal_lens.py": "52581c7b0b2e46ded0e7a2e8ca90fc3484375bc604b79be3fc262e18eea214a9",
+    "src/track1_fmr/junction_graph.py": "976968bb35f1230dbd8ed609b29eba25eadeaa1663ad750c282abd70145a01e1",
+    "src/track1_fmr/lebesgue_tubes.py": "7a3a34bb30e0de8d8286d0ffc60bc6c109400df9b32c312104b1aa12dcbe2821",
+    "src/track1_fmr/ledger.py": "88eb124726f31a4c04eeafebd8c7290770628ee519355679c782826a3971378c",
+    "src/track1_fmr/pipeline.py": "4c4acd977ee075e5486dd59192134303de0ffbb1da0739db9375cdb904395c6b",
+    "src/track1_fmr/source_stream.py": "7b2facb7218f7a387ecd53ba565ac191ea1af7d888dcb7fb55178c532a773bd8",
+    "src/track1_fmr/tube_benchmark.py": "be5ff461baed032fff24feef2a868371cfbf466511fbb1391143b5004cf29151",
+    "src/track1_fmr/ventral_query.py": "8148741bdbb4968a83548201494145f3ba7a80daa5705ae8fa76adb5bc628c6f"
+  },
+  "development_participants": [
+    "P02",
+    "P03",
+    "P04",
+    "P06",
+    "P08",
+    "P11",
+    "P18",
+    "P21",
+    "P22",
+    "P27",
+    "P30"
+  ],
+  "parameters": {
+    "comparison_grid": 320,
+    "grid": 160,
+    "sigma_flow": 0.005,
+    "v_min": 0.0035
+  },
+  "participants": [
+    "P14_02",
+    "P26_15"
+  ],
+  "preparation_sha256": "b163e682d5e9b7cdb370916ddadcfb078a942624812e76c3ed56a8269cd6fac5",
+  "selection": "Four action-centered 30-frame intervals per video; >=5s centre separation; deterministic hash ranking among feasible combinations",
+  "selection_has_decoded_rgb": false
+}

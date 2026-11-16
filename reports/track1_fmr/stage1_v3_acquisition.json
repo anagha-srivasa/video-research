@@ -1,0 +1,25 @@
+{
+  "note": "Original dataset/videos remains read-only. Earlier slow publisher requests were stopped; partial prefixes/ranges are preserved in work/track1_fmr. No RGB was decoded before final code freeze and episode lock.",
+  "videos": [
+    {
+      "bytes": 122064683,
+      "local_path": "work/track1_fmr/P14_02.mirror.MP4",
+      "publisher_md5": "cadb79515ff0577ef4a8e29b008ff72a",
+      "publisher_md5_verified": true,
+      "sha256": "9ccb111992153c016e58be6b0346a3f2b5b417c06e3abf91116b439e6624e690",
+      "transport_url": "https://huggingface.co/datasets/linxxx3/EPIC-KITCHENS/resolve/09c6bea858d47dff92e41c294e561bb9b5b9b9e8/P14/videos/P14_02.MP4",
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P14/P14_02.MP4",
+      "video_id": "P14_02"
+    },
+    {
+      "bytes": 135474262,
+      "local_path": "work/track1_fmr/P26_15.mirror.MP4",
+      "publisher_md5": "3fa4c8b8f2b536d067720eaa791e75ec",
+      "publisher_md5_verified": true,
+      "sha256": "6adb9eaa44098b26570bacd7c4a53b739d9ba01b909c00c4be587a1082e57e3a",
+      "transport_url": "https://huggingface.co/datasets/linxxx3/EPIC-KITCHENS/resolve/09c6bea858d47dff92e41c294e561bb9b5b9b9e8/P26/videos/P26_15.MP4",
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P26/P26_15.MP4",
+      "video_id": "P26_15"
+    }
+  ]
+}

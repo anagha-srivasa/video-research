@@ -104,13 +104,18 @@ def test_dorsal_grid_preserves_native_crop_coordinates(monkeypatch):
         mask[h // 4:3 * h // 4, w // 4:3 * w // 4] = True
         return [dict(measure=measure(image, mask), saliency=1., box=np.array([.25, .25, .75, .75]))]
 
-    def flux(previous, current, excluded):
-        assert previous.shape == current.shape == (160, 160, 3)
-        assert excluded.shape == (160, 160)
-        return dict(supported=True, clouds=[])
-
-    monkeypatch.setattr(module, 'flux', flux)
     pipeline = module.Pipeline(dorsal_grid=160, heartbeat=heartbeat)
+    original_step = pipeline.extractor.step
+
+    def inspect(image, active_tracks=()):
+        assert image.shape == frame.shape
+        for track in active_tracks:
+            assert track.grid_hw == (160, 160)
+            assert track.density.shape[0] <= 160 and track.density.shape[1] <= 160
+            assert np.any((track.density > 0) & (track.density < 1))
+        return original_step(image, active_tracks)
+
+    monkeypatch.setattr(pipeline.extractor, 'step', inspect)
     pipeline.step(frame, 0.)
     state = pipeline.tracker.tracks[0]
     np.testing.assert_allclose(state.mean[:2], [319.5 / 640, 159.5 / 320])
@@ -123,7 +128,7 @@ def test_dorsal_grid_preserves_native_crop_coordinates(monkeypatch):
     import cv2
     np.testing.assert_array_equal(builder.best[1], cv2.resize(frame[top:bottom, left:right], (96, 96)))
     pipeline.step(frame, .1)
-    assert pipeline.previous.shape == (160, 160, 3)
+    assert pipeline.previous.shape == (160, 160)
     assert calls == [frame.shape]
     native = module.Pipeline(heartbeat=heartbeat)
     native.step(frame, 0.)
