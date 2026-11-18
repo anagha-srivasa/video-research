@@ -218,7 +218,7 @@ class DormantEntity:
 
 class BeliefTracker:
     """Bounded proposal association and coasting; IDs are provisional."""
-    def __init__(self, acceleration_noise=.001, gate=9., max_tracks=40, measurement_floor=0., ncc_threshold=.78, containment_gate=5.06, adaptation_rate=.5, stationary_noise_multiplier=2.):
+    def __init__(self, acceleration_noise=.001, gate=9., max_tracks=40, measurement_floor=0., ncc_threshold=.78, containment_gate=5.06, adaptation_rate=.5, stationary_noise_multiplier=2., use_appearance=True, enable_reid=True, use_containment=True):
         if acceleration_noise < 0 or gate <= 0 or max_tracks < 1 or not np.isfinite(measurement_floor) or measurement_floor < 0:
             raise ValueError('Invalid tracker configuration')
         self.noise, self.gate, self.max_tracks = acceleration_noise, gate, max_tracks
@@ -226,6 +226,9 @@ class BeliefTracker:
             raise ValueError("Invalid NCC threshold")
         if not np.isfinite(containment_gate) or containment_gate<=0 or not 0<adaptation_rate<=1:raise ValueError("Invalid containment/adaptation settings")
         if not np.isfinite(stationary_noise_multiplier) or stationary_noise_multiplier<1:raise ValueError("Stationary noise multiplier must be >=1")
+        self.use_appearance=bool(use_appearance)
+        self.enable_reid=bool(enable_reid)
+        self.use_containment=bool(use_containment)
         self.stationary_noise_multiplier=float(stationary_noise_multiplier)
         self.containment_gate=containment_gate
         self.adaptation_rate=adaptation_rate
@@ -322,12 +325,12 @@ class BeliefTracker:
                 d = distances[i,j]
                 if d <= self.gate:
                     overlap = _polygon_iou(track_ellipses[i], cloud_ellipses[j]) if bbox_overlap[i,j] else 0.
-                    lab = lab_distances[i,j]
+                    lab = lab_distances[i,j] if self.use_appearance else 0.
                     cost[i, j] = .5 * np.sqrt(d) + .3 * (1 - overlap) + .2 * float(lab)
         part_pairs=set()
         for i,state in enumerate(predicted):
             tid=ids[i]
-            if self.observed_count.get(tid,1)<3:continue
+            if not self.use_containment or self.observed_count.get(tid,1)<3:continue
             parent=self.last_clouds.get(tid)
             inverse=np.linalg.inv(state.shape_scatter)
             for j,cloud in enumerate(clouds):
@@ -405,7 +408,7 @@ class BeliefTracker:
             oldest=min(self.dormant_entities,key=lambda tid:self.dormant_entities[tid].last_observed_ts)
             del self.dormant_entities[oldest];self.lifecycle.pop(oldest,None)
         # Second association pass uses the repository's actual Fourier/Lab layout.
-        dormant_ids=list(self.dormant_entities)
+        dormant_ids=list(self.dormant_entities) if self.enable_reid else []
         remaining=[j for j in range(len(clouds)) if j not in used]
         reid_cost=np.full((len(dormant_ids),len(remaining)),1e6)
         for row,tid in enumerate(dormant_ids):
@@ -419,6 +422,7 @@ class BeliefTracker:
                 if value<=.65:reid_cost[row,col]=value
         dormant_parts=set()
         for row,tid in enumerate(dormant_ids):
+            if not self.use_containment:continue
             ent=self.dormant_entities[tid]
             for col,j in enumerate(remaining):
                 cloud=clouds[j]

@@ -1,0 +1,8 @@
+{
+  "source_hashes": {
+    "keyframe_benchmark.py": "b4adb6dd9ac4f5463183018625ebc25d61a6d8b014494f4b353387ace2639414",
+    "04_verify_observation_identity.py": "9be55ef71b31317dca7ac4efddc6afba7eb16e00190c79b62fc14ded6f0355e5"
+  },
+  "note": "Corrected verifier snapshot: preserve float32 LK point/anchor arithmetic during independent transport replay. Original inference source snapshots and outputs are unchanged.",
+  "verification_sha256": "8d4bc2c33ddf8af4ab3d9e33e6f17a1ede112222e3c7018eca58fb1f67237b32"
+}

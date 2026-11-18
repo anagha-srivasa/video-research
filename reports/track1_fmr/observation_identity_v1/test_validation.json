@@ -1,0 +1,8 @@
+{
+  "passed": 282,
+  "warnings": 18,
+  "command": "PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m pytest -q tests --basetemp work/pytest_observation_identity_v1",
+  "fixture_policy": "Project-contained temporary directory required by existing provenance contracts; three default-temp path failures resolved without baseline source edits.",
+  "frozen_spline_lk_and_stage1_extractor_unchanged": true,
+  "scientific_acceptance": false
+}

@@ -1,0 +1,14 @@
+{
+  "passed": 307,
+  "warnings": 18,
+  "seconds": 16.37,
+  "command": "/opt/anaconda3/bin/python3.13 -m pytest -q tests --basetemp work/pytest_observation_identity_v4",
+  "environment": {
+    "PYTHONPATH": "src:work/deps:work/track1_deps:work/track1_fmr_deps",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "observation_verifier_passed": true,
+  "calibration_verifier_passed": true,
+  "verifier_float32_arithmetic_correction": "Full recorded-output replay passes after preserving runtime flow dtype; core tracking outputs unchanged"
+}

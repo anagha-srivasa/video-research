@@ -1,0 +1,7 @@
+{
+  "command": "PYTHONPATH=src:work/deps:work/track1_deps:work/track1_fmr_deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /opt/anaconda3/bin/python3.13 -m pytest -q tests --basetemp work/pytest_observation_identity_v2",
+  "passed": 292,
+  "warnings": 18,
+  "seconds": 12.43,
+  "scope": "Repository suite including measured-mask binding regression, FB-LK, mesh, lineage, dormancy and scalar/batched filter equivalence"
+}

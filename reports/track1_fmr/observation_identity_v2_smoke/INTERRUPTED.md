@@ -1,0 +1,1 @@
+This diagnostic smoke was stopped with SIGINT after excessive unbounded appearance-rescue comparisons were identified. It is incomplete and provides no qualification result. The corrected, fully verified run is observation_identity_v2_keyframe_evalfix.

@@ -1,0 +1,13 @@
+{
+  "passed": 299,
+  "warnings": 18,
+  "seconds": 13.54,
+  "command": "/opt/anaconda3/bin/python3.13 -m pytest -q tests --basetemp work/pytest_observation_identity_v3",
+  "environment": {
+    "PYTHONPATH": "src:work/deps:work/track1_deps:work/track1_fmr_deps",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "observation_verifier_passed": true,
+  "calibration_verifier_passed": true
+}

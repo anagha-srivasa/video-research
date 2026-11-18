@@ -1,0 +1,50 @@
+{
+  "local_commit": "df755e39766427847c4c88f10acd0e80ae3f113a",
+  "local_commit_count": 16,
+  "supplied_audit_sha256": "02b4da961a062099ea2a594dfb1832d6bf9a37bb10197fd02125111e72050d28",
+  "remote_head_not_independently_retrieved": true,
+  "scope": "Audit findings apply to frozen spline and LK experiments; experimental FMR capabilities exist but are unqualified.",
+  "confirmed_baseline_findings": [
+    {
+      "path": "src/track1_belief/anchors.py",
+      "lines": [
+        24,
+        76,
+        132,
+        133,
+        163
+      ],
+      "finding": "Privileged manual initialization, permanent anchor death, >100ms gap death and origin-relative similarity fitting remain in the preserved experiment."
+    }
+  ],
+  "existing_fmr_components": [
+    "prompt-free detector heartbeat",
+    "cloud measures separate shape/state covariance",
+    "bounded lifecycle and dormant archive",
+    "appearance-based provisional re-ID",
+    "observed/predicted evidence tags"
+  ],
+  "observation_layer_repair": [
+    "fresh detector pass every frame, independent of novel-motion suppression",
+    "box observations survive absent or invalid masks",
+    "current visible shape replaces origin-relative shape validity",
+    "motion, appearance and optional flow ablations",
+    "query labels restricted to evaluation, with fixed-ID binding",
+    "coasting reported separately from observed point agreement"
+  ],
+  "validation_sources": [
+    "publisher-checksummed TAP-Vid DAVIS point trajectories",
+    "prelocked external VISOR manual_sparse masks"
+  ],
+  "unavailable_evidence": [
+    "complete persistent physical-object identity labels",
+    "independently adjudicated contact/boundary truth",
+    "unprivileged frozen spline predictions for the same public point benchmark"
+  ],
+  "deferred_by_audit_order": [
+    "directional-lobe/contact geometry optimization",
+    "Track 2/3 event-certificate integration",
+    "production or scientific promotion"
+  ],
+  "prior_interrupted_noise_fallback": "3x noise option and unit check remain available; no native fallback result was represented as complete. New audit prioritizes observation/identity repair."
+}

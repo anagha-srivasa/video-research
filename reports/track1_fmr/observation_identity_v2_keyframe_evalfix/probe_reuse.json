@@ -1,0 +1,5 @@
+{
+  "source_tag": "observation_identity_v2_keyframe",
+  "scope": "Same eight RGB frames, same runtime and checkpoint hashes; detector-only masks copied unchanged, never injected into tracker",
+  "source_sha256": "35288982249b7fc76aba922da029b789aad5e116b3307a60c589216d6dac8232"
+}
